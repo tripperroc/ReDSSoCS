@@ -1,0 +1,72 @@
+<script>
+  $(function() {
+    $("#check_male_facebook_friends").click(function () {
+      $.getJSON("<%= url_for :controller => 'facebook', :action => 'total_male_friends' %>", function(data) {
+        $("#male_facebook_friends").text(data["total_male_friends"]);
+      });
+    });
+
+    $("#check_save_relationships").click(function () {
+      $.getJSON("<%= url_for :controller => 'facebook', :action => 'save_relationships' %>", function(data) {
+        $("#save_relationships").text(data["total_male_friends"]);
+      });
+    });
+  });
+</script>
+
+
+<div>
+  <p>
+    <%= "Logged in to Facebook as #{fb_graph_user.name}" %>
+  </p>
+
+  <hr />
+  
+  <h2><%= link_to "Recruitment Methods", :action => 'recruitment_methods' %></h2>
+
+  <h2><%= link_to "Recruitment Mockup", :action => 'recruitment_mockup' %></h2>
+
+  <hr />
+
+  <p>
+    View <%= link_to "data about your friends' relationships", :action => 'relationships' %>
+  </p>
+
+  <p>
+    View this Facebook application's
+    <%= link_to "access permissions", :action => 'permissions' %>
+  </p>
+
+  <p>
+    <a href="#" id="check_save_relationships" style="text-decoration: underline;">
+      Query Facebook for total male friends and save total to database
+    </a>
+    <br />
+    Total male Facebook friends = 
+    <span id="save_relationships">#</span>
+  </p>
+
+  <p>
+    <a href="#" id="check_male_facebook_friends" style="text-decoration: underline;">
+      Retrieve total male friends from database
+    </a>
+    <br />
+    Total male Facebook friends = 
+    <span id="male_facebook_friends">#</span>
+  </p>
+
+  <hr />
+
+  <p>
+    To revoke this Facebook application's access to your personal info, go to your 
+    <a href="https://www.facebook.com/settings?tab=applications">Facebook App Settings</a>
+    and click the 'X' mark to the far right of the application name.
+  </p>
+
+  <hr />
+
+  <p>
+    <a href="<%= url_for(:action => :login, :only_path => true) %>" onclick="FB.logout()">Logout</a>
+  </p>
+
+</div>

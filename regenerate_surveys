@@ -1,0 +1,13 @@
+#!/bin/bash
+
+#mysql -u root --password=borkborkbork -e "DROP DATABASE IF EXISTS redssocs"
+#mysql -u root --password=borkborkbork -e "CREATE DATABASE redssocs DEFAULT CHARACTER SET utf8"
+#mysql -u root --password=borkborkbork -e "GRANT ALL ON redssocs.* TO 'redssocs'@'localhost' IDENTIFIED BY 'redssocs'"
+rake db:reset
+mysql -u root -e "DROP DATABASE IF EXISTS redssocs"
+mysql -u root -e "CREATE DATABASE redssocs DEFAULT CHARACTER SET utf8"
+mysql -u root -e "GRANT ALL ON redssocs.* TO 'redssocs'@'localhost' IDENTIFIED BY 'redssocs'"
+
+rake db:migrate
+rake surveyor FILE=surveys/kitchen_sink_survey.rb
+rake surveyor FILE=surveys/ReDSSoCS.rb

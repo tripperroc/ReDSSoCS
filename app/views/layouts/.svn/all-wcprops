@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/freds/svn/freds/!svn/ver/1173/trunk/ReDSSoCS/app/views/layouts
+END
+surveyor_custom.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/freds/svn/freds/!svn/ver/1201/trunk/ReDSSoCS/app/views/layouts/surveyor_custom.html.erb
+END
+consent.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/freds/svn/freds/!svn/ver/1167/trunk/ReDSSoCS/app/views/layouts/consent.html.erb
+END
+facebook.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/freds/svn/freds/!svn/ver/1172/trunk/ReDSSoCS/app/views/layouts/facebook.html.erb
+END
+recruit.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/freds/svn/freds/!svn/ver/1173/trunk/ReDSSoCS/app/views/layouts/recruit.html.erb
+END
+application.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/freds/svn/freds/!svn/ver/996/trunk/ReDSSoCS/app/views/layouts/application.html.erb
+END

@@ -1,0 +1,19 @@
+<div>
+  <h2>Current Permissions</h2>
+  <ul>
+    <% @current_permissions.each do |p| %>
+      <li>
+        <%= p %>
+      </li>
+    <% end %>
+  </ul>
+</div>
+
+<hr />
+
+<div>
+  View all possible permissions by consulting 
+  <a href="https://developers.facebook.com/docs/authentication/permissions/">
+    Permissions Reference - Facebook Developers
+  </a>
+</div>

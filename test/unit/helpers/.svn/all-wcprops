@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/freds/svn/freds/!svn/ver/1192/trunk/ReDSSoCS/test/unit/helpers
+END
+status_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/freds/svn/freds/!svn/ver/1192/trunk/ReDSSoCS/test/unit/helpers/status_helper_test.rb
+END
+complete_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/freds/svn/freds/!svn/ver/1170/trunk/ReDSSoCS/test/unit/helpers/complete_helper_test.rb
+END
+consent_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/freds/svn/freds/!svn/ver/1073/trunk/ReDSSoCS/test/unit/helpers/consent_helper_test.rb
+END
+facebook_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/freds/svn/freds/!svn/ver/1034/trunk/ReDSSoCS/test/unit/helpers/facebook_helper_test.rb
+END
+survey_helper_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/freds/svn/freds/!svn/ver/999/trunk/ReDSSoCS/test/unit/helpers/survey_helper_test.rb
+END

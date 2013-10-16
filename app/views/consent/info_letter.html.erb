@@ -1,0 +1,43 @@
+<% content_for :head do %>
+<style>
+  body, div {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+  }
+</style>
+<% end %>
+
+<div style="margin-left: 5em; margin-right: 5em;">
+
+  <div style="margin-top: 1em; font-size: 1.2em;">
+    You are eligible to take this survey!
+    Please read the following information below and indicate whether 
+    you have done so and agree to participate.
+  </div>
+
+  <div style="margin-top: 1em; margin-bottom: 1em;">
+    <iframe src="<%= url_for(:action => "info_letter_content") %>" 
+            style="width: 100%; height: 300px;"></iframe>
+  </div>
+
+  <div style="width: 100%;">
+    <span style="float: left;">
+      <form action="<%= url_for :action => 'facebook_login' %>" style="display: inline;">
+        <%= submit_tag "I Agree" %>
+      </form>
+      <form action="<%= url_for :action => 'did_not_consent' %>" style="display: inline;">
+        <%= submit_tag "Cancel" %>
+      </form>
+    </span>
+
+    <span style="float: right;">
+      <%= link_to "Download a Copy of this Letter", root_url + "info_letter.pdf" %>
+    </span>
+  </div>
+
+  <div style="clear: both;">
+
+</div>

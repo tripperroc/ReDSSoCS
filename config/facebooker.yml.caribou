@@ -1,0 +1,31 @@
+development:
+  app_id: 179445217929
+  secret: "3f881df113dc48cd63b49de1fa1ca39a"
+  canvas_page_name: homanator
+  callback_url: http://caribou.rit.edu:7007/
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
+  tunnel:
+    public_host_username: cmh
+    public_host: caribou.rit.edu
+    public_port: 7007
+    local_port: 3000
+    server_alive_interval: 0
+
+production:
+  app_id: 179445217929
+  secret: "3f881df113dc48cd63b49de1fa1ca39a"
+  canvas_page_name: homanator
+  callback_url: http://caribou.rit.edu:7007/
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
+  tunnel:
+    public_host_username: cmh
+    public_host: caribou.rit.edu
+    public_port: 7007
+    local_port: 3000
+    server_alive_interval: 0
+
+test:
+  app_id: 179445217929
+  secret: "3f881df113dc48cd63b49de1fa1ca39a"

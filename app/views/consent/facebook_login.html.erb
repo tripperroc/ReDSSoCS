@@ -1,0 +1,62 @@
+<div>
+
+  <p style="font-weight: bold;">
+    One more quick step!
+  </p>
+
+  <p>
+    This study uses some data from Facebook to help us better
+    understand the your answers to the survey. Just like your 
+    survey answers, this data will be kept completely anonymous 
+    and will not be shared with anyone. 
+  </p>
+
+  <%= form_tag url_for(:controller => 'surveyor', :action => 'create'), :id => 'create_survey_form' do %>
+    <%= hidden_field_tag "survey_code", "redssocs" %>
+
+    <div id="facebook_login_button" style="margin-top: 1em;">
+      <fb:login-button 
+        show-faces="false"
+        scope="user_relationships,user_relationship_details,friends_relationships,friends_relationship_details"
+        onlogin="$('#create_survey_form').submit()">
+        Login with Facebook
+      </fb:login-button>
+    </div>
+  <% end %>
+
+  <p style="font-weight: bold;">
+    What we are asking for and why:
+  </p>
+
+  <div>
+    <ul>
+      <li>Your friend list</li>
+      <li>As much of the following basic information as is listed on your homepage:</li>
+      <ul>
+        <li>Birthday</li>
+        <li>Gender, and</li>
+        <li>Relationship status.</li>
+      </ul>
+    </ul>
+  </div>
+
+  <p>
+    We will use this data to ensure that our survey presents an unbiased view of Facebook 
+    users in our inclusion group.
+  </p>
+    
+
+  <p style="font-weight: bold;">
+    How we plan to use this data:
+  </p>
+
+  <p>
+    As part of this study, we will use methods from 
+    <i>social network analysis</i>
+    in order to analyze how patterns of behavior might be connected. 
+    As with every other part of this study, your data will be kept 
+    completely confidential, and your individual identity will never 
+    be known or shared with anyone at any time.
+  </p>
+  
+</div>

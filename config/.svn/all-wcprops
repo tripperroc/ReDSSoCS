@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/freds/svn/freds/!svn/ver/1190/trunk/ReDSSoCS/config
+END
+facebooker.yml.chiron
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/freds/svn/freds/!svn/ver/1092/trunk/ReDSSoCS/config/facebooker.yml.chiron
+END
+routes.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/freds/svn/freds/!svn/ver/1190/trunk/ReDSSoCS/config/routes.rb
+END
+database.yml
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/freds/svn/freds/!svn/ver/1201/trunk/ReDSSoCS/config/database.yml
+END
+facebooker.yml.freds_craigharman_net
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/freds/svn/freds/!svn/ver/1035/trunk/ReDSSoCS/config/facebooker.yml.freds_craigharman_net
+END
+application.rb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/freds/svn/freds/!svn/ver/1003/trunk/ReDSSoCS/config/application.rb
+END
+boot.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/freds/svn/freds/!svn/ver/996/trunk/ReDSSoCS/config/boot.rb
+END
+environment.rb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/freds/svn/freds/!svn/ver/996/trunk/ReDSSoCS/config/environment.rb
+END
+facebooker.yml.craigharman_net_redssocs
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/freds/svn/freds/!svn/ver/1188/trunk/ReDSSoCS/config/facebooker.yml.craigharman_net_redssocs
+END
+facebooker.yml.homanator
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/freds/svn/freds/!svn/ver/1166/trunk/ReDSSoCS/config/facebooker.yml.homanator
+END
+facebooker.yml.vmbs_tunnel
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/freds/svn/freds/!svn/ver/1146/trunk/ReDSSoCS/config/facebooker.yml.vmbs_tunnel
+END
+facebooker.yml.craig_freds_tunnel
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/freds/svn/freds/!svn/ver/1128/trunk/ReDSSoCS/config/facebooker.yml.craig_freds_tunnel
+END

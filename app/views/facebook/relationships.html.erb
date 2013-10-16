@@ -1,0 +1,38 @@
+<div>
+  <ul>
+    <li>Total friends: <%= @total_friends %></li>
+    <li>Total friends by gender:</li>
+    <ul>
+      <% @genders.each do |gender| %>
+      <li><%= "#{format_gender(gender)}: #{@friends_by_gender[gender].size}" %></li>
+      <% end %>
+    </ul>
+
+    <li>Total friends who shared relationship status: <%= @total_shared_relationship_status %></li>
+    <li>Total friends who shared relationship status by gender:</li>
+    <ul>
+      <% @genders.each do |gender| %>
+      <li>
+        <%= "#{format_gender(gender)}: #{@friends_in_relationship_by_gender[gender].size}" %>
+        <ul>
+          <li>Share info about significant other: <%= @friends_with_significant_other_by_gender[gender].size %></li>
+          <ul>
+            <% @genders.each do |so_gender| %>
+            <li><%= "S.O. is #{format_gender(so_gender)}: #{@total_couples_by_friend_gender_by_so_gender[gender][so_gender]}" %></li>
+            <% end %>
+          </ul>
+
+          <li>Relationship Status</li>
+          <ul>
+            <% @relationship_statuses.each do |relationship_status| %>
+            <li><%= "#{relationship_status}: #{@friends_by_gender_by_relationship[gender][relationship_status].size}" %></li>
+            <% end %>
+          </ul>
+        </ul>
+      </li>
+      <% end %>
+    </ul>
+
+    <li>Total friends who shared "interested_in" gender preference: <%= @total_shared_interested_in %></li>
+  </ul>
+</div>

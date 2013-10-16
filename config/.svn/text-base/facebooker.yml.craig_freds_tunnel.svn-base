@@ -1,0 +1,31 @@
+development:
+  app_id: 338863606756
+  secret: "56b9410247dd1d286bac24fdd8be655e"
+  canvas_page_name: craig_freds_tunnel
+  callback_url: http://freds-tunnel.craigharman.net/
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
+  tunnel:
+    public_host_username: charman
+    public_host: craigharman.net
+    public_port: 5055
+    local_port: 3000
+    server_alive_interval: 0
+
+production:
+  app_id: 338863606756
+  secret: "56b9410247dd1d286bac24fdd8be655e"
+  canvas_page_name: craig_freds_tunnel
+  callback_url: http://freds-tunnel.craigharman.net/
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
+  tunnel:
+    public_host_username: charman
+    public_host: craigharman.net
+    public_port: 5055
+    local_port: 3000
+    server_alive_interval: 0
+
+test:
+  app_id: 338863606756
+  secret: "56b9410247dd1d286bac24fdd8be655e"

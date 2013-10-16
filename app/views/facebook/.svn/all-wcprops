@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/freds/svn/freds/!svn/ver/1183/trunk/ReDSSoCS/app/views/facebook
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/freds/svn/freds/!svn/ver/1183/trunk/ReDSSoCS/app/views/facebook/index.html.erb
+END
+login.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/freds/svn/freds/!svn/ver/1102/trunk/ReDSSoCS/app/views/facebook/login.html.erb
+END
+permissions.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/freds/svn/freds/!svn/ver/1051/trunk/ReDSSoCS/app/views/facebook/permissions.html.erb
+END
+recruitment_mockup.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/freds/svn/freds/!svn/ver/1183/trunk/ReDSSoCS/app/views/facebook/recruitment_mockup.html.erb
+END
+channel.html
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/freds/svn/freds/!svn/ver/1057/trunk/ReDSSoCS/app/views/facebook/channel.html
+END
+relationships.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/freds/svn/freds/!svn/ver/1059/trunk/ReDSSoCS/app/views/facebook/relationships.html.erb
+END
+recruitment_methods.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/freds/svn/freds/!svn/ver/1183/trunk/ReDSSoCS/app/views/facebook/recruitment_methods.html.erb
+END

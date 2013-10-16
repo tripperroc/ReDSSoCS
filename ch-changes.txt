@@ -1,0 +1,65 @@
+index.html.erb:
+ <center>
+    <table width="500">
+      <td>
+        <%= image_tag "urmc.png", :width => 150 %>
+      </td>
+      <td>
+        <%= image_tag "drexel.png", :width => 150 %>
+      </td>
+      <td>
+        <%= image_tag "rit.png", :width => 150 %>
+      </td>
+    </table>
+  </center>
+
+views/consent/facebook_login.html.erb:
+  <%= form_tag url_for(:controller => 'surveyor', :action => 'create'), :id => 'create_survey_form' do %>
+
+<script>
+  $(function() {
+    $("#check_male_facebook_friends").click(function () {
+      $.getJSON("<%= url_for :controller => 'facebook', :action => 'total_male_frien
+ds' %>", function(data) {
+        $("#male_facebook_friends").text(data["total_male_friends"]);
+      });
+    });
+
+    $("#check_save_relationships").click(function () {
+      $.getJSON("<%= url_for :controller => 'facebook', :action => 'save_relationships' %>", function(data) {
+        $("#save_relationships").text(data["total_male_friends"]);
+      });
+    });
+  });
+</script>
+
+<div>
+  <p>
+    <%= "Logged in to Facebook as #{fb_graph_user.name}" %>
+  </p>
+</div>
+
+
+
+
+<script>
+  $(function() {
+    $("#check_male_facebook_friends").click(function () {
+      $.getJSON("<%= url_for :controller => 'facebook', :action => 'total_male_friends' %>", function(data) {
+        $("#male_facebook_friends").text(data["total_male_friends"]);
+      });
+    });
+
+    $("#check_save_relationships").click(function () {
+      $.getJSON("<%= url_for :controller => 'facebook', :action => 'save_relationships' %>", function(data) {
+        $("#save_relationships").text(data["total_male_friends"]);
+        });
+    });
+  });
+</script>
+
+<div>
+  <p>
+    <span id="save_relationships">#</span>
+  </p>
+</div>

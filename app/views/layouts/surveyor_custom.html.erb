@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Survey</title>
+  <%= surveyor_includes %>
+
+  <script>
+    $(function() {
+      $("#q_estimate_total_men").parents(".q_default").find(".integer").keyup(function() {
+        $("#a_estimate_total_men").text($("#q_estimate_total_men").parents(".q_default").find(".integer").val());
+      });
+
+      $("#q_estimate_total_facebook_gb_men").parents(".q_default").find(".integer").keyup(function() {
+        var total_male_facebook_friends = parseFloat($("#male_facebook_friends").text());
+        var estimated_gb = parseFloat($("#q_estimate_total_facebook_gb_men").parents(".q_default").find(".integer").val());
+        var percent_gb = Math.round(estimated_gb / total_male_facebook_friends * 100);
+
+        if (isNaN(percent_gb)) {
+          $("#estimated_percent_of_gb_friends").text("...");
+        }
+        else {
+          $("#estimated_percent_of_gb_friends").text(percent_gb);
+        }
+      });
+
+      if ($("#male_facebook_friends")) {
+        $.getJSON("<%= url_for :controller => 'facebook', :action => 'save_relationships' %>", function(data) {
+          $("#male_facebook_friends").text(data["total_male_friends"]);
+        });
+      }
+    });
+  </script>
+</head>
+<body>
+  <%= yield %>
+</body>
+</html>

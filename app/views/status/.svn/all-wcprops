@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/freds/svn/freds/!svn/ver/1198/trunk/ReDSSoCS/app/views/status
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/freds/svn/freds/!svn/ver/1198/trunk/ReDSSoCS/app/views/status/index.html.erb
+END
+closed.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/freds/svn/freds/!svn/ver/1198/trunk/ReDSSoCS/app/views/status/closed.html.erb
+END

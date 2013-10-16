@@ -1,0 +1,60 @@
+<p>
+  Thank you for completing our survey. We have one last favor to ask of you, for which 
+  we will pay you up to $15. It would be helpful for us if you could help us find 
+  other people to take the survey. To be eligible, the person must be a Facebook 
+  friend, at least 18 years old, male, and gay. Invite three of your Facebook friends:
+</p>
+
+<p>
+  <span>Invitation #1</span>
+  <span class="fb-send" data-href="<%= url_for :controller => 'recruit', :action => 'invitation', :only_path => false %>"></span>
+</p>
+
+<p>
+  <span>Invitation #2</span>
+  <span class="fb-send" data-href="<%= url_for :controller => 'recruit', :action => 'invitation', :only_path => false %>"></span>
+</p>
+
+<p>
+  <span>Invitation #3</span>
+  <span class="fb-send" data-href="<%= url_for :controller => 'recruit', :action => 'invitation', :only_path => false %>"></span>
+</p>
+
+<p>
+  We will give you $5 in Amazon.com credit for each of the first three friends of yours who 
+  takes the survey.  You may recruit friends any way you see fit. You may click here 
+  to send the person a Facebook message, however we have found that more direct 
+  approaches (such as a personal email or text message) works better.
+
+</p>
+
+<p> Here is your recruitment URL. Give this to any Facebook friend who
+  is eligible to take the survey.
+</p>
+<p>
+<a href ="<%= @invitation_url %>"><%=@invitation_url %></a>
+</p>
+<p>
+  Here is a sample email message. You may use it as is, but messages that are 
+  directly tailored toward the recipient tend to be more effective.
+</p>
+
+<blockquote>
+  <p>
+    Dear Friend,
+  </p>
+  <p>
+    I just took a online survey on gay men’s health and wanted to invite you to take it as well. 
+    If you are interested, please copy the link below into your web browser.
+  </p>
+  <p>
+    [Show link here]
+  </p>
+  <p>
+    You will earn $10 in Amazon credit just for taking the survey and will 
+    help the medical and public policy communities better understand of the 
+    health concerns of gay men. Additionally, I will earn $5 for referring 
+    you. After taking the survey, you may also have the opportunity to earn 
+    additional credit by referring others to the survey. Thank you!
+  </p>
+</blockquote>

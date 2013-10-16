@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/freds/svn/freds/!svn/ver/1192/trunk/ReDSSoCS/test/unit
+END
+facebook_friendship_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/freds/svn/freds/!svn/ver/1105/trunk/ReDSSoCS/test/unit/facebook_friendship_test.rb
+END
+.gitkeep
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/freds/svn/freds/!svn/ver/996/trunk/ReDSSoCS/test/unit/.gitkeep
+END
+facebook_user_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/freds/svn/freds/!svn/ver/1105/trunk/ReDSSoCS/test/unit/facebook_user_test.rb
+END
+redssocs_survey_consent_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/freds/svn/freds/!svn/ver/1155/trunk/ReDSSoCS/test/unit/redssocs_survey_consent_test.rb
+END

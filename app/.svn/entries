@@ -1,0 +1,46 @@
+10
+
+dir
+1200
+https://craigharman.net/freds/svn/freds/trunk/ReDSSoCS/app
+https://craigharman.net/freds/svn/freds
+
+
+
+2013-06-09T22:52:24.037555Z
+1198
+charman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fc26ce83-ac36-484a-b58f-0d00b5377432
+
+assets
+dir
+
+helpers
+dir
+
+models
+dir
+
+controllers
+dir
+
+mailers
+dir
+
+views
+dir
+

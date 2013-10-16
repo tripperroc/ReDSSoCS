@@ -1,0 +1,622 @@
+Only in .: .#charman-news.txt
+Only in .: .#dif.txt
+Only in .: .#workplan.txt
+Only in .: .DS_Store
+Only in .: .README.txt.swp
+Only in .: .git
+Only in ../ReDSSoCS2: .sass-cache
+Files ./.svn/all-wcprops and ../ReDSSoCS2/.svn/all-wcprops differ
+Files ./.svn/entries and ../ReDSSoCS2/.svn/entries differ
+Files ./.svn/text-base/Gemfile.lock.svn-base and ../ReDSSoCS2/.svn/text-base/Gemfile.lock.svn-base differ
+Only in ../ReDSSoCS2/.svn/tmp: Gemfile.lock.tmp
+Only in ../ReDSSoCS2/.svn/tmp: Gemfile.tmp
+Only in ../ReDSSoCS2/.svn/tmp: svn-JZ3pIY
+Only in ../ReDSSoCS2/.svn/tmp: svn-xc1dcs
+Files ./Gemfile.lock and ../ReDSSoCS2/Gemfile.lock differ
+Files ./app/.svn/entries and ../ReDSSoCS2/app/.svn/entries differ
+Files ./app/assets/.svn/entries and ../ReDSSoCS2/app/assets/.svn/entries differ
+Files ./app/assets/images/.svn/all-wcprops and ../ReDSSoCS2/app/assets/images/.svn/all-wcprops differ
+Files ./app/assets/images/.svn/entries and ../ReDSSoCS2/app/assets/images/.svn/entries differ
+Only in ./app/assets/images: lifescience.graffle
+Only in ./app/assets/images: lifescience.pdf
+Only in ./app/assets/images: lifescience.png
+Only in ./app/assets/javascripts: .#application.js
+Only in ./app/assets/javascripts: .#surveyor_all.js
+Files ./app/assets/javascripts/.svn/all-wcprops and ../ReDSSoCS2/app/assets/javascripts/.svn/all-wcprops differ
+Files ./app/assets/javascripts/.svn/entries and ../ReDSSoCS2/app/assets/javascripts/.svn/entries differ
+Files ./app/assets/stylesheets/.svn/all-wcprops and ../ReDSSoCS2/app/assets/stylesheets/.svn/all-wcprops differ
+Files ./app/assets/stylesheets/.svn/entries and ../ReDSSoCS2/app/assets/stylesheets/.svn/entries differ
+Files ./app/assets/stylesheets/consent.css and ../ReDSSoCS2/app/assets/stylesheets/consent.css differ
+Files ./app/controllers/.svn/all-wcprops and ../ReDSSoCS2/app/controllers/.svn/all-wcprops differ
+Files ./app/controllers/.svn/entries and ../ReDSSoCS2/app/controllers/.svn/entries differ
+Only in ../ReDSSoCS2/app/controllers/.svn/tmp: facebook_controller.rb.tmp
+Files ./app/controllers/consent_controller.rb and ../ReDSSoCS2/app/controllers/consent_controller.rb differ
+Files ./app/controllers/facebook_controller.rb and ../ReDSSoCS2/app/controllers/facebook_controller.rb differ
+Files ./app/controllers/recruit_controller.rb and ../ReDSSoCS2/app/controllers/recruit_controller.rb differ
+Files ./app/controllers/surveyor_controller.rb and ../ReDSSoCS2/app/controllers/surveyor_controller.rb differ
+Files ./app/helpers/.svn/all-wcprops and ../ReDSSoCS2/app/helpers/.svn/all-wcprops differ
+Files ./app/helpers/.svn/entries and ../ReDSSoCS2/app/helpers/.svn/entries differ
+Files ./app/mailers/.svn/entries and ../ReDSSoCS2/app/mailers/.svn/entries differ
+Files ./app/models/.svn/all-wcprops and ../ReDSSoCS2/app/models/.svn/all-wcprops differ
+Files ./app/models/.svn/entries and ../ReDSSoCS2/app/models/.svn/entries differ
+Only in ./app/models: facebook_response_set.rb
+Files ./app/models/facebook_user.rb and ../ReDSSoCS2/app/models/facebook_user.rb differ
+Files ./app/models/response_set.rb and ../ReDSSoCS2/app/models/response_set.rb differ
+Files ./app/views/.svn/entries and ../ReDSSoCS2/app/views/.svn/entries differ
+Files ./app/views/complete/.svn/entries and ../ReDSSoCS2/app/views/complete/.svn/entries differ
+Only in ./app/views/consent: .git
+Files ./app/views/consent/.svn/all-wcprops and ../ReDSSoCS2/app/views/consent/.svn/all-wcprops differ
+Files ./app/views/consent/.svn/entries and ../ReDSSoCS2/app/views/consent/.svn/entries differ
+Files ./app/views/consent/facebook_login.html.erb and ../ReDSSoCS2/app/views/consent/facebook_login.html.erb differ
+Files ./app/views/consent/index.html.erb and ../ReDSSoCS2/app/views/consent/index.html.erb differ
+Files ./app/views/consent/not_eligible.html.erb and ../ReDSSoCS2/app/views/consent/not_eligible.html.erb differ
+Files ./app/views/facebook/.svn/all-wcprops and ../ReDSSoCS2/app/views/facebook/.svn/all-wcprops differ
+Files ./app/views/facebook/.svn/entries and ../ReDSSoCS2/app/views/facebook/.svn/entries differ
+Files ./app/views/layouts/.svn/all-wcprops and ../ReDSSoCS2/app/views/layouts/.svn/all-wcprops differ
+Files ./app/views/layouts/.svn/entries and ../ReDSSoCS2/app/views/layouts/.svn/entries differ
+Only in ../ReDSSoCS2/app/views/layouts/.svn/tmp: surveyor_custom.html.erb.tmp
+Only in ../ReDSSoCS2/app/views/layouts/.svn/tmp: svn-lmnr3R
+Files ./app/views/layouts/surveyor_custom.html.erb and ../ReDSSoCS2/app/views/layouts/surveyor_custom.html.erb differ
+Files ./app/views/recruit/.svn/all-wcprops and ../ReDSSoCS2/app/views/recruit/.svn/all-wcprops differ
+Files ./app/views/recruit/.svn/entries and ../ReDSSoCS2/app/views/recruit/.svn/entries differ
+Files ./app/views/recruit/index.html.erb and ../ReDSSoCS2/app/views/recruit/index.html.erb differ
+Files ./app/views/recruit/invitation.html.erb and ../ReDSSoCS2/app/views/recruit/invitation.html.erb differ
+Files ./app/views/shared/.svn/entries and ../ReDSSoCS2/app/views/shared/.svn/entries differ
+Files ./app/views/status/.svn/entries and ../ReDSSoCS2/app/views/status/.svn/entries differ
+Files ./app/views/survey/.svn/entries and ../ReDSSoCS2/app/views/survey/.svn/entries differ
+Only in .: ch-changes.txt
+Files ./config/.svn/all-wcprops and ../ReDSSoCS2/config/.svn/all-wcprops differ
+Files ./config/.svn/entries and ../ReDSSoCS2/config/.svn/entries differ
+Only in ./config/.svn/tmp: facebooker.yml.homanator.tmp
+Only in ./config/.svn/tmp: svn-SiZ1zv
+Files ./config/environments/.svn/entries and ../ReDSSoCS2/config/environments/.svn/entries differ
+Only in ./config/environments: development.rb.out
+Files ./config/environments/production.rb and ../ReDSSoCS2/config/environments/production.rb differ
+Only in ./config: facebooker.chris.yml
+Only in ./config: facebooker.yml.caribou
+Only in ../ReDSSoCS2/config: facebooker.yml.chiron.~1~
+Files ./config/facebooker.yml.homanator and ../ReDSSoCS2/config/facebooker.yml.homanator differ
+Only in ./config: gateway.readme
+Files ./config/initializers/.svn/all-wcprops and ../ReDSSoCS2/config/initializers/.svn/all-wcprops differ
+Files ./config/initializers/.svn/entries and ../ReDSSoCS2/config/initializers/.svn/entries differ
+Files ./config/locales/.svn/all-wcprops and ../ReDSSoCS2/config/locales/.svn/all-wcprops differ
+Files ./config/locales/.svn/entries and ../ReDSSoCS2/config/locales/.svn/entries differ
+Files ./db/.svn/entries and ../ReDSSoCS2/db/.svn/entries differ
+Only in ../ReDSSoCS2/db/.svn/tmp: schema.rb.2.tmp
+Only in ../ReDSSoCS2/db/.svn/tmp: schema.rb.tmp
+Only in ../ReDSSoCS2/db/.svn/tmp: svn-IgGlog
+Files ./db/development.sqlite3 and ../ReDSSoCS2/db/development.sqlite3 differ
+Files ./db/migrate/.svn/all-wcprops and ../ReDSSoCS2/db/migrate/.svn/all-wcprops differ
+Files ./db/migrate/.svn/entries and ../ReDSSoCS2/db/migrate/.svn/entries differ
+Only in ./db/migrate: 20130909060130_create_facebook_response_sets.rb
+Only in ./db: production.sqlite3
+Files ./db/schema.rb and ../ReDSSoCS2/db/schema.rb differ
+Only in ./db: test.sqlite3
+Only in .: dif.txt
+Only in .: diff.txt
+Files ./doc/.svn/entries and ../ReDSSoCS2/doc/.svn/entries differ
+Only in .: eula.html
+Only in .: eula.tiff
+Only in .: eulas.gif
+Only in .: eulas.xcf
+Only in .: images
+Files ./lib/.svn/entries and ../ReDSSoCS2/lib/.svn/entries differ
+Files ./lib/assets/.svn/entries and ../ReDSSoCS2/lib/assets/.svn/entries differ
+Files ./lib/tasks/.svn/entries and ../ReDSSoCS2/lib/tasks/.svn/entries differ
+Files ./log/.svn/entries and ../ReDSSoCS2/log/.svn/entries differ
+Files ./log/development.log and ../ReDSSoCS2/log/development.log differ
+Only in ../ReDSSoCS2/log: old_development.log
+Only in ../ReDSSoCS2/log: old_production.log
+Only in ../ReDSSoCS2/log: production_log.20130121
+Only in ../ReDSSoCS2/log: production_log.20130122
+Only in ../ReDSSoCS2/log: production_log.20130123
+Only in ../ReDSSoCS2/log: production_log.20130124
+Only in ../ReDSSoCS2/log: production_log.20130125
+Only in ../ReDSSoCS2/log: production_log.20130126
+Only in ../ReDSSoCS2/log: production_log.20130129
+Only in ../ReDSSoCS2/log: production_log.20130205
+Only in ../ReDSSoCS2/log: production_log.20130207
+Only in ../ReDSSoCS2/log: production_log.20130208
+Only in ../ReDSSoCS2/log: production_log.20130209
+Only in ../ReDSSoCS2/log: production_log.20130211
+Only in ../ReDSSoCS2/log: production_log.20130212
+Only in ../ReDSSoCS2/log: production_log.20130214
+Only in ../ReDSSoCS2/log: production_log.20130305
+Only in ../ReDSSoCS2/log: production_log.20130306
+Only in ../ReDSSoCS2/log: production_log.20130307
+Only in ../ReDSSoCS2/log: production_log.20130312
+Only in ../ReDSSoCS2/log: production_log.20130313
+Only in ../ReDSSoCS2/log: production_log.20130314
+Only in ../ReDSSoCS2/log: production_log.20130315
+Only in ../ReDSSoCS2/log: production_log.20130316
+Only in ../ReDSSoCS2/log: production_log.20130319
+Only in ../ReDSSoCS2/log: production_log.20130320
+Only in ../ReDSSoCS2/log: production_log.20130321
+Only in ../ReDSSoCS2/log: production_log.20130325
+Only in ../ReDSSoCS2/log: production_log.20130329
+Only in ../ReDSSoCS2/log: production_log.20130330
+Only in ../ReDSSoCS2/log: production_log.20130402
+Only in ../ReDSSoCS2/log: production_log.20130407
+Only in ../ReDSSoCS2/log: production_log.20130408
+Only in ../ReDSSoCS2/log: production_log.20130409
+Only in ../ReDSSoCS2/log: production_log.20130410
+Only in ../ReDSSoCS2/log: production_log.20130416
+Only in ../ReDSSoCS2/log: production_log.20130419
+Only in ../ReDSSoCS2/log: production_log.20130507
+Only in ../ReDSSoCS2/log: production_log.20130510
+Only in ../ReDSSoCS2/log: production_log.20130511
+Only in ../ReDSSoCS2/log: production_log.20130513
+Only in ../ReDSSoCS2/log: production_log.20130514
+Only in ../ReDSSoCS2/log: production_log.20130515
+Only in ../ReDSSoCS2/log: production_log.20130516
+Only in ../ReDSSoCS2/log: production_log.20130517
+Only in ../ReDSSoCS2/log: production_log.20130518
+Only in ../ReDSSoCS2/log: production_log.20130520
+Only in ../ReDSSoCS2/log: production_log.20130521
+Only in ../ReDSSoCS2/log: production_log.20130522
+Only in ../ReDSSoCS2/log: production_log.20130523
+Only in ../ReDSSoCS2/log: production_log.20130524
+Only in ../ReDSSoCS2/log: production_log.20130525
+Only in ../ReDSSoCS2/log: production_log.20130526
+Only in ../ReDSSoCS2/log: production_log.20130527
+Only in ../ReDSSoCS2/log: production_log.20130528
+Only in ../ReDSSoCS2/log: production_log.20130529
+Only in ../ReDSSoCS2/log: production_log.20130530
+Only in ../ReDSSoCS2/log: production_log.20130531
+Only in ../ReDSSoCS2/log: production_log.20130601
+Only in ../ReDSSoCS2/log: production_log.20130602
+Only in ../ReDSSoCS2/log: production_log.20130603
+Only in ../ReDSSoCS2/log: production_log.20130604
+Only in ../ReDSSoCS2/log: production_log.20130605
+Only in ../ReDSSoCS2/log: production_log.20130606
+Only in ../ReDSSoCS2/log: production_log.20130607
+Only in ../ReDSSoCS2/log: production_log.20130608
+Only in ../ReDSSoCS2/log: production_log.20130609
+Only in ../ReDSSoCS2/log: production_log.20130610
+Only in ../ReDSSoCS2/log: production_log.20130611
+Only in ../ReDSSoCS2/log: production_log.20130612
+Only in ../ReDSSoCS2/log: production_log.20130613
+Only in ../ReDSSoCS2/log: production_log.20130614
+Only in ../ReDSSoCS2/log: production_log.20130615
+Only in ../ReDSSoCS2/log: production_log.20130616
+Only in ../ReDSSoCS2/log: production_log.20130617
+Only in ../ReDSSoCS2/log: production_log.20130618
+Only in ../ReDSSoCS2/log: production_log.20130619
+Only in ../ReDSSoCS2/log: production_log.20130620
+Only in ../ReDSSoCS2/log: production_log.20130621
+Only in ../ReDSSoCS2/log: production_log.20130622
+Only in ../ReDSSoCS2/log: production_log.20130623
+Only in ../ReDSSoCS2/log: production_log.20130624
+Only in ../ReDSSoCS2/log: production_log.20130625
+Only in ../ReDSSoCS2/log: production_log.20130626
+Only in ../ReDSSoCS2/log: production_log.20130627
+Only in ../ReDSSoCS2/log: production_log.20130628
+Only in ../ReDSSoCS2/log: production_log.20130629
+Only in ../ReDSSoCS2/log: production_log.20130630
+Only in ../ReDSSoCS2/log: production_log.20130701
+Only in ../ReDSSoCS2/log: production_log.20130702
+Only in ../ReDSSoCS2/log: production_log.20130703
+Only in ../ReDSSoCS2/log: production_log.20130704
+Only in ../ReDSSoCS2/log: production_log.20130705
+Only in ../ReDSSoCS2/log: production_log.20130706
+Only in ../ReDSSoCS2/log: production_log.20130707
+Only in ../ReDSSoCS2/log: production_log.20130708
+Only in ../ReDSSoCS2/log: production_log.20130709
+Only in ../ReDSSoCS2/log: production_log.20130710
+Only in ../ReDSSoCS2/log: production_log.20130711
+Only in ../ReDSSoCS2/log: production_log.20130712
+Only in ../ReDSSoCS2/log: production_log.20130713
+Only in ../ReDSSoCS2/log: production_log.20130714
+Only in ../ReDSSoCS2/log: production_log.20130715
+Only in ../ReDSSoCS2/log: production_log.20130716
+Only in ../ReDSSoCS2/log: production_log.20130717
+Only in ../ReDSSoCS2/log: production_log.20130718
+Only in ../ReDSSoCS2/log: production_log.20130719
+Only in ../ReDSSoCS2/log: production_log.20130720
+Only in ../ReDSSoCS2/log: production_log.20130721
+Only in ../ReDSSoCS2/log: production_log.20130722
+Only in ../ReDSSoCS2/log: production_log.20130723
+Only in ../ReDSSoCS2/log: production_log.20130724
+Only in ../ReDSSoCS2/log: production_log.20130725
+Only in ../ReDSSoCS2/log: production_log.20130726
+Only in ../ReDSSoCS2/log: production_log.20130727
+Only in ../ReDSSoCS2/log: production_log.20130728
+Only in ../ReDSSoCS2/log: production_log.20130729
+Only in ../ReDSSoCS2/log: production_log.20130730
+Only in ../ReDSSoCS2/log: production_log.20130731
+Only in ../ReDSSoCS2/log: production_log.20130801
+Only in ../ReDSSoCS2/log: production_log.20130802
+Only in ../ReDSSoCS2/log: production_log.20130803
+Only in ../ReDSSoCS2/log: production_log.20130804
+Only in ../ReDSSoCS2/log: production_log.20130805
+Only in ../ReDSSoCS2/log: production_log.20130806
+Only in ../ReDSSoCS2/log: production_log.20130807
+Only in ../ReDSSoCS2/log: production_log.20130808
+Only in ../ReDSSoCS2/log: production_log.20130809
+Only in ../ReDSSoCS2/log: production_log.20130810
+Only in ../ReDSSoCS2/log: production_log.20130811
+Only in ../ReDSSoCS2/log: production_log.20130812
+Only in ../ReDSSoCS2/log: production_log.20130813
+Only in ../ReDSSoCS2/log: production_log.20130814
+Only in ../ReDSSoCS2/log: production_log.20130815
+Only in ../ReDSSoCS2/log: production_log.20130816
+Only in ../ReDSSoCS2/log: production_log.20130817
+Only in ../ReDSSoCS2/log: production_log.20130818
+Only in ../ReDSSoCS2/log: production_log.20130819
+Only in ../ReDSSoCS2/log: production_log.20130820
+Only in ../ReDSSoCS2/log: production_log.20130821
+Only in ../ReDSSoCS2/log: production_log.20130822
+Only in ../ReDSSoCS2/log: production_log.20130823
+Only in ../ReDSSoCS2/log: production_log.20130824
+Only in ../ReDSSoCS2/log: production_log.20130825
+Only in ../ReDSSoCS2/log: production_log.20130826
+Only in ../ReDSSoCS2/log: production_log.20130827
+Only in ../ReDSSoCS2/log: production_log.20130828
+Only in ../ReDSSoCS2/log: production_log.20130829
+Only in ../ReDSSoCS2/log: production_log.20130830
+Only in ../ReDSSoCS2/log: production_log.20130831
+Only in ../ReDSSoCS2/log: production_log.20130901
+Only in ../ReDSSoCS2/log: production_log.20130902
+Only in ../ReDSSoCS2/log: production_log.20130903
+Only in ../ReDSSoCS2/log: production_log.20130904
+Only in ../ReDSSoCS2/log: production_log.20130905
+Only in ../ReDSSoCS2/log: production_log.20130906
+Only in ../ReDSSoCS2/log: production_log.20130907
+Files ./log/production_log.20130908 and ../ReDSSoCS2/log/production_log.20130908 differ
+Only in ./log: test.log
+Files ./public/.svn/entries and ../ReDSSoCS2/public/.svn/entries differ
+Only in ../ReDSSoCS2/public: assets
+Files ./regenerate_surveys and ../ReDSSoCS2/regenerate_surveys differ
+Files ./script/.svn/entries and ../ReDSSoCS2/script/.svn/entries differ
+Only in ./surveys: .DS_Store
+Files ./surveys/.svn/all-wcprops and ../ReDSSoCS2/surveys/.svn/all-wcprops differ
+Files ./surveys/.svn/entries and ../ReDSSoCS2/surveys/.svn/entries differ
+Files ./surveys/ReDSSoCS.rb and ../ReDSSoCS2/surveys/ReDSSoCS.rb differ
+Files ./surveys/translations/.svn/all-wcprops and ../ReDSSoCS2/surveys/translations/.svn/all-wcprops differ
+Files ./surveys/translations/.svn/entries and ../ReDSSoCS2/surveys/translations/.svn/entries differ
+Files ./test/.svn/entries and ../ReDSSoCS2/test/.svn/entries differ
+Files ./test/fixtures/.svn/all-wcprops and ../ReDSSoCS2/test/fixtures/.svn/all-wcprops differ
+Files ./test/fixtures/.svn/entries and ../ReDSSoCS2/test/fixtures/.svn/entries differ
+Files ./test/functional/.svn/all-wcprops and ../ReDSSoCS2/test/functional/.svn/all-wcprops differ
+Files ./test/functional/.svn/entries and ../ReDSSoCS2/test/functional/.svn/entries differ
+Files ./test/integration/.svn/entries and ../ReDSSoCS2/test/integration/.svn/entries differ
+Files ./test/performance/.svn/entries and ../ReDSSoCS2/test/performance/.svn/entries differ
+Files ./test/unit/.svn/entries and ../ReDSSoCS2/test/unit/.svn/entries differ
+Files ./test/unit/helpers/.svn/all-wcprops and ../ReDSSoCS2/test/unit/helpers/.svn/all-wcprops differ
+Files ./test/unit/helpers/.svn/entries and ../ReDSSoCS2/test/unit/helpers/.svn/entries differ
+Files ./tmp/.svn/entries and ../ReDSSoCS2/tmp/.svn/entries differ
+Only in ../ReDSSoCS2/tmp/cache: 005
+Only in ../ReDSSoCS2/tmp/cache: 05E
+Only in ../ReDSSoCS2/tmp/cache: 06F
+Only in ../ReDSSoCS2/tmp/cache: 15D
+Only in ../ReDSSoCS2/tmp/cache: 20C
+Only in ../ReDSSoCS2/tmp/cache: 233
+Only in ../ReDSSoCS2/tmp/cache: 243
+Only in ../ReDSSoCS2/tmp/cache: 29D
+Only in ../ReDSSoCS2/tmp/cache: 2C4
+Only in ../ReDSSoCS2/tmp/cache: 32D
+Only in ../ReDSSoCS2/tmp/cache: 33A
+Only in ../ReDSSoCS2/tmp/cache: 3A2
+Only in ../ReDSSoCS2/tmp/cache: 3A9
+Only in ../ReDSSoCS2/tmp/cache: 413
+Only in ../ReDSSoCS2/tmp/cache: 432
+Only in ../ReDSSoCS2/tmp/cache: 43D
+Only in ../ReDSSoCS2/tmp/cache: 447
+Only in ../ReDSSoCS2/tmp/cache: 44D
+Only in ../ReDSSoCS2/tmp/cache: 475
+Only in ../ReDSSoCS2/tmp/cache: 4B5
+Only in ../ReDSSoCS2/tmp/cache: 4B9
+Only in ../ReDSSoCS2/tmp/cache: 4BB
+Only in ../ReDSSoCS2/tmp/cache: 4C7
+Only in ./tmp/cache: 4D3
+Only in ../ReDSSoCS2/tmp/cache: 51D
+Only in ../ReDSSoCS2/tmp/cache: 543
+Only in ../ReDSSoCS2/tmp/cache: 54F
+Only in ../ReDSSoCS2/tmp/cache: 550
+Only in ./tmp/cache: 566
+Only in ../ReDSSoCS2/tmp/cache: 576
+Only in ./tmp/cache: 5D2
+Only in ../ReDSSoCS2/tmp/cache: 635
+Only in ../ReDSSoCS2/tmp/cache: 680
+Only in ../ReDSSoCS2/tmp/cache: 6B6
+Only in ../ReDSSoCS2/tmp/cache: 713
+Only in ../ReDSSoCS2/tmp/cache: 7B2
+Only in ../ReDSSoCS2/tmp/cache: 7DE
+Only in ../ReDSSoCS2/tmp/cache: 7E6
+Only in ../ReDSSoCS2/tmp/cache: 8AD
+Only in ../ReDSSoCS2/tmp/cache: 904
+Only in ../ReDSSoCS2/tmp/cache: 935
+Only in ../ReDSSoCS2/tmp/cache: 978
+Only in ../ReDSSoCS2/tmp/cache: 98B
+Only in ../ReDSSoCS2/tmp/cache: 9C3
+Only in ../ReDSSoCS2/tmp/cache: 9F1
+Only in ../ReDSSoCS2/tmp/cache: A16
+Only in ../ReDSSoCS2/tmp/cache: A39
+Only in ../ReDSSoCS2/tmp/cache: A45
+Only in ../ReDSSoCS2/tmp/cache: A68
+Only in ../ReDSSoCS2/tmp/cache: A7C
+Only in ../ReDSSoCS2/tmp/cache: A80
+Only in ../ReDSSoCS2/tmp/cache: A9E
+Only in ../ReDSSoCS2/tmp/cache: AA2
+Only in ../ReDSSoCS2/tmp/cache: AB4
+Only in ../ReDSSoCS2/tmp/cache: AB9
+Only in ../ReDSSoCS2/tmp/cache/ABD: 440
+Only in ./tmp/cache/ABD: B00
+Only in ../ReDSSoCS2/tmp/cache: ABE
+Only in ../ReDSSoCS2/tmp/cache: AC2
+Only in ../ReDSSoCS2/tmp/cache: ACA
+Only in ../ReDSSoCS2/tmp/cache: ACE
+Only in ../ReDSSoCS2/tmp/cache: AD8
+Only in ../ReDSSoCS2/tmp/cache: AEB
+Only in ../ReDSSoCS2/tmp/cache: AEF
+Only in ../ReDSSoCS2/tmp/cache: AF5
+Only in ../ReDSSoCS2/tmp/cache: AF8
+Only in ../ReDSSoCS2/tmp/cache: AFC
+Only in ../ReDSSoCS2/tmp/cache: AFE
+Only in ../ReDSSoCS2/tmp/cache: AFF
+Only in ../ReDSSoCS2/tmp/cache: B21
+Only in ../ReDSSoCS2/tmp/cache: B35
+Only in ../ReDSSoCS2/tmp/cache: B40
+Only in ../ReDSSoCS2/tmp/cache: B44
+Only in ../ReDSSoCS2/tmp/cache: B46
+Only in ../ReDSSoCS2/tmp/cache: B4A
+Only in ./tmp/cache: B4B
+Only in ../ReDSSoCS2/tmp/cache: B4F
+Only in ../ReDSSoCS2/tmp/cache: B56
+Only in ../ReDSSoCS2/tmp/cache: B75
+Only in ../ReDSSoCS2/tmp/cache: B7B
+Only in ../ReDSSoCS2/tmp/cache: B8B
+Only in ../ReDSSoCS2/tmp/cache: B98
+Only in ../ReDSSoCS2/tmp/cache: BC3
+Only in ./tmp/cache: BCD
+Only in ../ReDSSoCS2/tmp/cache: C10
+Only in ../ReDSSoCS2/tmp/cache: C16
+Only in ../ReDSSoCS2/tmp/cache: CCE
+Only in ../ReDSSoCS2/tmp/cache: CFA
+Only in ../ReDSSoCS2/tmp/cache: D0D
+Only in ../ReDSSoCS2/tmp/cache: E1A
+Only in ./tmp/cache: E45
+Only in ../ReDSSoCS2/tmp/cache: E76
+Only in ./tmp/cache: EAC
+Only in ./tmp/cache/EB8: 2B1
+Only in ../ReDSSoCS2/tmp/cache/EB8: 6E2
+Only in ../ReDSSoCS2/tmp/cache: EEE
+Only in ../ReDSSoCS2/tmp/cache: EF0
+Only in ../ReDSSoCS2/tmp/cache: FEA
+Files ./tmp/cache/assets/BE7/5F0/sprockets%2F13073a4f44251332f7601b845928c076 and ../ReDSSoCS2/tmp/cache/assets/BE7/5F0/sprockets%2F13073a4f44251332f7601b845928c076 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: BF2
+Only in ../ReDSSoCS2/tmp/cache/assets: BF4
+Only in ./tmp/cache/assets: C02
+Files ./tmp/cache/assets/C04/CF0/sprockets%2Fc206b53017232739bc118621217d0c35 and ../ReDSSoCS2/tmp/cache/assets/C04/CF0/sprockets%2Fc206b53017232739bc118621217d0c35 differ
+Files ./tmp/cache/assets/C1A/4E0/sprockets%2Feca3418b4969040e04a1226561585097 and ../ReDSSoCS2/tmp/cache/assets/C1A/4E0/sprockets%2Feca3418b4969040e04a1226561585097 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: C1D
+Only in ../ReDSSoCS2/tmp/cache/assets: C21
+Only in ./tmp/cache/assets: C40
+Only in ../ReDSSoCS2/tmp/cache/assets: C51
+Only in ./tmp/cache/assets: C52
+Files ./tmp/cache/assets/C56/840/sprockets%2F0e3a4b9561f24d37778723269c5a4381 and ../ReDSSoCS2/tmp/cache/assets/C56/840/sprockets%2F0e3a4b9561f24d37778723269c5a4381 differ
+Files ./tmp/cache/assets/C58/750/sprockets%2F735873019c149e3319a9d93e7013d73c and ../ReDSSoCS2/tmp/cache/assets/C58/750/sprockets%2F735873019c149e3319a9d93e7013d73c differ
+Only in ../ReDSSoCS2/tmp/cache/assets: C60
+Files ./tmp/cache/assets/C67/DE0/sprockets%2F4125d68b71f87096538d748e577e432b and ../ReDSSoCS2/tmp/cache/assets/C67/DE0/sprockets%2F4125d68b71f87096538d748e577e432b differ
+Only in ../ReDSSoCS2/tmp/cache/assets: C74
+Only in ../ReDSSoCS2/tmp/cache/assets: C77
+Files ./tmp/cache/assets/C79/9A0/sprockets%2F17460297827721b11027e9a1bf8dec23 and ../ReDSSoCS2/tmp/cache/assets/C79/9A0/sprockets%2F17460297827721b11027e9a1bf8dec23 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: C81
+Only in ../ReDSSoCS2/tmp/cache/assets: C82
+Files ./tmp/cache/assets/C84/FC0/sprockets%2Ffb0d3f3810f149944b62b882a9431927 and ../ReDSSoCS2/tmp/cache/assets/C84/FC0/sprockets%2Ffb0d3f3810f149944b62b882a9431927 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: C85
+Only in ../ReDSSoCS2/tmp/cache/assets: C8C
+Only in ../ReDSSoCS2/tmp/cache/assets: C8F
+Files ./tmp/cache/assets/C90/690/sprockets%2Fcc5e5650435f3bd8939066c298713d56 and ../ReDSSoCS2/tmp/cache/assets/C90/690/sprockets%2Fcc5e5650435f3bd8939066c298713d56 differ
+Files ./tmp/cache/assets/C96/2B0/sprockets%2F5b698bb284395105b88469bce897b262 and ../ReDSSoCS2/tmp/cache/assets/C96/2B0/sprockets%2F5b698bb284395105b88469bce897b262 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: C97
+Files ./tmp/cache/assets/C99/220/sprockets%2F480bc8b4930066676c249f997a99fa17 and ../ReDSSoCS2/tmp/cache/assets/C99/220/sprockets%2F480bc8b4930066676c249f997a99fa17 differ
+Files ./tmp/cache/assets/CA0/2F0/sprockets%2F0e16635a5f1608855cf9332a2f31a4a0 and ../ReDSSoCS2/tmp/cache/assets/CA0/2F0/sprockets%2F0e16635a5f1608855cf9332a2f31a4a0 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: CA3
+Files ./tmp/cache/assets/CAD/1B0/sprockets%2Fbd40170b2ac365955e2d6b86038c5792 and ../ReDSSoCS2/tmp/cache/assets/CAD/1B0/sprockets%2Fbd40170b2ac365955e2d6b86038c5792 differ
+Only in ../ReDSSoCS2/tmp/cache/assets/CAD: C30
+Only in ../ReDSSoCS2/tmp/cache/assets: CB2
+Files ./tmp/cache/assets/CB3/B40/sprockets%2F7b185f7b6e8810c072464ec661a13f56 and ../ReDSSoCS2/tmp/cache/assets/CB3/B40/sprockets%2F7b185f7b6e8810c072464ec661a13f56 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: CB6
+Only in ../ReDSSoCS2/tmp/cache/assets: CBA
+Only in ../ReDSSoCS2/tmp/cache/assets: CBB
+Files ./tmp/cache/assets/CBD/0A0/sprockets%2F910a7223741fdb3c9cd857782b6647c9 and ../ReDSSoCS2/tmp/cache/assets/CBD/0A0/sprockets%2F910a7223741fdb3c9cd857782b6647c9 differ
+Files ./tmp/cache/assets/CBD/990/sprockets%2F946a7d8b1b427fb99a91c045288c0693 and ../ReDSSoCS2/tmp/cache/assets/CBD/990/sprockets%2F946a7d8b1b427fb99a91c045288c0693 differ
+Files ./tmp/cache/assets/CBF/CD0/sprockets%2F5923a446c47d93563cc34bec9806397d and ../ReDSSoCS2/tmp/cache/assets/CBF/CD0/sprockets%2F5923a446c47d93563cc34bec9806397d differ
+Files ./tmp/cache/assets/CC5/2C0/sprockets%2Fd9035741a4fc199375871ed5df95a791 and ../ReDSSoCS2/tmp/cache/assets/CC5/2C0/sprockets%2Fd9035741a4fc199375871ed5df95a791 differ
+Only in ./tmp/cache/assets: CC8
+Only in ../ReDSSoCS2/tmp/cache/assets: CCD
+Files ./tmp/cache/assets/CCE/720/sprockets%2F626e1101bd566531bd4b0fd1385f60e4 and ../ReDSSoCS2/tmp/cache/assets/CCE/720/sprockets%2F626e1101bd566531bd4b0fd1385f60e4 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: CD1
+Only in ../ReDSSoCS2/tmp/cache/assets: CD4
+Only in ../ReDSSoCS2/tmp/cache/assets: CD8
+Only in ../ReDSSoCS2/tmp/cache/assets: CD9
+Only in ../ReDSSoCS2/tmp/cache/assets/CDC: 420
+Files ./tmp/cache/assets/CDC/8A0/sprockets%2F470ed808b2335f5a1801fcc9817c6f03 and ../ReDSSoCS2/tmp/cache/assets/CDC/8A0/sprockets%2F470ed808b2335f5a1801fcc9817c6f03 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: CDE
+Only in ../ReDSSoCS2/tmp/cache/assets: CE0
+Only in ../ReDSSoCS2/tmp/cache/assets: CE1
+Only in ../ReDSSoCS2/tmp/cache/assets/CE9: 1B0
+Files ./tmp/cache/assets/CE9/A00/sprockets%2Fd56c58663104fdf70e4e374ee2c66561 and ../ReDSSoCS2/tmp/cache/assets/CE9/A00/sprockets%2Fd56c58663104fdf70e4e374ee2c66561 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: CEA
+Only in ../ReDSSoCS2/tmp/cache/assets/CEB: 1A0
+Files ./tmp/cache/assets/CEB/9B0/sprockets%2F583f6c590b67e65378cde082314ad9a4 and ../ReDSSoCS2/tmp/cache/assets/CEB/9B0/sprockets%2F583f6c590b67e65378cde082314ad9a4 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: CED
+Files ./tmp/cache/assets/CEE/000/sprockets%2F2698664fdf22ce21f5a8919d20e4781d and ../ReDSSoCS2/tmp/cache/assets/CEE/000/sprockets%2F2698664fdf22ce21f5a8919d20e4781d differ
+Only in ../ReDSSoCS2/tmp/cache/assets/CF0: 940
+Only in ../ReDSSoCS2/tmp/cache/assets/CF0: B20
+Only in ../ReDSSoCS2/tmp/cache/assets/CF0: DA0
+Files ./tmp/cache/assets/CF0/DF0/sprockets%2Fb72d5b952e2f6fbb554938f26a281849 and ../ReDSSoCS2/tmp/cache/assets/CF0/DF0/sprockets%2Fb72d5b952e2f6fbb554938f26a281849 differ
+Files ./tmp/cache/assets/CF3/350/sprockets%2Fa1032bc8863b77c3f723d6d927ff7887 and ../ReDSSoCS2/tmp/cache/assets/CF3/350/sprockets%2Fa1032bc8863b77c3f723d6d927ff7887 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: CF6
+Files ./tmp/cache/assets/CFA/5C0/sprockets%2Fa855ff9f2a997615e7f9f144e3a37128 and ../ReDSSoCS2/tmp/cache/assets/CFA/5C0/sprockets%2Fa855ff9f2a997615e7f9f144e3a37128 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: CFB
+Files ./tmp/cache/assets/CFC/040/sprockets%2Fefc248c00d819d1f2160d6cd5e312420 and ../ReDSSoCS2/tmp/cache/assets/CFC/040/sprockets%2Fefc248c00d819d1f2160d6cd5e312420 differ
+Only in ../ReDSSoCS2/tmp/cache/assets/CFC: 180
+Only in ../ReDSSoCS2/tmp/cache/assets: CFD
+Files ./tmp/cache/assets/CFE/720/sprockets%2F11a121eecc97d53186b24244bf9aa704 and ../ReDSSoCS2/tmp/cache/assets/CFE/720/sprockets%2F11a121eecc97d53186b24244bf9aa704 differ
+Files ./tmp/cache/assets/D01/650/sprockets%2Faa20909d1bc0bd482928407a0f9662cb and ../ReDSSoCS2/tmp/cache/assets/D01/650/sprockets%2Faa20909d1bc0bd482928407a0f9662cb differ
+Only in ../ReDSSoCS2/tmp/cache/assets: D03
+Only in ./tmp/cache/assets/D09: 6D0
+Only in ../ReDSSoCS2/tmp/cache/assets/D09: 8D0
+Files ./tmp/cache/assets/D0A/AF0/sprockets%2F3755a11a92605aabedc88c9e31c61728 and ../ReDSSoCS2/tmp/cache/assets/D0A/AF0/sprockets%2F3755a11a92605aabedc88c9e31c61728 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: D0B
+Files ./tmp/cache/assets/D0C/AD0/sprockets%2Fe01b03f0b39f955b82fc0f12c4c78098 and ../ReDSSoCS2/tmp/cache/assets/D0C/AD0/sprockets%2Fe01b03f0b39f955b82fc0f12c4c78098 differ
+Files ./tmp/cache/assets/D0E/4F0/sprockets%2F2df20c35793c155c72d92acd482de653 and ../ReDSSoCS2/tmp/cache/assets/D0E/4F0/sprockets%2F2df20c35793c155c72d92acd482de653 differ
+Files ./tmp/cache/assets/D0E/B80/sprockets%2Fd664b5b6934c77c251aa31b796c35e3b and ../ReDSSoCS2/tmp/cache/assets/D0E/B80/sprockets%2Fd664b5b6934c77c251aa31b796c35e3b differ
+Only in ../ReDSSoCS2/tmp/cache/assets/D0E: DA0
+Only in ../ReDSSoCS2/tmp/cache/assets/D0E: F30
+Files ./tmp/cache/assets/D0F/DE0/sprockets%2Fb7a8d648fb505c632315be2337b47fe4 and ../ReDSSoCS2/tmp/cache/assets/D0F/DE0/sprockets%2Fb7a8d648fb505c632315be2337b47fe4 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: D10
+Only in ../ReDSSoCS2/tmp/cache/assets: D11
+Only in ../ReDSSoCS2/tmp/cache/assets: D14
+Only in ../ReDSSoCS2/tmp/cache/assets: D16
+Only in ./tmp/cache/assets/D17: 650
+Only in ../ReDSSoCS2/tmp/cache/assets/D17: FE0
+Only in ../ReDSSoCS2/tmp/cache/assets: D18
+Only in ../ReDSSoCS2/tmp/cache/assets: D1C
+Files ./tmp/cache/assets/D1E/4C0/sprockets%2Ffa014fd6fcd6a306d780388e75c89833 and ../ReDSSoCS2/tmp/cache/assets/D1E/4C0/sprockets%2Ffa014fd6fcd6a306d780388e75c89833 differ
+Only in ../ReDSSoCS2/tmp/cache/assets/D1E: 960
+Files ./tmp/cache/assets/D1F/4B0/sprockets%2Fb7827c5977d72eb50f8c9e5902ebc215 and ../ReDSSoCS2/tmp/cache/assets/D1F/4B0/sprockets%2Fb7827c5977d72eb50f8c9e5902ebc215 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: D20
+Only in ../ReDSSoCS2/tmp/cache/assets: D22
+Only in ../ReDSSoCS2/tmp/cache/assets: D23
+Files ./tmp/cache/assets/D26/350/sprockets%2F2b6af2163d046ad7613d12a0f35ccc64 and ../ReDSSoCS2/tmp/cache/assets/D26/350/sprockets%2F2b6af2163d046ad7613d12a0f35ccc64 differ
+Files ./tmp/cache/assets/D27/E50/sprockets%2Fc3e211bb9a02edce23660a843d7c6240 and ../ReDSSoCS2/tmp/cache/assets/D27/E50/sprockets%2Fc3e211bb9a02edce23660a843d7c6240 differ
+Only in ../ReDSSoCS2/tmp/cache/assets/D2C: 030
+Only in ./tmp/cache/assets/D2C: A90
+Files ./tmp/cache/assets/D2C/D90/sprockets%2F30f2843452e1d7111cdbcca923d9be14 and ../ReDSSoCS2/tmp/cache/assets/D2C/D90/sprockets%2F30f2843452e1d7111cdbcca923d9be14 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: D2F
+Only in ../ReDSSoCS2/tmp/cache/assets: D30
+Only in ../ReDSSoCS2/tmp/cache/assets: D31
+Only in ../ReDSSoCS2/tmp/cache/assets: D32
+Only in ./tmp/cache/assets: D33
+Only in ../ReDSSoCS2/tmp/cache/assets/D34: D50
+Files ./tmp/cache/assets/D34/EA0/sprockets%2F46f6af47d93794b89bcc4e86c924597c and ../ReDSSoCS2/tmp/cache/assets/D34/EA0/sprockets%2F46f6af47d93794b89bcc4e86c924597c differ
+Files ./tmp/cache/assets/D39/7B0/sprockets%2Ffa1f36f0625cf6ac8e415f41d06e4074 and ../ReDSSoCS2/tmp/cache/assets/D39/7B0/sprockets%2Ffa1f36f0625cf6ac8e415f41d06e4074 differ
+Files ./tmp/cache/assets/D39/BD0/sprockets%2Fa63a4d3e1d15521fc93d2b5ea1298c79 and ../ReDSSoCS2/tmp/cache/assets/D39/BD0/sprockets%2Fa63a4d3e1d15521fc93d2b5ea1298c79 differ
+Files ./tmp/cache/assets/D3D/460/sprockets%2F115f46841fdd3064c168b4eccf198ac3 and ../ReDSSoCS2/tmp/cache/assets/D3D/460/sprockets%2F115f46841fdd3064c168b4eccf198ac3 differ
+Only in ./tmp/cache/assets/D3D: EF0
+Files ./tmp/cache/assets/D3E/300/sprockets%2F6a9721bea42022c216f78d7ecda8881d and ../ReDSSoCS2/tmp/cache/assets/D3E/300/sprockets%2F6a9721bea42022c216f78d7ecda8881d differ
+Only in ../ReDSSoCS2/tmp/cache/assets/D40: 5E0
+Only in ./tmp/cache/assets/D40: 760
+Only in ../ReDSSoCS2/tmp/cache/assets: D44
+Files ./tmp/cache/assets/D46/B00/sprockets%2F16ac7683f18ac6c8768c15aefc8710e1 and ../ReDSSoCS2/tmp/cache/assets/D46/B00/sprockets%2F16ac7683f18ac6c8768c15aefc8710e1 differ
+Only in ../ReDSSoCS2/tmp/cache/assets/D47: 400
+Only in ../ReDSSoCS2/tmp/cache/assets/D47: 7E0
+Files ./tmp/cache/assets/D47/FF0/sprockets%2F82eb4d4c6e8c307a53f93dcb656d4563 and ../ReDSSoCS2/tmp/cache/assets/D47/FF0/sprockets%2F82eb4d4c6e8c307a53f93dcb656d4563 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: D48
+Only in ./tmp/cache/assets/D4C: 320
+Only in ../ReDSSoCS2/tmp/cache/assets/D4C: A90
+Files ./tmp/cache/assets/D4E/1B0/sprockets%2Ff7cbd26ba1d28d48de824f0e94586655 and ../ReDSSoCS2/tmp/cache/assets/D4E/1B0/sprockets%2Ff7cbd26ba1d28d48de824f0e94586655 differ
+Files ./tmp/cache/assets/D57/BB0/sprockets%2Fd50ded2968e70da994c768491ffc45d3 and ../ReDSSoCS2/tmp/cache/assets/D57/BB0/sprockets%2Fd50ded2968e70da994c768491ffc45d3 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: D59
+Only in ../ReDSSoCS2/tmp/cache/assets: D5A
+Only in ../ReDSSoCS2/tmp/cache/assets: D5D
+Files ./tmp/cache/assets/D5F/5E0/sprockets%2F6ed320647bc5519d35f22bd36ccf02aa and ../ReDSSoCS2/tmp/cache/assets/D5F/5E0/sprockets%2F6ed320647bc5519d35f22bd36ccf02aa differ
+Only in ../ReDSSoCS2/tmp/cache/assets: D60
+Files ./tmp/cache/assets/D62/BD0/sprockets%2F4521415f6f11bc63b1aafc5e4a47fe56 and ../ReDSSoCS2/tmp/cache/assets/D62/BD0/sprockets%2F4521415f6f11bc63b1aafc5e4a47fe56 differ
+Files ./tmp/cache/assets/D63/620/sprockets%2Fa024a35cf72c8f8118c203bdc05cd7f8 and ../ReDSSoCS2/tmp/cache/assets/D63/620/sprockets%2Fa024a35cf72c8f8118c203bdc05cd7f8 differ
+Only in ../ReDSSoCS2/tmp/cache/assets/D63: 830
+Only in ../ReDSSoCS2/tmp/cache/assets: D64
+Only in ../ReDSSoCS2/tmp/cache/assets: D65
+Only in ../ReDSSoCS2/tmp/cache/assets: D67
+Only in ../ReDSSoCS2/tmp/cache/assets: D69
+Only in ./tmp/cache/assets: D6A
+Only in ../ReDSSoCS2/tmp/cache/assets/D6B: 190
+Files ./tmp/cache/assets/D6B/990/sprockets%2Fdf3f3d01bc9091c07f28a71d9b6b3f09 and ../ReDSSoCS2/tmp/cache/assets/D6B/990/sprockets%2Fdf3f3d01bc9091c07f28a71d9b6b3f09 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: D6C
+Only in ../ReDSSoCS2/tmp/cache/assets: D6D
+Only in ../ReDSSoCS2/tmp/cache/assets: D6F
+Only in ../ReDSSoCS2/tmp/cache/assets: D71
+Only in ./tmp/cache/assets/D72: 460
+Only in ../ReDSSoCS2/tmp/cache/assets/D72: D60
+Only in ../ReDSSoCS2/tmp/cache/assets: D74
+Only in ../ReDSSoCS2/tmp/cache/assets: D75
+Files ./tmp/cache/assets/D76/280/sprockets%2F9c0aa29b71eb68bd8a61e67b483279cd and ../ReDSSoCS2/tmp/cache/assets/D76/280/sprockets%2F9c0aa29b71eb68bd8a61e67b483279cd differ
+Files ./tmp/cache/assets/D76/AF0/sprockets%2F48cafe93ff99222b5056edbb6544d3e1 and ../ReDSSoCS2/tmp/cache/assets/D76/AF0/sprockets%2F48cafe93ff99222b5056edbb6544d3e1 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: D78
+Only in ../ReDSSoCS2/tmp/cache/assets: D79
+Only in ../ReDSSoCS2/tmp/cache/assets: D7A
+Only in ../ReDSSoCS2/tmp/cache/assets: D7B
+Files ./tmp/cache/assets/D81/450/sprockets%2F54c78577fef97e223d72ba8ccb58bd07 and ../ReDSSoCS2/tmp/cache/assets/D81/450/sprockets%2F54c78577fef97e223d72ba8ccb58bd07 differ
+Only in ./tmp/cache/assets: D82
+Only in ../ReDSSoCS2/tmp/cache/assets: D84
+Only in ../ReDSSoCS2/tmp/cache/assets: D85
+Only in ../ReDSSoCS2/tmp/cache/assets: D8B
+Only in ../ReDSSoCS2/tmp/cache/assets: D93
+Only in ../ReDSSoCS2/tmp/cache/assets: D94
+Only in ../ReDSSoCS2/tmp/cache/assets: D97
+Only in ../ReDSSoCS2/tmp/cache/assets: D9A
+Files ./tmp/cache/assets/D9C/570/sprockets%2Fb8425ef3af9f10e46eb43a5c2c7607eb and ../ReDSSoCS2/tmp/cache/assets/D9C/570/sprockets%2Fb8425ef3af9f10e46eb43a5c2c7607eb differ
+Only in ../ReDSSoCS2/tmp/cache/assets/D9C: 790
+Files ./tmp/cache/assets/D9C/C40/sprockets%2Fe7a82c5d24a69b34fd0eb078063e9cca and ../ReDSSoCS2/tmp/cache/assets/D9C/C40/sprockets%2Fe7a82c5d24a69b34fd0eb078063e9cca differ
+Only in ../ReDSSoCS2/tmp/cache/assets: D9D
+Files ./tmp/cache/assets/D9E/6D0/sprockets%2F9cd2eb57da3d171d6c1967bbd2b86a81 and ../ReDSSoCS2/tmp/cache/assets/D9E/6D0/sprockets%2F9cd2eb57da3d171d6c1967bbd2b86a81 differ
+Only in ./tmp/cache/assets/D9E: A00
+Files ./tmp/cache/assets/D9F/3E0/sprockets%2F1fc74f0fe2d5f354cd657efbcb933204 and ../ReDSSoCS2/tmp/cache/assets/D9F/3E0/sprockets%2F1fc74f0fe2d5f354cd657efbcb933204 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: DA0
+Files ./tmp/cache/assets/DA1/120/sprockets%2F07e35f5f9d7e57bb459e09ad0dbe112c and ../ReDSSoCS2/tmp/cache/assets/DA1/120/sprockets%2F07e35f5f9d7e57bb459e09ad0dbe112c differ
+Files ./tmp/cache/assets/DA1/D60/sprockets%2Ffe6ef747efb556c40bd2b942b20289ba and ../ReDSSoCS2/tmp/cache/assets/DA1/D60/sprockets%2Ffe6ef747efb556c40bd2b942b20289ba differ
+Only in ./tmp/cache/assets: DA2
+Files ./tmp/cache/assets/DA4/CE0/sprockets%2Fa63143de0a4958db55975eaafef22ce9 and ../ReDSSoCS2/tmp/cache/assets/DA4/CE0/sprockets%2Fa63143de0a4958db55975eaafef22ce9 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: DA5
+Only in ../ReDSSoCS2/tmp/cache/assets: DA6
+Only in ../ReDSSoCS2/tmp/cache/assets: DA7
+Files ./tmp/cache/assets/DAA/CC0/sprockets%2F12fd4709ee9a8dde326df29b5d5b67e0 and ../ReDSSoCS2/tmp/cache/assets/DAA/CC0/sprockets%2F12fd4709ee9a8dde326df29b5d5b67e0 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: DAC
+Only in ../ReDSSoCS2/tmp/cache/assets: DAD
+Only in ../ReDSSoCS2/tmp/cache/assets: DB0
+Only in ../ReDSSoCS2/tmp/cache/assets: DB1
+Files ./tmp/cache/assets/DB2/510/sprockets%2F5acf2fa03c1ca17652ecb0e619061cad and ../ReDSSoCS2/tmp/cache/assets/DB2/510/sprockets%2F5acf2fa03c1ca17652ecb0e619061cad differ
+Only in ../ReDSSoCS2/tmp/cache/assets: DB5
+Only in ../ReDSSoCS2/tmp/cache/assets: DB8
+Only in ../ReDSSoCS2/tmp/cache/assets: DBF
+Only in ../ReDSSoCS2/tmp/cache/assets: DC6
+Only in ../ReDSSoCS2/tmp/cache/assets/DC7: 980
+Only in ./tmp/cache/assets/DC7: FD0
+Only in ../ReDSSoCS2/tmp/cache/assets: DC9
+Files ./tmp/cache/assets/DCD/1C0/sprockets%2Fb5ce4f55ac53f83505f368ffa0debc32 and ../ReDSSoCS2/tmp/cache/assets/DCD/1C0/sprockets%2Fb5ce4f55ac53f83505f368ffa0debc32 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: DD1
+Only in ../ReDSSoCS2/tmp/cache/assets/DD2: 5E0
+Files ./tmp/cache/assets/DD2/E80/sprockets%2F5cbd5137a4fae186737c4aeadcfe5756 and ../ReDSSoCS2/tmp/cache/assets/DD2/E80/sprockets%2F5cbd5137a4fae186737c4aeadcfe5756 differ
+Only in ./tmp/cache/assets: DD4
+Files ./tmp/cache/assets/DDC/400/sprockets%2Fcffd775d018f68ce5dba1ee0d951a994 and ../ReDSSoCS2/tmp/cache/assets/DDC/400/sprockets%2Fcffd775d018f68ce5dba1ee0d951a994 differ
+Only in ../ReDSSoCS2/tmp/cache/assets: DDE
+Files ./tmp/cache/assets/DE6/6B0/sprockets%2Fb1862d8d78e6cb6dd9d95f8b31eaa68f and ../ReDSSoCS2/tmp/cache/assets/DE6/6B0/sprockets%2Fb1862d8d78e6cb6dd9d95f8b31eaa68f differ
+Files ./tmp/cache/assets/DEC/C10/sprockets%2Fb1e7ee2b111fced50e2b85d9a0152cdf and ../ReDSSoCS2/tmp/cache/assets/DEC/C10/sprockets%2Fb1e7ee2b111fced50e2b85d9a0152cdf differ
+Only in ../ReDSSoCS2/tmp/cache/assets: DF5
+Files ./tmp/cache/assets/DF7/8F0/sprockets%2F583ae2fbe2f8ee01af3d94de3e50a2e2 and ../ReDSSoCS2/tmp/cache/assets/DF7/8F0/sprockets%2F583ae2fbe2f8ee01af3d94de3e50a2e2 differ
+Files ./tmp/cache/assets/DF9/470/sprockets%2Fbc42bc12fd66f4f5a2b537fad917c3cf and ../ReDSSoCS2/tmp/cache/assets/DF9/470/sprockets%2Fbc42bc12fd66f4f5a2b537fad917c3cf differ
+Only in ../ReDSSoCS2/tmp/cache/assets: DFF
+Only in ../ReDSSoCS2/tmp/cache/assets: E01
+Files ./tmp/cache/assets/E04/890/sprockets%2F2f5173deea6c795b8fdde723bb4b63af and ../ReDSSoCS2/tmp/cache/assets/E04/890/sprockets%2F2f5173deea6c795b8fdde723bb4b63af differ
+Files ./tmp/cache/assets/E05/820/sprockets%2F5e699eb37eb75e330e2fc7bacdae19d3 and ../ReDSSoCS2/tmp/cache/assets/E05/820/sprockets%2F5e699eb37eb75e330e2fc7bacdae19d3 differ
+Files ./tmp/cache/assets/E05/AE0/sprockets%2F57178eb41b092feae8efada3882fbe5c and ../ReDSSoCS2/tmp/cache/assets/E05/AE0/sprockets%2F57178eb41b092feae8efada3882fbe5c differ
+Only in ../ReDSSoCS2/tmp/cache/assets: E06
+Only in ./tmp/cache/assets: E10
+Only in ../ReDSSoCS2/tmp/cache/assets: E25
+Files ./tmp/cache/assets/E27/2E0/sprockets%2F9c4b0c6d7c2de4e6007e1fdecfb4f12d and ../ReDSSoCS2/tmp/cache/assets/E27/2E0/sprockets%2F9c4b0c6d7c2de4e6007e1fdecfb4f12d differ
+Files ./tmp/cache/assets/E32/3D0/sprockets%2Ffc85e65aa31329ed277f55eeaba1dfee and ../ReDSSoCS2/tmp/cache/assets/E32/3D0/sprockets%2Ffc85e65aa31329ed277f55eeaba1dfee differ
+Only in ../ReDSSoCS2/tmp/cache/assets: E35
+Files ./tmp/cache/assets/E4B/220/sprockets%2F46e6fe9fd17fb99c97b0afc8add7e54e and ../ReDSSoCS2/tmp/cache/assets/E4B/220/sprockets%2F46e6fe9fd17fb99c97b0afc8add7e54e differ
+Only in ../ReDSSoCS2/tmp/cache/assets: E4E
+Only in ../ReDSSoCS2/tmp/cache/assets: E56
+Only in ../ReDSSoCS2/tmp/cache/assets: E65
+Only in ../ReDSSoCS2/tmp/cache/assets: E6F
+Only in ../ReDSSoCS2/tmp/cache/assets: E81
+Files ./tmp/cache/assets/EE5/4B0/sprockets%2F5cea4aab9d9d570dff1c4bcf5ecdc3ab and ../ReDSSoCS2/tmp/cache/assets/EE5/4B0/sprockets%2F5cea4aab9d9d570dff1c4bcf5ecdc3ab differ
+Only in ../ReDSSoCS2/tmp/cache/sass: 7ae1c533ba829ac52d437c4a1898e8b02539e8fd
+Only in ./tmp/cache/sass: d0aa79233a28cbf7a3b8c763400e1862dac00557
+Only in ../ReDSSoCS2/tmp/cache/sass: d32dd4dd01a10c62b6a31fedec5cb04d6cbcc80c
+Only in ./tmp/pids: server.pid
+Files ./vendor/.svn/entries and ../ReDSSoCS2/vendor/.svn/entries differ
+Files ./vendor/assets/.svn/entries and ../ReDSSoCS2/vendor/assets/.svn/entries differ
+Files ./vendor/assets/images/.svn/entries and ../ReDSSoCS2/vendor/assets/images/.svn/entries differ
+Files ./vendor/assets/images/surveyor/.svn/entries and ../ReDSSoCS2/vendor/assets/images/surveyor/.svn/entries differ
+Files ./vendor/assets/javascripts/.svn/entries and ../ReDSSoCS2/vendor/assets/javascripts/.svn/entries differ
+Files ./vendor/assets/javascripts/surveyor/.svn/entries and ../ReDSSoCS2/vendor/assets/javascripts/surveyor/.svn/entries differ
+Files ./vendor/assets/stylesheets/.svn/entries and ../ReDSSoCS2/vendor/assets/stylesheets/.svn/entries differ
+Files ./vendor/assets/stylesheets/surveyor/.svn/all-wcprops and ../ReDSSoCS2/vendor/assets/stylesheets/surveyor/.svn/all-wcprops differ
+Files ./vendor/assets/stylesheets/surveyor/.svn/entries and ../ReDSSoCS2/vendor/assets/stylesheets/surveyor/.svn/entries differ
+Files ./vendor/plugins/.svn/entries and ../ReDSSoCS2/vendor/plugins/.svn/entries differ

@@ -1,0 +1,183 @@
+<h2>Facebook Send button</h2>
+<div style="margin-left: 2em;">
+
+  <p>
+    <a href="https://developers.facebook.com/docs/reference/plugins/send/">Send Button - Facebook Developer Documentation</a>:
+
+    <div style="margin-left: 2em;">
+      <p>
+        "The Send Button allows users to easily send content to their friends.
+        People will have the option to send your URL in a message to their
+        Facebook friends, to the group wall of one of their Facebook groups,
+        and as an email to any email address." 
+      </p>
+      <p>[...]</p>
+      <p>
+        "The message will include a link to the URL specified in the send 
+        button, along with a title, image, and short description of the 
+        link. <i>You can specify what is shown for the title, image, and 
+        description by using 
+        <a href="https://developers.facebook.com/docs/opengraph/using-objects">Open Graph Meta Tags</a>."</i>
+    </div>
+  </p>
+
+  <div>
+    <div style="font-weight: bold;">Example:</div>
+
+    <div style="margin-left: 2em;  padding: 1em; background-color: #FAFAFA;">
+      <div>
+        <p>Interactive Send Button example (what the invitor sees):</p>
+        <div style="margin-left: 2em;">
+          <div class="fb-send" data-href="<%= url_for :controller =>'recruit', :action => 'og_meta_test2', :only_path => false %>"></div>
+        </div>
+      </div>
+      
+      <div>
+        <p>
+          Invitees who receive the invitation through Facebook will receive a
+          notification that they have a new Facebook message with a snippet
+          of the text written by the invitor:
+        </p>
+        <div style="margin-left: 2em;">
+          <%= image_tag "facebook_message_notification_example.png" %>
+        </div>
+      </div>
+      
+      <div>
+        <p>
+          Invitees who receive the invitation as a Facebook message and view the
+          Facebook message will see both the personalized text from the friend who
+          invited them and the title, image and short description specified by the
+          Open Graph Meta Tags:
+        </p>
+        <div style="margin-left: 2em;">
+          <%= image_tag "facebook_message_example.png" %>
+        </div>
+      </div>
+
+      
+      <div>
+        <p>
+          Invitees who receive the invitation through regular (non-Facebook) email
+          will just see the personalized text from the friend who invited them.  The
+          email they receive will not contain the title, image and short description
+          that are shown (1) to the invitor while the invitor is composing their
+          invitation and (2) to invitees who receive the invitation as a Facebook message.
+        </p>
+        <div style="margin-left: 2em;">
+          <%= image_tag "email_invitation_example.png" %>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <p>
+    <div style="font-weight: bold;">Pros</div>
+    <li>
+      The "Send Button" can be used to share an invitation link with a user's Facebook
+      friends and with a user's friends who are not on Facebook but have a known email address
+    </li>
+    <li>
+      A user's Facebook friends receive the message as a "Facebook message", 
+      as opposed to a "Facebook notification".  Facebook notifications are
+      more likely to be deliberately and/or accidentally ignored.
+    </li>
+  </p>
+
+  <p>
+    <div style="font-weight: bold;">Cons</div>
+    <li>
+      The "Send Button" does not provide us a way to restrict the number of recipients.
+    </li>
+    <li>
+      The "Send Button" dialog box does not allow users to browse a list of their
+      Facebook friends.
+    </li>
+    <li>
+      If a survey participant invites multiple friends using the "Send Button", the friends
+      will see the names of the other message recipients - 
+      everyone who receives the message is CC'ed, not BCC'ed.
+    </li>
+    <li>
+      Friends who receive the email through regular email (as opposed to Facebook email)
+      will not see the title, image and short description for invitation page.
+    </li>
+  </p>
+
+</div>
+<hr />
+
+
+<h2>Facebook Requests Dialog</h2>
+<div style="margin-left: 2em;">
+  
+  <p>
+    Facebook Developer Documentation -
+    <a href="https://developers.facebook.com/docs/howtos/requests/">How-To: Requests</a>,
+    <a href="https://developers.facebook.com/docs/reference/dialogs/requests/">Requests Dialog API</a>
+  </p>
+  
+  <div>
+    <div style="font-weight: bold;">Example:</div>
+
+    <div style="margin-left: 2em;  padding: 1em; background-color: #FAFAFA;">
+      <div>
+        <p>What the invitor sees (interactive Request Dialog):</p>
+
+        <form>
+          <input type="button" value="Invite Friends" onclick="FB.ui({method: 'apprequests', message: 'Take the LINCS survey'});" />
+        </form>
+      </div>
+      
+      <div>
+        <p>What the invitee sees through Facebook:</p>
+        <div style="margin-left: 2em;">
+          <%= image_tag "facebook_request_message_example.png" %>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  
+  <p>
+    <div style="font-weight: bold;">Pros</div>
+    <li>Allows the user to browse a list of their Facebook friends</li>
+  </p>
+  
+  <p>
+    <div style="font-weight: bold;">Cons</div>
+    <li>
+      A user's Facebook friends receive the message as a "Facebook notification", 
+      as opposed to a "Facebook message".  Facebook notifications are
+      more likely to be deliberately and/or accidentally ignored.
+    </li>
+  </p>
+
+</div>
+
+
+<!--
+<hr />
+
+<h2>email and "mailto:" link</h2>
+<div style="margin-left: 2em;">
+
+  <div>
+    <a href="mailto:craig@craigharman.net?subject=This is the subject of the email&body=This is the body">Send mail</a>
+  </div>
+
+  <p>
+    <div style="font-weight: bold;">Pros</div>
+    <li>Pro #1</li>
+    <li>Pro #2</li>
+  </p>
+      
+  <p>
+    <div style="font-weight: bold;">Cons</div>
+    <li>Con #1</li>
+    <li>Con #2</li>
+  </p>
+
+</div>
+-->

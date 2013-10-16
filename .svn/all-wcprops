@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/freds/svn/freds/!svn/ver/1200/trunk/ReDSSoCS
+END
+Gemfile.lock
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/freds/svn/freds/!svn/ver/1200/trunk/ReDSSoCS/Gemfile.lock
+END
+regenerate_surveys
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/freds/svn/freds/!svn/ver/1201/trunk/ReDSSoCS/regenerate_surveys
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/freds/svn/freds/!svn/ver/996/trunk/ReDSSoCS/Rakefile
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/freds/svn/freds/!svn/ver/996/trunk/ReDSSoCS/.gitignore
+END
+Gemfile
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/freds/svn/freds/!svn/ver/1199/trunk/ReDSSoCS/Gemfile
+END
+config.ru
+K 25
+svn:wc:ra_dav:version-url
+V 54
+/freds/svn/freds/!svn/ver/996/trunk/ReDSSoCS/config.ru
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/freds/svn/freds/!svn/ver/1176/trunk/ReDSSoCS/README.txt
+END
+Rails_README.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/freds/svn/freds/!svn/ver/1132/trunk/ReDSSoCS/Rails_README.rdoc
+END

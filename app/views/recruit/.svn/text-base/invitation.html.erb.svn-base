@@ -1,0 +1,14 @@
+<% content_for :head do %>
+  <meta property="fb:app_id"      content="<%= Facebooker2.app_id %>" />
+  <meta property="fb:app_id"      content="<%= Facebooker2.app_id %>" />
+  <meta property="og:title"       content="Title for LINCS invitation page" />
+  <meta property="og:description" content="Description of the survey. This description goes on for a while. The quick brown fox jumped over the lazy sleeping dog. And then some." />
+<% end %>
+
+<p>
+  Use your browser's "View Source" command to view the meta tags used by
+  the Facebook
+  <a href="https://developers.facebook.com/docs/opengraph/using-objects/">Open
+  Graph objects</a>
+  Recruit id is <%= @recruit_code %>
+</p>

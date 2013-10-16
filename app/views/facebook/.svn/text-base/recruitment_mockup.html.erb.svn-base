@@ -1,0 +1,28 @@
+<p>
+  Thank you for completing our survey. We have one last favor to ask you, for which
+  we will pay you up to $15. It would be a great help for us if you could help us 
+  find other people to take the survey. To be eligible, the person must be a Facebook 
+  friend, at least 18, male, and gay. Invite three of your Facebook friends:
+</p>
+
+<p>
+  <span>Invitation #1</span>
+  <span class="fb-send" data-href="<%= url_for :controller => 'recruit', :action => 'invitation', :only_path => false %>"></span>
+</p>
+
+<p>
+  <span>Invitation #2</span>
+  <span class="fb-send" data-href="<%= url_for :controller => 'recruit', :action => 'invitation', :only_path => false %>"></span>
+</p>
+
+<p>
+  <span>Invitation #3</span>
+  <span class="fb-send" data-href="<%= url_for :controller => 'recruit', :action => 'invitation', :only_path => false %>"></span>
+</p>
+
+<p>
+  We will give you $5 in Amazon.com credit for the first three friends of yours who 
+  takes the survey.  You may recruit friends anyway you see fit. You may click here 
+  to send the person a facebook message, however, we have found that more direct 
+  approaches (such as a personal email or text message) works better.
+</p>

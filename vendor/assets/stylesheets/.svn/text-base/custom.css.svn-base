@@ -1,0 +1,92 @@
+/* Add custom styles here. They will be
+ * loaded after the surveyor stylesheets */
+
+/* CSS styles copied from Facebook: */
+
+#surveyor {
+  font-family: font-family 'lucida grande',tahoma,verdana,arial,sans-serif;
+  background-color: white;
+}
+
+#surveyor fieldset {
+  font-size: 15px;
+  color: rgb(51,51,51);
+}
+
+#surveyor fieldset.q_default, fieldset.g_inline, fieldset.g_grid {
+  /*
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(233,233,233);
+  */
+
+  margin-top: 14px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+#surveyor fieldset.choices {
+  padding-top: 0px;
+  margin-bottom: 5px;
+}
+
+#surveyor legend {
+  line-height: 18px;
+}
+
+/*  These CSS3 selectors may not be supported by some browsers */
+#surveyor input[type=checkbox],input[type=radio] {
+  margin-top: 2px;
+}
+
+
+/* CSS styles NOT copied from Facebook: */
+
+#surveyor fieldset > ol {
+  /*  Facebook uses blue-green, but not this precise shade of blue-green  */
+  /* background-color: rgb(245,247,255); */
+
+  margin-left: 1em;
+  padding-left: 0.5em;
+  padding-right: 1em;
+}
+
+
+#surveyor {
+    width: auto;
+}
+
+
+/* Hide survey name */
+#surveyor div.surveyor_flash {
+    display: none;
+}
+
+/* Hide menu showing survey sections */
+#surveyor div.surveyor_menu {
+    display: none;
+}
+
+/* Buttons to move to next survey section are left-aligned */
+#surveyor div.next_section {
+    float: left;
+}
+
+/* Background color for dependent questions is white instead of yellow */
+#surveyor fieldset.q_dependent, fieldset.g_dependent {
+    background-color: white;
+}
+#surveyor fieldset.q_dependent > legend, fieldset.g_dependent > legend  {
+    background-color: white;
+}
+
+/* Hide question numbers */
+#surveyor span.qnum {
+    display: none;
+}
+
+/* Form fields for integers will be right-aligned */
+#surveyor input.integer {
+    text-align: right;
+    width: 6em;
+}

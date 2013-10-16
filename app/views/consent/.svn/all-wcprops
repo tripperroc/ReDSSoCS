@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/freds/svn/freds/!svn/ver/1198/trunk/ReDSSoCS/app/views/consent
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/freds/svn/freds/!svn/ver/1201/trunk/ReDSSoCS/app/views/consent/index.html.erb
+END
+did_not_consent.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/freds/svn/freds/!svn/ver/1191/trunk/ReDSSoCS/app/views/consent/did_not_consent.html.erb
+END
+nothing_here.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/freds/svn/freds/!svn/ver/1191/trunk/ReDSSoCS/app/views/consent/nothing_here.html.erb
+END
+info_letter.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/freds/svn/freds/!svn/ver/1194/trunk/ReDSSoCS/app/views/consent/info_letter.html.erb
+END
+not_eligible.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/freds/svn/freds/!svn/ver/1191/trunk/ReDSSoCS/app/views/consent/not_eligible.html.erb
+END
+facebook_login.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/freds/svn/freds/!svn/ver/1198/trunk/ReDSSoCS/app/views/consent/facebook_login.html.erb
+END
+expired_coupon.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/freds/svn/freds/!svn/ver/1195/trunk/ReDSSoCS/app/views/consent/expired_coupon.html.erb
+END
+info_letter_content.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/freds/svn/freds/!svn/ver/1187/trunk/ReDSSoCS/app/views/consent/info_letter_content.html.erb
+END

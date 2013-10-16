@@ -1,0 +1,77 @@
+10
+
+dir
+1200
+https://craigharman.net/freds/svn/freds/trunk/ReDSSoCS/test
+https://craigharman.net/freds/svn/freds
+
+
+
+2013-05-22T23:56:36.363441Z
+1192
+charman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+fc26ce83-ac36-484a-b58f-0d00b5377432
+
+unit
+dir
+
+test_helper.rb
+file
+
+
+
+
+2012-08-17T17:04:43.000000Z
+2b8130eb4e1a65bce16e6e0fbe90d447
+2012-08-13T21:07:29.554428Z
+996
+charman
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+454
+
+performance
+dir
+
+functional
+dir
+
+integration
+dir
+
+fixtures
+dir
+

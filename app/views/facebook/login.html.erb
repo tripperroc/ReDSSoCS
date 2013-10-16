@@ -1,0 +1,25 @@
+<% if flash[:fb_graph_auth_exception] %>
+  <p>
+    Exception: 
+    <%= flash[:fb_graph_auth_exception] %>
+  </p>
+<% end %>
+
+<div>
+  <fb:login-button 
+    show-faces="false"
+    scope="user_relationships,user_relationship_details,friends_relationships,friends_relationship_details"
+    onlogin="window.location.href = '<%= url_for(:action => 'index', :only_path => true) %>'">
+  </fb:login-button>
+</div>
+
+<hr />
+
+<div>
+  If your Facebook application is not authorized by the user,
+  they will be presented with an
+  <a href="https://developers.facebook.com/docs/opengraph/authentication/#configure">
+    Auth Dialog
+  </a>
+  for your application
+</div>

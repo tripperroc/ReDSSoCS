@@ -1,0 +1,135 @@
+<% content_for :head do %>
+<style>
+  body, div {
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+  }
+</style>
+<% end %>
+
+
+<div id="info_letter_content" style="margin-left: 0.5em; margin-right: 0.5em;">
+
+  <div>
+
+    <p>
+      <b>Title of Study:</b> Social Diffusion in Online Media for Reaching Hidden
+      Communities and Underrepresented Groups
+      <br />
+      <b>Principal Investigator:</b> Vincent Silenzio, M.D., M.P.H.
+      <br />
+      <b>University of Rochester Department:</b> Psychiatry
+    </p>
+
+    <p>
+      <b><u>Introduction:</u></b> This letter describes a research study that
+      researchers from the University of Rochester are conducting along with
+      our research partners from the Rochester Institute of Technology, and 
+      Drexel University. This study is intended to show that online social 
+      networks such as Facebook can be used to reach men who may have sex 
+      with men or may be sexually attracted to other men. We estimate that 
+      approximately 900 people will take part in this study. You will be 
+      asked to complete a brief survey. This should take up to five minutes. 
+      At the end of the survey, you will have the chance to ask up to three 
+      of your friends who you think would be eligible and willing to participate.
+    </p>
+
+    <p>
+      <b><u>Payment:</u></b> You will receive $5 in online credit at Amazon.com
+      for completing the survey. You can also earn more Amazon.com credit when 
+      you refer friends who complete the survey. You can refer up to three 
+      Facebook friends. For each one who completes the survey, you will receive 
+      an additional $5 in Amazon.com credit, up to a total of $20. When added 
+      to the $5 credit you receive for finishing your own survey, you may 
+      receive an overall total of between $5 and $20 in credit you can use 
+      as you please at the Amazon.com store.
+    </p>
+
+    <p>
+      <b>Your participation in this survey is completely voluntary.</b> 
+      You are free not to participate or to withdraw at any time, for whatever 
+      reason without penalty.
+    </p>
+
+    <p>
+      <b><u>Privacy:</u></b> All the information we receive from you, including 
+      your name and any other identifying information, will be strictly 
+      confidential. In order to protect your privacy, your individual responses 
+      will not be shared with anyone. Only summarized data that is pooledfrom 
+      all participants will be presented at meetings or in any publications. 
+      Information regarding your personal identity will not be used, nor would 
+      any information be shared that would make it possible for anyone to 
+      identify you or your responses.
+    </p>
+
+    <p>
+      We are using a secure online connection to minimize any risk to your 
+      privacy from un-authorized parties (e.g. computer hackers). While we 
+      are taking steps to prevent it from occurring, you should be aware 
+      that there is a small possibility that responses could be viewed by 
+      unauthorized parties because your responses are being communicated 
+      over the web and stored on a web server. There are no other expected 
+      risks to you for helping with this study. There are also no expected 
+      benefits for you.
+    </p>
+
+    <p>
+      We will keep what we learn about you private, but we may have to share 
+      this information with University of Rochester monitors or the Department 
+      of Health and Human Services. While they normally protect the privacy 
+      of this information, they may not be required to do so by law. Results 
+      of the research may be presented at meetings or in publications, but 
+      your name will not be used.
+    </p>
+
+    <p>
+      By law, we have to get your authorization to use health information we 
+      collect from you. We will use your responses to the survey questions, 
+      including your age range, gender, and sexual orientation, to conduct 
+      the study. This information may be audited to make sure we are following 
+      regulations, policies and study plans.
+    </p>
+
+    <p>
+      Your Authorization for this study will not expire unless you tell us 
+      you want to cancel it.  We will keep your responses to the survey 
+      questions indefinitely. However your name and other personal 
+      information will be discarded as soon as possible after the conclusion 
+      of the study, once all participants have received payment. If you 
+      cancel your Authorization, you will be removed from the study.
+    </p>
+
+    <p>
+      <b><u>More Information:</b></u> For more information or questions about 
+      this research you may call Dr. Vincent Silenzio at 585.275.6069. If you 
+      have questions, concerns or complaints about your rights as a research 
+      subject you may contact, anonymously if you wish, a Human Subjects 
+      Protection Specialist at the University of Rochester Research Subjects 
+      Review Board, Box 315, 601 Elmwood Avenue, Rochester, NY 14642-8315, 
+      Telephone 011(585) 276-0005. For long-distance you may call toll-free: 
+      011(877) 449-4441. You may also call these numbers if you cannot reach 
+      the research staff or wish to talk to someone else.
+    </p>
+
+    <p>
+      Sincerely yours,
+    </p>
+
+    <p>
+      Vincent M. B. Silenzio, M.D., M.P.H.
+      <br />
+      Associate Professor
+      <br />
+      Departments of Psychiatry, Community &amp; Preventive Medicine, and Family Medicine
+      <br />
+      Laboratory of Interactive Networks and Computational Studies (LINCS)
+      <br />
+      University of Rochester School of Medicine and Dentistry
+    </p>
+
+  </div>
+
+</div>

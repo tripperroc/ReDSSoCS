@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/freds/svn/freds/!svn/ver/1185/trunk/ReDSSoCS/config/initializers
+END
+inflections.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/freds/svn/freds/!svn/ver/996/trunk/ReDSSoCS/config/initializers/inflections.rb
+END
+session_store.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/freds/svn/freds/!svn/ver/1127/trunk/ReDSSoCS/config/initializers/session_store.rb
+END
+fieldset_wrapper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/freds/svn/freds/!svn/ver/1023/trunk/ReDSSoCS/config/initializers/fieldset_wrapper.rb
+END
+facebooker2.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/freds/svn/freds/!svn/ver/1185/trunk/ReDSSoCS/config/initializers/facebooker2.rb
+END
+secret_token.rb
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/freds/svn/freds/!svn/ver/996/trunk/ReDSSoCS/config/initializers/secret_token.rb
+END
+backtrace_silencers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/freds/svn/freds/!svn/ver/996/trunk/ReDSSoCS/config/initializers/backtrace_silencers.rb
+END
+mime_types.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/freds/svn/freds/!svn/ver/996/trunk/ReDSSoCS/config/initializers/mime_types.rb
+END
+wrap_parameters.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/freds/svn/freds/!svn/ver/996/trunk/ReDSSoCS/config/initializers/wrap_parameters.rb
+END

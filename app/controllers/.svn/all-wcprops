@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/freds/svn/freds/!svn/ver/1192/trunk/ReDSSoCS/app/controllers
+END
+survey_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/freds/svn/freds/!svn/ver/999/trunk/ReDSSoCS/app/controllers/survey_controller.rb
+END
+recruit_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/freds/svn/freds/!svn/ver/1201/trunk/ReDSSoCS/app/controllers/recruit_controller.rb
+END
+surveyor_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/freds/svn/freds/!svn/ver/1201/trunk/ReDSSoCS/app/controllers/surveyor_controller.rb
+END
+application_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/freds/svn/freds/!svn/ver/1178/trunk/ReDSSoCS/app/controllers/application_controller.rb
+END
+status_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/freds/svn/freds/!svn/ver/1192/trunk/ReDSSoCS/app/controllers/status_controller.rb
+END
+complete_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/freds/svn/freds/!svn/ver/1171/trunk/ReDSSoCS/app/controllers/complete_controller.rb
+END
+consent_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/freds/svn/freds/!svn/ver/1201/trunk/ReDSSoCS/app/controllers/consent_controller.rb
+END
+facebook_controller.rb
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/freds/svn/freds/!svn/ver/1201/trunk/ReDSSoCS/app/controllers/facebook_controller.rb
+END
