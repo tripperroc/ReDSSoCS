@@ -29,13 +29,10 @@ fc26ce83-ac36-484a-b58f-0d00b5377432
 test
 dir
 
-surveys
-dir
-
 app
 dir
 
-log
+surveys
 dir
 
 regenerate_surveys
@@ -71,6 +68,9 @@ has-props
 
 
 642
+
+log
+dir
 
 Rakefile
 file
@@ -186,7 +186,7 @@ dir
 script
 dir
 
-config
+doc
 dir
 
 .gitignore
@@ -223,7 +223,7 @@ charman
 
 430
 
-doc
+config
 dir
 
 lib
@@ -265,20 +265,15 @@ charman
 
 README.txt
 file
+1202
 
 
 
-
-2013-05-11T19:35:05.000000Z
-9d5001eb625eab837d70ba9368b015a4
-2013-04-25T13:44:02.045328Z
-1176
-charman
-
-
-
-
-
+2013-10-17T02:49:33.000000Z
+e488677f4512a0da1cf59ab1e27d6d5b
+2013-10-17T02:50:49.114810Z
+1202
+cmh
 
 
 
@@ -295,7 +290,12 @@ charman
 
 
 
-1880
+
+
+
+
+
+1678
 
 Rails_README.rdoc
 file

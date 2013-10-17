@@ -34,14 +34,6 @@ DEVELOPMENT ENVIRONMENT CONFIGURATION  (one time only)
 
 
 
-INSTALLING THE ReDSSoCS APP  (one time only)
-===========================
-
-  Download the ReDSSoCS source code by using this command:
-
-    svn co https://craigharman.net/freds/svn/freds/trunk/ReDSSoCS
-
-
 
 UPDATING THE ReDSSoCS APP
 =========================
