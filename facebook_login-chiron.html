@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ReDSSoCS</title>
+  <style>
+    div.thin_grey_line {
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-color: rgb(233,233,233);
+      width: 100%;
+    }
+  </style>
+  <script src="/assets/application-0f2a237e01e42157d9f3cd6fc6846a00.js" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="zQhw1IPglpQ8flFRZWiMSb3dQGdQZV3XEu+/V79WqEU=" name="csrf-token" />
+  
+  
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>
+  //  Copied from: https://developers.facebook.com/docs/reference/javascript/
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '350846314996542', // App ID
+      channelUrl : 'https://chiron.urmc.rochester.edu/facebook/channel', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
+
+
+<div style="margin-left: 3em; margin-right: 3em;">
+
+  <p style="font-weight: bold;">
+    One more quick step!
+  </p>
+
+  <p>
+    This study uses some data from Facebook to help us better
+    understand the your answers to the survey. Just like your 
+    survey answers, this data will be kept completely anonymous 
+    and will not be shared with anyone. 
+  </p>
+
+  <form accept-charset="UTF-8" action="/surveyor/create" id="create_survey_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="zQhw1IPglpQ8flFRZWiMSb3dQGdQZV3XEu+/V79WqEU=" /></div>
+    <input id="survey_code" name="survey_code" type="hidden" value="rochester-gay-men-s-health-survey" />
+
+    <div id="facebook_login_button" style="margin-top: 1em;">
+      <fb:login-button 
+        show-faces="false"
+        scope="user_relationships,user_relationship_details,friends_relationships,friends_relationship_details"
+        onlogin="$('#create_survey_form').submit()">
+        Login with Facebook
+      </fb:login-button>
+    </div>
+</form>
+  <p style="font-weight: bold;">
+    What we are asking for and why:
+  </p>
+
+  <div>
+    <ul>
+      <li>Your friend list</li>
+      <li>As much of the following basic information as is listed on your homepage:</li>
+      <ul>
+        <li>Birthday</li>
+        <li>Gender, and</li>
+        <li>Relationship status.</li>
+      </ul>
+    </ul>
+  </div>
+
+  <p>
+    We will use this data to ensure that our survey presents an unbiased view of Facebook 
+    users in our inclusion group.
+  </p>
+    
+
+  <p style="font-weight: bold;">
+    How we plan to use this data:
+  </p>
+
+  <p>
+    As part of this study, we will use methods from 
+    <i>social network analysis</i>
+    in order to analyze how patterns of behavior might be connected. 
+    As with every other part of this study, your data will be kept 
+    completely confidential, and your individual identity will never 
+    be known or shared with anyone at any time.
+  </p>
+  
+</div>
+
+
+</body>
+</html>
+
+

@@ -30,18 +30,7 @@
   <h1>Welcome!</h1>
 
   <p>
-    By participating in this research study you can make an important
-    contribution to gay and bisexual men's health and earn five dollars
-    or more at Amazon.com for doing so. This online survey is being 
-    conducted by researchers from the University of Rochester, the 
-    Rochester Institute of Technology and Drexel University. This 
-    study is intended to show that online social networks such as 
-    Facebook can be used to understand the health and needs of gay 
-    and bisexual men. We estimate that approximately 900 people will 
-    take part in this study which includes a brief survey which should 
-    take five to ten minutes to complete. At the end of the survey you 
-    will have the chance to ask up to three of your friends who you 
-    think would be eligible and willing to also participate.  
+   By participating in this research study you can make an important contribution to gay and bisexual men's health and earn five dollars at Amazon.com. At the end of the survey you will be able to invite up to three of your friends to also participate. You will earn $5 for every one of these friends who completes the survey.  This online survey is being conducted by researchers from the University of Rochester, the Rochester Institute of Technology and Drexel University. This study is intended to show that online social networks such as Facebook can be used to understand the health of gay and bisexual men. We estimate that approximately 900 people will complete this survey which should take five to ten minutes of your time. 
   </p>
 
   <p> Your recruit code is: <%= @recruitee_coupon %> </p>
@@ -55,39 +44,39 @@
 
     <p>
       <%= f.radio_button :eighteen_or_older, true, :onclick => "$('#sexuality_questions').toggle('highlight', 1000);" %> Yes
-      <%= f.radio_button :eighteen_or_older, false %> No
+      <%= f.radio_button :eighteen_or_older, false, :onclick => "$('#sexuality_questions').toggle();" %> No
 
       <span style="margin-left: 2em;"></span>
 
-      <%= label_tag 'eighteen_or_older', 'I am 18 years of age or older'%>
+      <%= label_tag 'eighteen_or_older', 'I am 18 years of age or older' %>
     </p>
     <div id="sexuality_questions" style="display: none; margin-left: 2em;">
       <p>
-        Do you consider yourself to be
+        <%= label_tag 'gender', 'Do you consider yourself to be' %>
         <br />
-        <%= f.check_box :gender_male %>
-        <%= label_tag 'gender_male', 'Male' %>
+        <%= f.radio_button :gender, "Male"%>
+       <%= label_tag 'gender_male', 'Male' %>
         <br />
-        <%= f.check_box :gender_female %>
+        <%= f.radio_button :gender, "Female"%>
         <%= label_tag 'gender_female', 'Female' %>
         <br />
-        <%= f.check_box :gender_other %>
+        <%= f.radio_button :gender, "Other"%>
         <%= label_tag 'gender_other', 'Other' %>
       </p>
       <p>
         Do you consider yourself to be
         <br />
-        <%= f.check_box :heterosexual %>
-        <%= label_tag 'heterosexual', 'heterosexual or straight' %>
+       <%= f.radio_button :orientation, "Heterosexual"%>
+       <%= label_tag 'heterosexual', 'Heterosexual or straight' %>
         <br />
-        <%= f.check_box :gay %>
-        <%= label_tag 'gay', 'gay' %>
+        <%= f.radio_button :orientation, "Gay"%>
+        <%= label_tag 'gay', 'Gay' %>
         <br />
-        <%= f.check_box :bisexual %>
-        <%= label_tag 'bisexual', 'bisexual' %>
+        <%= f.radio_button :orientation, "Bisexual"%>
+        <%= label_tag 'bisexual', 'Bisexual' %>
         <br />
-        <%= f.check_box :other %>
-        <%= label_tag 'other', "other/not sure/don't know" %>
+       <%= f.radio_button :orientation, "Other"%>
+        <%= label_tag 'Other', "other/not sure/don't know" %>
       </p>
     </div>
     <p style="text-align: center;">

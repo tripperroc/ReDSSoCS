@@ -42,10 +42,6 @@ UPDATING THE ReDSSoCS APP
   
     cd ReDSSoCS
     
-  Use Subversion to update the source code:
-
-    svn update
-
   Install the required versions of the Gem libraries using Bundler:
 
     bundle install
@@ -71,3 +67,10 @@ RUNNING THE ReDSSoCS APP (on a development machine)
 
     rake facebooker:tunnel:start
 
+  The following command kills all processes on the server listening on
+    port 7007. It is useful for recovering from a hung tunnel.
+
+    kill -9 `lsof -t -i:7007`
+
+ Note: this was installed with ruby 2.0.0. You may need to make sure
+ this is the version you are using before running bundle update.

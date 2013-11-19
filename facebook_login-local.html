@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ReDSSoCS</title>
+  <style>
+    div.thin_grey_line {
+      border-bottom-style: solid;
+      border-bottom-width: 1px;
+      border-bottom-color: rgb(233,233,233);
+      width: 100%;
+    }
+  </style>
+  <script src="/assets/jquery.js?body=1" type="text/javascript"></script>
+<script src="/assets/jquery_ujs.js?body=1" type="text/javascript"></script>
+<script src="/assets/estimate.js?body=1" type="text/javascript"></script>
+<script src="/assets/surveyor/jquery-1.9.0.js?body=1" type="text/javascript"></script>
+<script src="/assets/surveyor/jquery-ui-1.10.0.custom.js?body=1" type="text/javascript"></script>
+<script src="/assets/surveyor/jquery-ui-timepicker-addon.js?body=1" type="text/javascript"></script>
+<script src="/assets/surveyor/jquery.selectToUISlider.js?body=1" type="text/javascript"></script>
+<script src="/assets/surveyor/jquery.surveyor.js?body=1" type="text/javascript"></script>
+<script src="/assets/surveyor/jquery.maskedinput.js?body=1" type="text/javascript"></script>
+<script src="/assets/surveyor_all.js?body=1" type="text/javascript"></script>
+<script src="/assets/application.js?body=1" type="text/javascript"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="n+8izHRcZ9yj0OSdetGk4EKqd3GfZm1iUZDwdGbLGKY=" name="csrf-token" />
+  
+  
+</head>
+<body>
+
+<div id="fb-root"></div>
+<script>
+  //  Copied from: https://developers.facebook.com/docs/reference/javascript/
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '179445217929', // App ID
+      channelUrl : 'http://caribou.rit.edu:7007/facebook/channel', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
+
+
+<div>
+
+  <p style="font-weight: bold;">
+    Why Facebook?
+  </p>
+
+  <p>
+    This study uses some data from Facebook to help us better
+    understand the your answers to the survey. Just like your 
+    survey answers, this data will be kept completely confidential
+    and will not be shared with anyone. 
+  </p>
+
+  <form accept-charset="UTF-8" action="/surveyor/create" id="create_survey_form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="n+8izHRcZ9yj0OSdetGk4EKqd3GfZm1iUZDwdGbLGKY=" /></div>
+    <input id="survey_code" name="survey_code" type="hidden" value="redssocs" />
+
+    <div id="facebook_login_button" style="margin-top: 1em;">
+      <fb:login-button 
+        show-faces="false"
+        scope="user_relationships,user_relationship_details,friends_relationships,friends_relationship_details"
+        registration-url="surveyor/create"
+         onlogin="$('#create_survey_form').submit()">
+       Login with Facebook
+      </fb:login-button>
+    </div>
+</form>
+
+  <p style="font-weight: bold;">
+    What we are asking for and why:
+  </p>
+
+  <div>
+    <ul>
+      <li>Your friend list</li>
+      <li>As much of the following basic information as is listed on your homepage:</li>
+      <ul>
+        <li>Birthday</li>
+        <li>Gender, and</li>
+        <li>Relationship status.</li>
+      </ul>
+    </ul>
+  </div>
+
+  <p>
+    We will use this data to ensure that our survey presents an unbiased view of Facebook 
+    users in our inclusion group.
+  </p>
+    
+
+  <p style="font-weight: bold;">
+    How we plan to use this data:
+  </p>
+
+  <p>
+    As part of this study, we will use methods from 
+    <i>social network analysis</i>
+    in order to analyze how patterns of behavior might be connected. 
+    As with every other part of this study, your data will be kept 
+    completely confidential, and your individual identity will never 
+    be known or shared with anyone at any time.
+  </p>
+  
+</div>
+
+
+</body>
+</html>

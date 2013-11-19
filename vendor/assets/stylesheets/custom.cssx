@@ -1,44 +1,13 @@
-<!doctype html>
-<html>
-<head>
-  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
-  <title>Survey</title>
-  <%= surveyor_includes %>
+/* Add custom styles here. They will be
+ * loaded after the surveyor stylesheets */
 
-  <script>
-    $(function() {
-      $("#q_estimate_total_men").parents(".q_default").find(".integer").keyup(function() {
-        $("#a_estimate_total_men").text($("#q_estimate_total_men").parents(".q_default").find(".integer").val());
-      });
+/* CSS styles copied from Facebook: */
 
-      $("#q_estimate_total_facebook_gb_men").parents(".q_default").find(".integer").keyup(function() {
-        var total_male_facebook_friends = parseFloat($("#male_facebook_friends").text());
-        var estimated_gb = parseFloat($("#q_estimate_total_facebook_gb_men").parents(".q_default").find(".integer").val());
-        var percent_gb = Math.round(estimated_gb / total_male_facebook_friends * 100);
+#surveyor {
+  font-family: font-family 'lucida grande',tahoma,verdana,arial,sans-serif;
+  background-color: white;
+}
 
-        if (isNaN(percent_gb)) {
-          $("#estimated_percent_of_gb_friends").text("...");
-        }
-        else {
-          $("#estimated_percent_of_gb_friends").text(percent_gb);
-        }
-      });
-
-      if ($("#male_facebook_friends")) {
-        $.getJSON("<%= url_for :controller => 'facebook', :action => 'total_male_friends' %>", function(data) {
-          $("#male_facebook_friends").text(data["total_male_friends"]);
-        });
-      }
-      
-    });
-
-  </script>
-
-  <style>
-    #surveyor {
-      font-family: font-family 'times new roman',tahoma,verdana,arial,sans-serif;
-     background-color: white;
-    }
 #surveyor fieldset {
   font-size: 15px;
   color: rgb(51,51,51);
@@ -121,10 +90,3 @@
     text-align: right;
     width: 6em;
 }
-  </style>
-
-</head>
-<body>
-  <%= yield %>
-</body>
-</html>

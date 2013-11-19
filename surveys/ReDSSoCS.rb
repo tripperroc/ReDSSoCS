@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 
-survey "ReDSSoCS" do
+survey "ReDSSoCS", :default_mandatory => true do
   
   section "Questions" do
 
-    q "What is your age (in years)? And here is your facebook account number:"
+    q "What is your age (in years)?", :is_mandatory => true
     a :integer
     
     q "What sex were you assigned at birth, on your original birth certificate?", :pick => :one
@@ -72,7 +72,7 @@ survey "ReDSSoCS" do
     a "Some graduate or professional studies (completed bachelor’s degree but not graduate degree)"
     a "Completed Master’s degree or equivalent or higher graduate degree"
     
-    q "Please report income from all jobs BEFORE taxes and other deductions and net income after business expenses." + 
+    q "Please report income from all jobs BEFORE taxes and other deductions and net income after business expenses. " + 
       "Include any tips, bonuses, overtime pay and commissions, as well as any income from pensions, dividends, " + 
       "interest, Social Security, alimony, child support, financial aid, support from persons living elsewhere, " +  
       "worker’s compensation or any public assistance or welfare payments and any other money income received by " +  
@@ -203,19 +203,19 @@ survey "ReDSSoCS" do
     
     ###  Questions about smoking  ###
 
-    q_smoking "Did you smoke a cigarette in the last year?", :pick => :one
-    a_yes "Yes"
+    q_1 "Did you smoke a cigarette in the last year?", :pick => :one
+    a_1 "Yes"
     a "No"
     
     q "About how often did you USUALLY smoke a cigarette in the last 12 months?", :pick => :one
+    dependency :rule => "S"
+    condition_S :q_1, "==", :a_1
     a "Every day"
     a "5 to 6 days a week"
     a "3 to 4 days a week"
     a "1 to 2 days a week"
     a "2 to 3 days a month"
     a "Once a month or less"
-    dependency :rule => "S"
-    condition_S :q_smoking, "==", :a_yes
 
 
     ###  Questions about drugs  ###
@@ -484,6 +484,7 @@ survey "ReDSSoCS" do
       "as gay or bisexual?"
     a :integer
     
+    
     q_estimate_total_facebook_gb_men "<span id=\"q_estimate_total_facebook_gb_men\"></span>" + 
       "According to Facebook you have <span id=\"male_facebook_friends\">...</span> Facebook friends who are males." +
       "Thinking about ONLY these Facebook friends, how many of them would you say identify as gay or bisexual?" +
@@ -508,5 +509,4 @@ survey "ReDSSoCS" do
     condition_H :q_estimate_percent_facebook_gb_men, "==", :a_too_high
 
   end
-  
 end

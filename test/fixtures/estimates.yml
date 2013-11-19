@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  male_friends: 1
+  gay_friends: 1
+  facebook_male_friends: 1
+  facebook_gay_friends: 1
+  accuracy: MyString
+  right_percentage: 1
+
+two:
+  male_friends: 1
+  gay_friends: 1
+  facebook_male_friends: 1
+  facebook_gay_friends: 1
+  accuracy: MyString
+  right_percentage: 1

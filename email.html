@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Survey</title>
+  <link href="/assets/surveyor/reset.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/surveyor/jquery-ui-1.10.0.custom.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/surveyor/jquery-ui-timepicker-addon.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/surveyor/ui.slider.extras.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/surveyor/results.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/surveyor.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/custom.css?body=1" media="screen" rel="stylesheet" type="text/css" />
+<link href="/assets/surveyor_all.css?body=1" media="screen" rel="stylesheet" type="text/css" /><script src="/assets/surveyor/jquery-1.9.0.js?body=1" type="text/javascript"></script>
+<script src="/assets/surveyor/jquery-ui-1.10.0.custom.js?body=1" type="text/javascript"></script>
+<script src="/assets/surveyor/jquery-ui-timepicker-addon.js?body=1" type="text/javascript"></script>
+<script src="/assets/surveyor/jquery.selectToUISlider.js?body=1" type="text/javascript"></script>
+<script src="/assets/surveyor/jquery.surveyor.js?body=1" type="text/javascript"></script>
+<script src="/assets/surveyor/jquery.maskedinput.js?body=1" type="text/javascript"></script>
+<script src="/assets/surveyor_all.js?body=1" type="text/javascript"></script>
+
+  <script>
+    $(function() {
+      $("#q_estimate_total_men").parents(".q_default").find(".integer").keyup(function() {
+        $("#a_estimate_total_men").text($("#q_estimate_total_men").parents(".q_default").find(".integer").val());
+      });
+
+      $("#q_estimate_total_facebook_gb_men").parents(".q_default").find(".integer").keyup(function() {
+        var total_male_facebook_friends = parseFloat($("#male_facebook_friends").text());
+        var estimated_gb = parseFloat($("#q_estimate_total_facebook_gb_men").parents(".q_default").find(".integer").val());
+        var percent_gb = Math.round(estimated_gb / total_male_facebook_friends * 100);
+
+        if (isNaN(percent_gb)) {
+          $("#estimated_percent_of_gb_friends").text("...");
+        }
+        else {
+          $("#estimated_percent_of_gb_friends").text(percent_gb);
+        }
+      });
+
+      $("#finish").onclick(function () {
+          data["email"] = $("#q_email").parents(".q_default").find(".string").val();
+      });
+
+      if ($("#male_facebook_friends")) {
+        $.getJSON("/facebook/total_male_friends", function(data) {
+          $("#male_facebook_friends").text(data["total_male_friends"]);
+        });
+      }
+      
+    });
+
+  </script>
+
+  <style>
+    #surveyor {
+      font-family: font-family 'times new roman',tahoma,verdana,arial,sans-serif;
+     background-color: white;
+    }
+#surveyor fieldset {
+  font-size: 15px;
+  color: rgb(51,51,51);
+}
+
+#surveyor fieldset.q_default, fieldset.g_inline, fieldset.g_grid {
+  /*
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(233,233,233);
+  */
+
+  margin-top: 14px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+#surveyor fieldset.choices {
+  padding-top: 0px;
+  margin-bottom: 5px;
+}
+
+#surveyor legend {
+  line-height: 18px;
+}
+
+/*  These CSS3 selectors may not be supported by some browsers */
+#surveyor input[type=checkbox],input[type=radio] {
+  margin-top: 2px;
+}
+
+
+/* CSS styles NOT copied from Facebook: */
+
+#surveyor fieldset > ol {
+  /*  Facebook uses blue-green, but not this precise shade of blue-green  */
+  /* background-color: rgb(245,247,255); */
+
+  margin-left: 1em;
+  padding-left: 0.5em;
+  padding-right: 1em;
+}
+
+
+#surveyor {
+    width: auto;
+}
+
+
+/* Hide survey name */
+#surveyor div.surveyor_flash {
+    display: none;
+}
+
+/* Hide menu showing survey sections */
+#surveyor div.surveyor_menu {
+    display: none;
+}
+
+/* Buttons to move to next survey section are left-aligned */
+#surveyor div.next_section {
+    float: left;
+}
+
+/* Background color for dependent questions is white instead of yellow */
+#surveyor fieldset.q_dependent, fieldset.g_dependent {
+    background-color: white;
+}
+#surveyor fieldset.q_dependent > legend, fieldset.g_dependent > legend  {
+    background-color: white;
+}
+
+/* Hide question numbers */
+#surveyor span.qnum {
+    display: none;
+}
+
+/* Form fields for integers will be right-aligned */
+#surveyor input.integer {
+    text-align: right;
+    width: 6em;
+}
+  </style>
+
+</head>
+<body>
+  <div id='surveyor'>
+  <form accept-charset="UTF-8" action="/surveys/redssocs/YPlPUVkPGw" class="formtastic r" id="survey_form" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="QKgzwt2CRkd5hqT8wCTwYQYixZd7BKm9EZH4pjQIyIo=" /></div>  <input id="surveyor_javascript_enabled" name="surveyor_javascript_enabled" type="hidden" value="false" />
+    <div class='surveyor_menu'>
+      Sections
+      <ul>
+        <li><input name="section[3]" type="submit" value="Questions" /></li>
+        <li><input name="section[4]" type="submit" value="Estimation Questions" /></li>
+        <li class='active'><input name="section[5]" type="submit" value="Email" /></li>
+      </ul>
+    </div>
+    <div class='survey_title'>ReDSSoCS</div>
+    <div class='previous_section'><input name="section[4]" type="submit" value="&laquo; Previous section" /></div>
+    
+    <div class="survey_section" id="survey_section_5"><span class='title'>Email</span>
+    <div class="fieldset_wrapper"><fieldset class="q_default " id="q_125"><legend><span><span class='qnum'>1) </span>Thank you for completing our survey! Please enter an email address
+      where we can send your Amazon gift card. Or if you wish, leave this blank and you may call us using the 
+    numbers on the following page.</span></legend><ol><span class='help'></span>
+    <li class="quiet input optional" id="r_1_question_id_input"><input id="r_1_question_id" name="r[1][question_id]" type="hidden" value="125" />
+    
+    </li>
+    <li class="quiet input optional" id="r_1_api_id_input"><input id="r_1_api_id" name="r[1][api_id]" type="hidden" value="81d1fa95-85c0-404a-b22d-27d5ee730207" />
+    
+    </li>
+    
+    <li class="quiet input optional" id="r_1_answer_id_input"><input class="" id="r_1_answer_id" name="r[1][answer_id]" type="hidden" value="546" />
+    
+    </li>
+    <li class="string input optional stringish" id="r_1_string_value_input"><input class="string" id="r_1_string_value" maxlength="255" name="r[1][string_value]" type="text" />
+    
+    </li>
+    <span class='help'></span>
+    </ol></fieldset></div>
+    </div>
+    <div class='next_section'><input name="finish" type="submit" value="Click here to finish" /></div>
+  </form>
+  <br>
+</div>
+<script>
+  $(document).ready(function() {
+    $("input#surveyor_javascript_enabled").val(true);
+  });
+</script>
+
+</body>
+</html>

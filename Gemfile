@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '~> 3.2.13'
 
@@ -39,7 +39,7 @@ end
 gem 'jquery-rails'
 
 gem 'surveyor', '~> 1.4.0'
-gem 'surveyor_tweaks', '0.0.10', :git => "git://github.com/charman/surveyor_tweaks.git"
+#gem 'surveyor_tweaks', '0.0.10', :git => "git://github.com/charman/surveyor_tweaks.git"
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

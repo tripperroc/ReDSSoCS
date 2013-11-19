@@ -8,6 +8,7 @@ class CreateFacebookResponseSets < ActiveRecord::Migration
       # Content
       t.string :recruitee_coupon
       t.string :recruiter_coupon
+      t.string :email_address
 
       t.timestamps
     end

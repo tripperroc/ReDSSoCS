@@ -22,5 +22,13 @@ class ConsentController < ApplicationController
 
   def not_eligible
   end
+ 
+  def wrong_coupon
+    @original_url = url_for :controller => 'recruit', :action => 'invitation', :id => session[:original_coupon]
+    @wrong_url = url_for :controller => 'recruit', :action => 'invitation', :id => session[:recruitee_coupon]  
+  end
 
+  def expired 
+    @coupon_url  = url_for :controller => 'recruit', :action => 'invitation', :id => session[:recruitee_coupon]
+  end
 end

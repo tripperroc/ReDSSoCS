@@ -1,0 +1,166 @@
+    <style>
+    #surveyor {
+      font-family: font-family 'times new roman',tahoma,verdana,arial,sans-serif;
+     background-color: white;
+    }
+#surveyor fieldset {
+  font-size: 15px;
+  color: rgb(51,51,51);
+}
+
+#surveyor fieldset.q_default, fieldset.g_inline, fieldset.g_grid {
+  /*
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(233,233,233);
+  */
+
+  margin-top: 14px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+#surveyor fieldset.choices {
+  padding-top: 0px;
+  margin-bottom: 5px;
+}
+
+#surveyor legend {
+  line-height: 18px;
+}
+
+/*  These CSS3 selectors may not be supported by some browsers */
+#surveyor input[type=checkbox],input[type=radio] {
+  margin-top: 2px;
+}
+
+
+/* CSS styles NOT copied from Facebook: */
+
+#surveyor fieldset > ol {
+  /*  Facebook uses blue-green, but not this precise shade of blue-green  */
+  /* background-color: rgb(245,247,255); */
+
+  margin-left: 1em;
+  padding-left: 0.5em;
+  padding-right: 1em;
+}
+
+
+#surveyor {
+    width: auto;
+}
+
+
+/* Hide survey name */
+#surveyor div.surveyor_flash {
+    display: none;
+}
+
+/* Hide menu showing survey sections */
+#surveyor div.surveyor_menu {
+    display: none;
+}
+
+/* Buttons to move to next survey section are left-aligned */
+#surveyor div.next_section {
+    float: left;
+}
+
+/* Background color for dependent questions is white instead of yellow */
+#surveyor fieldset.q_dependent, fieldset.g_dependent {
+    background-color: white;
+}
+#surveyor fieldset.q_dependent > legend, fieldset.g_dependent > legend  {
+    background-color: white;
+}
+
+/* Hide question numbers */
+#surveyor span.qnum {
+    display: none;
+}
+
+/* Form fields for integers will be right-aligned */
+#surveyor input.integer {
+    text-align: right;
+    width: 6em;
+}
+  </style>
+
+
+<div id='surveyor'>
+ <%= form_tag @where_to_go, :method=>"get" do %>
+<%= submit_tag "<< Previous Section" %> 
+  <% end %>
+
+  <%= form_for @estimate, :url => {:controller => 'recruit', :action  => 'index'} do |f| %> 
+        <div class="survey_section" id="survey_section_4"><span class='title'>Estimation Questions</span>
+    <div class="fieldset_wrapper"><fieldset class="q_default "><span id="q_estimate_total_men"></span>Thinking about ALL of your friends,
+    both online (in places like Facebook, Google+, etc.) <i>and</i> in
+    the real world, how many of them are men living in the U.S. over
+    the age of 18?</span><br /><br />
+<ol>
+<li><%= f.text_field :male_friends, :id=>"total_men" %></li></ol></fieldset>
+</div>
+    <div class="fieldset_wrapper"><fieldset class="q_default "><span id="q_estimate_total_gb_men"></span>Thinking about these  <span id="a_estimate_total_men"></span> friends, how many of them would you say identify as gay or bisexual?
+	<br /><br /> <ol>    <li><%= f.text_field :facebook_gay_friends, :id=>"gay_men" %></li></ol>
+</fieldset>
+</div>
+    <div class="fieldset_wrapper"><fieldset class="q_default "><span id="q_estimate_total_facebook_gb_men"></span>According to Facebook you
+    have <span id="male_facebook_friends"><%= @male_facebook_friends %></span> Facebook friends
+    who are males. Thinking about ONLY these Facebook friends, how many
+    of them would you say identify as gay or bisexual?
+<br /><br /> <ol>    <li><%= f.text_field :gay_friends, :id=>"gay_facebook_men" %></li></ol>
+</fieldset>
+</div>
+    <div class="fieldset_wrapper"><fieldset class="q_default "><span id="q_estimate_percent_facebook_gb_men"></span>Based on
+    your previous answer, that would
+    mean <span id="estimated_percent_of_gb_friends">...</span> percent
+    of your Facebook friends are gay or bisexual men.<br /><br />Do
+    you think this percentage is
+ <br /><br /><ol>   <li>  <%= f.radio_button :accuracy, false, :onclick=>"$('#accuracy').show('highlight', 1000)" %> too low </li>
+    <li> <%= f.radio_button :accuracy, false, :onclick=>"$('#accuracy').hide()" %> about right </li>
+     <li><%= f.radio_button :accuracy, false, :onclick=>"$('#accuracy').show('highlight', 1000)" %> too high </li></ol>
+</fieldset>
+
+</div>
+
+    <div class="fieldset_wrapper"  style="display: none"  id="accuracy"><fieldset class="q_default ">What do you think the right
+    percentage is?
+<br /><br />   <ol><li><%= f.text_field :right_percentage %></li></ol>
+</fieldset>
+</div>
+ <%= submit_tag "Click Here to Finish" %>
+
+<% end %>
+</div>
+   <script>
+    $(function() {
+      $("#total_men").keyup(function()
+      {
+        $("#a_estimate_total_men").text($("#total_men").val());
+      });
+
+     
+
+      $("#gay_facebook_men").keyup(function() {
+        var total_male_facebook_friends = parseFloat($("#male_facebook_friends").text());
+        var estimated_gb = parseFloat($("#gay_facebook_men").val());
+        var percent_gb = Math.round(estimated_gb / total_male_facebook_friends * 100);
+
+        if (isNaN(percent_gb)) {
+          $("#estimated_percent_of_gb_friends").text("...");
+        }
+        else {
+          $("#estimated_percent_of_gb_friends").text(percent_gb);
+        }
+      });
+
+      if ($("#male_facebook_friends")) {
+        $.getJSON("<%= url_for :controller => 'facebook', :action => 'total_male_friends' %>", function(data) {
+          $("#male_facebook_friends").text(data["total_male_friends"]);
+        });
+      }
+    });
+
+  </script>

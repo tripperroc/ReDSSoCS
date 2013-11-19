@@ -4,7 +4,20 @@ class FacebookController < ApplicationController
 
   before_filter :require_fb_graph_authentication, :only => [:index, :permissions, :recruitment_methods, :recruitment_mockup, :relationships, :save_relationships, :total_male_friends]
 
-
+  def email
+    logger.debug "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    logger.debug "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    logger.debug "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    logger.debug "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    logger.debug "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@     email        @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    logger.debug "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    logger.debug "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    logger.debug "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    logger.debug "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+    session[:email] = params[:email]
+    render :json => { "mmail" => params[:email] }
+ 
+  end
   #  Facebook recommends using a Channel File, which "greatly improves the performance of the [Facebook] JS
   #  SDK by addressing issues with cross-domain communication in certain browsers".  For more info, see:
   #     https://developers.facebook.com/docs/reference/javascript/#channel
@@ -116,7 +129,7 @@ class FacebookController < ApplicationController
     end
 
     @total_couples_by_friend_gender_by_so_gender = Hash.new
-    @genders.each do |friend_gender|
+    @genders.each do |friend_gender|to
       @total_couples_by_friend_gender_by_so_gender[friend_gender] = Hash.new
       @genders.each do |so_gender|
         @total_couples_by_friend_gender_by_so_gender[friend_gender][so_gender] =
@@ -186,7 +199,7 @@ class FacebookController < ApplicationController
   end
 
   def total_male_friends
-    render :json => { "total_male_friends" => facebook_user.total_male_friends }
+    render :json => { "total_male_friends" => session[:total_male_friends]} #facebook_user.total_male_friends }
   end
 
   def facebook_account_number

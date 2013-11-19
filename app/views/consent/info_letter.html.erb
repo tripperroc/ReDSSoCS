@@ -1,21 +1,10 @@
-<% content_for :head do %>
-<style>
-  body, div {
-    margin: 0;
-    padding: 0;
-  }
-
-  body {
-  }
-</style>
-<% end %>
-
 <div style="margin-left: 5em; margin-right: 5em;">
 
   <div style="margin-top: 1em; font-size: 1.2em;">
     You are eligible to take this survey!
-    Please read the following information below and indicate whether 
-    you have done so and agree to participate.
+    Please read the information in the box below and indicate whether
+    or not
+    you agree to participate. 
   </div>
 
   <div style="margin-top: 1em; margin-bottom: 1em;">
@@ -25,12 +14,28 @@
 
   <div style="width: 100%;">
     <span style="float: left;">
-      <form action="<%= url_for :action => 'facebook_login' %>" style="display: inline;">
-        <%= submit_tag "I Agree" %>
-      </form>
-      <form action="<%= url_for :action => 'did_not_consent' %>" style="display: inline;">
-        <%= submit_tag "Cancel" %>
-      </form>
+ <%= form_tag url_for(:controller => 'surveyor', :action => 'create'), :id => 'create_survey_form' do %>
+    <%= hidden_field_tag "survey_code", "redssocs" %>
+ <div id="facebook_login_button" style="margin-top: 1em;">
+ <%= email_field(:user, :address, :value => "Enter your email
+ address", :id => "email") %> 
+       <fb:login-button 
+        show-faces="false"
+        scope="user_relationships,user_relationship_details,friends_relationships,friends_relationship_details"
+        onlogin="$('#create_survey_form').submit()">
+        I agree to participate
+      </fb:login-button>
+
+  </div>
+
+  <% end %>
+<p>
+       <%= link_to " (Why do we need Facebook?)", root_url +  "consent/facebook_login?commit=I+Agree" %>
+<br/>
+or <br/>
+    <%= link_to "I do not wish to participate", root_url +
+	"consent/did_not_consent?commit=Cancel" %>
+</p>
     </span>
 
     <span style="float: right;">
@@ -38,6 +43,27 @@
     </span>
   </div>
 
-  <div style="clear: both;">
-
+ 
 </div>
+
+
+<script>
+
+
+          //Get a reference to the link on the page
+          // with an id of "mylink"
+          var a = document.getElementById("email");
+          a.color = "#888";
+          //Set code to run when the link is clicked
+          // by assigning a function to "onclick"
+          a.onclick = function() {
+
+            if (this.value == "Enter your email address") {
+               // Your code here...
+               this.value = "";
+            }
+            this.color = "black";
+
+         }
+
+</script>
