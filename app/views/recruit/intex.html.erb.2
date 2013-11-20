@@ -1,0 +1,88 @@
+<div id="fb-root"></div>
+<style>
+a:link { color:blue; }
+
+a:visited { color:blue; }
+
+a:hover { color:blue; }
+
+a:active { color:blue; }
+
+</style>
+
+<p>
+ Thank you for completing the survey! You have now earned $5. Would you be willing to help us find 
+  other adult gay male friends to take the survey? 
+</p>
+
+<p>
+ 
+  <a href="#" id = "fb-invite">Recruit friends through Facebook</a>
+
+</p>
+
+<p>
+  We will give you $5 in Amazon.com credit for each of your first three friends who 
+  take the survey.  We have found that more direct 
+  approaches, such as a personal email or text message, work better
+  than going through Facebook. Here is a sample email you may use,
+  however it is only necessary to provide the link below.
+
+</p>
+
+<blockquote>
+  <p>
+    Dear Friend,
+  </p>
+
+  <p>
+    I just took a online survey on gay men’s health and wanted to invite you to take it as well. 
+    If you are interested, please copy the link below into your web browser.
+  </p>
+ <p>
+<a href ="<%= @invitation_url %>"><%=@invitation_url %></a>
+</p>
+<p>
+ <p>
+    You will earn $5 in Amazon credit just for taking the survey and will 
+    help the medical and public policy communities better understand of the 
+    health concerns of gay men. Additionally, I will earn $5 for referring 
+    you. After taking the survey, you may also have the opportunity to earn 
+    additional credit by referring others to the survey. Thank you!
+  </p>
+</blockquote>
+
+
+<a href="mailto:?Subject=Hello">Recruit friends through email</a>
+
+
+<script>
+
+
+          //Get a reference to the link on the page
+          // with an id of "mylink"
+          var a = document.getElementById("fb-invite");
+
+          //Set code to run when the link is clicked
+          // by assigning a function to "onclick"
+          a.onclick = function() {
+
+            // Your code here...
+            FB.ui({
+                   //method: 'send',     
+                    //link: "<%= url_for :controller => 'recruit', :action => 'invitation', :only_path => false %>" 
+                   method: 'apprequests',     
+                   message: 'Take a health survey for gay men'
+	    });
+            //If you don't want the link to actually 
+            // redirect the browser to another page,
+            // "google.com" in our example here, then
+            // return false at the end of this block.
+            // Note that this also prevents event bubbling,
+            // which is probably what we want here, but won't 
+            // always be the case.
+            return false;
+         }
+
+</script>
+

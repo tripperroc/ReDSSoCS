@@ -9,51 +9,44 @@ a:hover { color:blue; }
 a:active { color:blue; }
 
 </style>
+ <h1>Thank you!</h1>
 
 <p>
- Thank you for completing the survey! You have now earned $5. Would you be willing to help us find 
-  other adult gay male friends to take the survey? 
+ Thank you for completing the survey! You have now earned $5. You told
+ us you have <%= @male_facebook_friends %> Facebook friends who are adult gay males. We will give
+ you $5 for every one of these friends who you recruit and who
+ completes the survey (up to three friends for a total of $15).  You
+ can recruit friends through: 1) <b style="color:black;">Facebook
+ Recruitment</b> or 2) <b style="color:black;">Email  Recruitment</b>.
 </p>
-
+<ol>
+<li><b style="color:black;">Facebook Recruitment</b>.  To recruit a friend through Facebook,
+      click on the link below
 <p>
  
   <a href="#" id = "fb-invite">Recruit friends through Facebook</a>
 
 </p>
-
-<p>
-  We will give you $5 in Amazon.com credit for each of your first three friends who 
-  take the survey.  We have found that more direct 
-  approaches, such as a personal email or text message, work better
-  than going through Facebook. Here is a sample email you may use,
-  however it is only necessary to provide the link below.
-
-</p>
+</li>
+<li><b style="color:black;">Email Recruitment.</b> To recruit a friend through email we suggest you copy the text below and send emails separately to friends you think might be eligible.
 
 <blockquote>
-  <p>
-    Dear Friend,
-  </p>
-  <p>
-    I just took a online survey on gay men’s health and wanted to invite you to take it as well. 
-    If you are interested, please copy the link below into your web browser.
-  </p>
+  <p> I just took a survey that will help us better understand of the health concerns of gay men.  I earned $5 for completing the survey and will earn $5 for the first three friends of mine who complete it. You will earn $5 in Amazon credit if you take the survey and you may also have the opportunity to earn additional credit by recruiting others to the survey. If you would like to complete the survey please go to:</p>
  <p>
 <a href ="<%= @invitation_url %>"><%=@invitation_url %></a>
 </p>
+
+
 <p>
- <p>
-    You will earn $5 in Amazon credit just for taking the survey and will 
-    help the medical and public policy communities better understand of the 
-    health concerns of gay men. Additionally, I will earn $5 for referring 
-    you. After taking the survey, you may also have the opportunity to earn 
-    additional credit by referring others to the survey. Thank you!
-  </p>
+You can find out additional information about the survey by going to: 
+</p>
+<p>
+<a  href="http://www.lgbtdata.com/respondent-driven-sampling-in-social-computing-systems-project-redssocs.html">http://www.lgbtdata.com/respondent-driven-sampling-in-social-computing-systems-project-redssocs.html</a>
+</p>
+<p>
+Thank you!
+</p>
 </blockquote>
-
-
-<a href="mailto:?Subject=Hello">Recruit friends through email</a>
-
 
 <script>
 
