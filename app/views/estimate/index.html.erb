@@ -93,9 +93,13 @@
 <%= submit_tag "<< Previous Section" %> 
   <% end %>
 
-  <%= form_for @estimate, :url => {:controller => 'recruit', :action  => 'index'} do |f| %> 
+  <%= form_for @estimate, :url => {:controller => 'recruit', :action => 'index'} do |f| %> 
+
+
+
         <div class="survey_section" id="survey_section_4"><span class='title'>Estimation Questions</span>
-    <div class="fieldset_wrapper"><fieldset class="q_default "><span id="q_estimate_total_men"></span>Thinking about ALL of your friends,
+    <div class="fieldset_wrapper"><fieldset class="q_default
+    "><span id="q_estimate_total_men"></span> Thinking about ALL of your friends,
     both online (in places like Facebook, Google+, etc.) <i>and</i> in
     the real world, how many of them are men living in the U.S. over
     the age of 18?</span><br /><br />

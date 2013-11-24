@@ -31,4 +31,8 @@ class ConsentController < ApplicationController
   def expired 
     @coupon_url  = url_for :controller => 'recruit', :action => 'invitation', :id => session[:recruitee_coupon]
   end
+
+  def invalid
+    @coupon_url  = url_for :controller => 'recruit', :action => 'invitation', :id => session[:recruitee_coupon]    
+  end
 end

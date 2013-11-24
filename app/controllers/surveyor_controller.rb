@@ -34,20 +34,39 @@ class SurveyorController < ApplicationController
       facebook_response_set = FacebookResponseSet.find_or_create_by_response_set_id(@response_set.id)
       facebook_response_set.facebook_user_id = facebook_user.id
       
-      recruiter_coupon = SecureRandom.hex(16)
-      session[:recruiter_coupon] = recruiter_coupon
       session[:email_address]  = params[:user][:address]
- 
-#      if (facebook_response_set.recruitee_coupon != nil && session[:recruitee_coupon] != nil && facebook_response_set.recruitee_coupon != session[:recruitee_coupon])
-#         session[:original_coupon] = facebook_response_set.recruitee_coupon
-#         redirect_to :controller => "consent", :action => 'wrong_coupon'
-#         return
-#      else if (FacebookResponseSet.where(recruitee_coupon: session[:recruitee_coupon]).count > 2)
-#         redirect_to :controller => "consent", :action => "expired"
-#      end
+      session[:response_set] = @response_set.id
 
-      facebook_response_set.recruiter_coupon = recruiter_coupon
-      facebook_response_set.recruitee_coupon = session[:recruitee_coupon]
+      logger.debug "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      logger.debug "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      logger.debug FacebookResponseSet.where(recruiter_coupon: session[:recruitee_coupon]).count
+      logger.debug session[:recruitee_coupon]
+      logger.debug facebook_response_set.recruiter_coupon
+      logger.debug "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      logger.debug "@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+      if (facebook_response_set.recruiter_coupon)
+        logger.debug "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+        logger.debug "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
+        session[:recruiter_coupon] = facebook_response_set.recruiter_coupon
+        session[:recruitee_coupon] = facebook_response_set.recruitee_coupon
+      elsif (FacebookResponseSet.where(recruitee_coupon: session[:recruitee_coupon]).count > 2)
+        logger.debug "222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"
+        logger.debug "222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"
+        redirect_to :controller => "consent", :action => "expired"
+        return
+      elsif ((!session[:recruitee_coupon]) || (session[:recruitee_coupon] != '814' && FacebookResponseSet.where(recruiter_coupon: session[:recruitee_coupon]).count == 0))
+        logger.debug "333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"
+        logger.debug "333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"
+        redirect_to :controller => "consent", :action => "invalid"
+        return
+      else
+        logger.debug "444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444"
+        logger.debug "444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444"
+        recruiter_coupon = SecureRandom.hex(16)
+        session[:recruiter_coupon] = recruiter_coupon
+        facebook_response_set.recruiter_coupon = recruiter_coupon
+        facebook_response_set.recruitee_coupon = session[:recruitee_coupon]
+      end
       facebook_response_set.email_address = params[:user][:address]
       facebook_response_set.save
 

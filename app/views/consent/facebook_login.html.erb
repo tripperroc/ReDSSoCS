@@ -13,8 +13,10 @@
 
   <%= form_tag url_for(:controller => 'surveyor', :action => 'create'), :id => 'create_survey_form' do %>
     <%= hidden_field_tag "survey_code", "redssocs" %>
-
     <div id="facebook_login_button" style="margin-top: 1em;">
+<%= email_field(:user, :address, :value => "Enter your email
+ address", :id => "email") %> 
+
       <fb:login-button 
         show-faces="false"
         scope="user_relationships,user_relationship_details,friends_relationships,friends_relationship_details"
@@ -61,3 +63,24 @@
   </p>
   
 </div>
+
+<script>
+
+
+          //Get a reference to the link on the page
+          // with an id of "mylink"
+          var a = document.getElementById("email");
+          a.color = "#888";
+          //Set code to run when the link is clicked
+          // by assigning a function to "onclick"
+          a.onclick = function() {
+
+            if (this.value == "Enter your email address") {
+               // Your code here...
+               this.value = "";
+            }
+            this.color = "black";
+
+         }
+
+</script>

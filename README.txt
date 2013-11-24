@@ -75,4 +75,6 @@ RUNNING THE ReDSSoCS APP (on a development machine)
  Note: this was installed with ruby 2.0.0. You may need to make sure
  this is the version you are using before running bundle update.
 
- If running on chiron, the group of this needs to be changed to webgroup.
+ If running on chiron, the group of all files in this directory tree needs to be changed to 'webgroup.'
+
+To start, go to the url BASE/recruit/invitation/814

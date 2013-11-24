@@ -66,15 +66,15 @@ ActiveRecord::Schema.define(:version => 20131027025915) do
   end
 
   create_table "estimates", :force => true do |t|
-    t.integer  "facebook_response_set_id"
+    t.integer  "response_set_id"
     t.integer  "male_friends"
     t.integer  "gay_friends"
     t.integer  "facebook_male_friends"
     t.integer  "facebook_gay_friends"
     t.string   "accuracy"
     t.integer  "right_percentage"
-    t.datetime "created_at",               :null => false
-    t.datetime "updated_at",               :null => false
+    t.datetime "created_at",            :null => false
+    t.datetime "updated_at",            :null => false
   end
 
   create_table "facebook_friendships", :force => true do |t|
