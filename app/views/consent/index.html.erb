@@ -60,6 +60,12 @@
         <%= f.radio_button :gender, "Female"%>
         <%= label_tag 'gender_female', 'Female' %>
         <br />
+        <%= f.radio_button :gender, "Male-to-Female"%>
+        <%= label_tag 'gender_mtf', ' Transgender, male-to-female' %>
+        <br />
+        <%= f.radio_button :gender, "Female-to-Male"%>
+        <%= label_tag 'gender_ftm', ' Transgender, female-to-male' %>
+        <br />
         <%= f.radio_button :gender, "Other"%>
         <%= label_tag 'gender_other', 'Other' %>
       </p>
@@ -67,16 +73,16 @@
         Do you consider yourself to be
         <br />
        <%= f.radio_button :orientation, "Heterosexual"%>
-       <%= label_tag 'heterosexual', 'Heterosexual or straight' %>
+       <%= label_tag 'heterosexual', 'Heterosexual (straight)' %>
         <br />
         <%= f.radio_button :orientation, "Gay"%>
-        <%= label_tag 'gay', 'Gay' %>
+        <%= label_tag 'gay', 'Gay or lesbian' %>
         <br />
         <%= f.radio_button :orientation, "Bisexual"%>
         <%= label_tag 'bisexual', 'Bisexual' %>
         <br />
-       <%= f.radio_button :orientation, "Other"%>
-        <%= label_tag 'Other', "other/not sure/don't know" %>
+       <%= f.radio_button :orientation, "Not-sure"%>
+        <%= label_tag 'Other', "Not sure" %>
       </p>
     </div>
     <p style="text-align: center;">

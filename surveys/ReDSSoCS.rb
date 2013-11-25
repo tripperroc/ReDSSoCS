@@ -135,7 +135,7 @@ survey "ReDSSoCS", :default_mandatory => true do
 
     group "The next questions are about drinking alcohol. This includes coolers; beer; wine; champagne; liquor such as whiskey, " + 
       "rum, gin, vodka, bourbon, tequila, scotch, brandy, cognac, cordials, or liqueurs; and also any other type of alcohol", 
-      :display_type => :inline do
+     :display_type => :inline do
 
       q_alcohol_within_past_year "" +
         "<br />" +
@@ -335,7 +335,7 @@ survey "ReDSSoCS", :default_mandatory => true do
     q "And now some questions about your health and sexual practices." +
       "<br />" + 
       "<br />" + 
-      "People are different in their sexual attraction to other people. Which category on the card best describes your feelings?", :pick => :one
+      "People are different in their sexual attraction to other people. Which category best describes your feelings?", :pick => :one
     a "Only attracted to females"
     a "Mostly attracted to females"
     a "Equally attracted to females and males"
@@ -348,7 +348,7 @@ survey "ReDSSoCS", :default_mandatory => true do
     a "Both males and females "
     a "Never had sex"
 
-    q "Which of the categories on the card best describes you?", :pick => :one
+    q "Which of the categories best describes you?", :pick => :one
     a "Heterosexual (straight) "
     a "Gay or lesbian "
     a "Bisexual "
@@ -492,7 +492,7 @@ survey "ReDSSoCS", :default_mandatory => true do
     a :integer
 
     q_estimate_percent_facebook_gb_men "<span id=\"q_estimate_percent_facebook_gb_men\"></span>" + 
-      "Based on your previous answer, that would mean <span id=\"estimated_percent_of_gb_friends\">...</span> " +
+      "Based on your previous answer, that would mean   <span id=\"estimated_percent_of_gb_friends\">...</span> " +
       "percent of your Facebook friends are gay or bisexual men." +
       "<br />" +
       "<br />" +

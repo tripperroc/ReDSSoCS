@@ -6,12 +6,7 @@
   <%= surveyor_includes %>
 
   <script>
-    $(function() {
-      $("#q_estimate_total_men").parents(".q_default").find(".integer").keyup(function() {
-        $("#a_estimate_total_men").text($("#q_estimate_total_men").parents(".q_default").find(".integer").val());
-      });
-
-      $("#q_estimate_total_facebook_gb_men").parents(".q_default").find(".integer").keyup(function() {
+    divi = function() {
         var total_male_facebook_friends = parseFloat($("#male_facebook_friends").text());
         var estimated_gb = parseFloat($("#q_estimate_total_facebook_gb_men").parents(".q_default").find(".integer").val());
         var percent_gb = Math.round(estimated_gb / total_male_facebook_friends * 100);
@@ -22,12 +17,23 @@
         else {
           $("#estimated_percent_of_gb_friends").text(percent_gb);
         }
+      }
+    $(function() {
+      $("#q_estimate_total_men").parents(".q_default").find(".integer").keyup(function() {
+        $("#a_estimate_total_men").text($("#q_estimate_total_men").parents(".q_default").find(".integer").val());
       });
+
+      $("#q_estimate_total_facebook_gb_men").parents(".q_default").find(".integer").keyup(divi);
+
+     // $("#q_estimate_total_facebook_gb_men").parents(".q_default").find(".integer").change(divi);
 
       if ($("#male_facebook_friends")) {
         $.getJSON("<%= url_for :controller => 'facebook', :action => 'total_male_friends' %>", function(data) {
           $("#male_facebook_friends").text(data["total_male_friends"]);
+          divi();
+
         });
+
       }
       
     });

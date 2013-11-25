@@ -49,12 +49,12 @@ class SurveyorController < ApplicationController
         logger.debug "111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"
         session[:recruiter_coupon] = facebook_response_set.recruiter_coupon
         session[:recruitee_coupon] = facebook_response_set.recruitee_coupon
-      elsif (FacebookResponseSet.where(recruitee_coupon: session[:recruitee_coupon]).count > 2)
+      elsif ((session[:recruitee_coupon] != '585' && FacebookResponseSet.where(recruitee_coupon: session[:recruitee_coupon]).count > 2) || (session[:recruitee_coupon] == '585' && FacebookResponseSet.where(recruitee_coupon: session[:recruitee_coupon]).count > 9) )
         logger.debug "222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"
         logger.debug "222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222"
         redirect_to :controller => "consent", :action => "expired"
         return
-      elsif ((!session[:recruitee_coupon]) || (session[:recruitee_coupon] != '814' && FacebookResponseSet.where(recruiter_coupon: session[:recruitee_coupon]).count == 0))
+      elsif ((!session[:recruitee_coupon]) || (session[:recruitee_coupon] != '814' && session[:recruitee_coupon] != '585' && FacebookResponseSet.where(recruiter_coupon: session[:recruitee_coupon]).count == 0))
         logger.debug "333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"
         logger.debug "333333333333333333333333333333333333333333333333333333333333333333333333333333333333333333"
         redirect_to :controller => "consent", :action => "invalid"
