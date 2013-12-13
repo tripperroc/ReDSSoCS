@@ -50,7 +50,7 @@ class RedssocsSurveyConsent < ActiveRecord::Base
 
 
   def eligible?
-    eighteen_or_older && gender == "Male" && (orientation == "Gay" || orientation == "Bisexual")
+    eighteen_or_older && (gender == "Male" || gender == "Female-to-Male") && (orientation == "Gay" || orientation == "Bisexual")
   end
 
   def self_identifies_as_only_gay_or_bisexual?

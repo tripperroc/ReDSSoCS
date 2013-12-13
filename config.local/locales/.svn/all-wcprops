@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/freds/svn/freds/!svn/ver/1177/trunk/ReDSSoCS/config/locales
+END
+surveyor_en.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/freds/svn/freds/!svn/ver/1177/trunk/ReDSSoCS/config/locales/surveyor_en.yml
+END
+en.yml
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/freds/svn/freds/!svn/ver/996/trunk/ReDSSoCS/config/locales/en.yml
+END
+surveyor_es.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/freds/svn/freds/!svn/ver/1177/trunk/ReDSSoCS/config/locales/surveyor_es.yml
+END
+surveyor_ko.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/freds/svn/freds/!svn/ver/1177/trunk/ReDSSoCS/config/locales/surveyor_ko.yml
+END
+surveyor_he.yml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/freds/svn/freds/!svn/ver/1177/trunk/ReDSSoCS/config/locales/surveyor_he.yml
+END

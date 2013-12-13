@@ -6,7 +6,7 @@ if defined?(Bundler)
   # If you precompile assets before deploying to production, use this line
   Bundler.require(*Rails.groups(:assets => %w(development test)))
   # If you want your assets lazily compiled in production, use this line
-  # Bundler.require(:default, :assets, Rails.env)
+  #Bundler.require(:default, :assets, Rails.env)
 end
 
 module ReDSSoCS
@@ -53,7 +53,7 @@ module ReDSSoCS
     # parameters by using an attr_accessible or attr_protected declaration.
     # [CTH]  Version 0.22.0 of the surveyor gem is not compatible with setting whitelist_attributes to true.
     #        Problem should be fixed with version 0.23.0 of the Gem.
-    ## config.active_record.whitelist_attributes = true
+    #config.active_record.whitelist_attributes = true
     config.active_record.whitelist_attributes = false
     # [/CTH]
 

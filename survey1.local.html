@@ -1,0 +1,3354 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Survey</title>
+  <link href="/assets/surveyor_all-9d366c75940271e122691a15bcc15972.css" media="screen" rel="stylesheet" type="text/css" /><script src="/assets/surveyor_all-3cd671a83d06a299c5496f02dde25236.js" type="text/javascript"></script>
+
+  <script>
+    divi = function() {
+        var total_male_facebook_friends = parseFloat($("#male_facebook_friends").text());
+        var estimated_gb = parseFloat($("#q_estimate_total_facebook_gb_men").parents(".q_default").find(".integer").val());
+        var percent_gb = Math.round(estimated_gb / total_male_facebook_friends * 100);
+
+        if (isNaN(percent_gb)) {
+          $("#estimated_percent_of_gb_friends").text("...");
+        }
+        else {
+          $("#estimated_percent_of_gb_friends").text(percent_gb);
+        }
+      }
+    $(function() {
+      $("#q_estimate_total_men").parents(".q_default").find(".integer").keyup(function() {
+        $("#a_estimate_total_men").text($("#q_estimate_total_men").parents(".q_default").find(".integer").val());
+      });
+
+      $("#q_estimate_total_facebook_gb_men").parents(".q_default").find(".integer").keyup(divi);
+
+     // $("#q_estimate_total_facebook_gb_men").parents(".q_default").find(".integer").change(divi);
+
+      if ($("#male_facebook_friends")) {
+        $.getJSON("/facebook/total_male_friends", function(data) {
+          $("#male_facebook_friends").text(data["total_male_friends"]);
+          divi();
+
+        });
+
+      }
+      
+    });
+
+  </script>
+
+  <style>
+    #surveyor {
+      font-family: font-family 'times new roman',tahoma,verdana,arial,sans-serif;
+     background-color: white;
+    }
+#surveyor fieldset {
+  font-size: 15px;
+  color: rgb(51,51,51);
+}
+
+#surveyor fieldset.q_default, fieldset.g_inline, fieldset.g_grid {
+  /*
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgb(233,233,233);
+  */
+
+  margin-top: 14px;
+  padding-top: 8px;
+  padding-bottom: 16px;
+}
+
+#surveyor fieldset.choices {
+  padding-top: 0px;
+  margin-bottom: 5px;
+}
+
+#surveyor legend {
+  line-height: 18px;
+}
+
+/*  These CSS3 selectors may not be supported by some browsers */
+#surveyor input[type=checkbox],input[type=radio] {
+  margin-top: 2px;
+}
+
+
+/* CSS styles NOT copied from Facebook: */
+
+#surveyor fieldset > ol {
+  /*  Facebook uses blue-green, but not this precise shade of blue-green  */
+  /* background-color: rgb(245,247,255); */
+
+  margin-left: 1em;
+  padding-left: 0.5em;
+  padding-right: 1em;
+}
+
+
+#surveyor {
+    width: auto;
+}
+
+
+/* Hide survey name */
+#surveyor div.surveyor_flash {
+    display: none;
+}
+
+/* Hide menu showing survey sections */
+#surveyor div.surveyor_menu {
+    display: none;
+}
+
+/* Buttons to move to next survey section are left-aligned */
+#surveyor div.next_section {
+    float: left;
+}
+
+/* Background color for dependent questions is white instead of yellow */
+#surveyor fieldset.q_dependent, fieldset.g_dependent {
+    background-color: white;
+}
+#surveyor fieldset.q_dependent > legend, fieldset.g_dependent > legend  {
+    background-color: white;
+}
+
+/* Hide question numbers */
+#surveyor span.qnum {
+    display: none;
+}
+
+/* Form fields for integers will be right-aligned */
+#surveyor input.integer {
+    text-align: right;
+    width: 6em;
+}
+  </style>
+
+</head>
+<body>
+  <div id='surveyor'>
+<div class='surveyor_flash'>
+<div class="notice">Survey started successfully</div>
+<div class='close'></div>
+</div>
+<form accept-charset="UTF-8" action="/surveys/redssocs/-fM3Fp6dLg" class="formtastic r" id="survey_form" method="post" novalidate="novalidate"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="_method" type="hidden" value="put" /><input name="authenticity_token" type="hidden" value="FO1eDW0K8LR7ZKEQLt95VTMUwjGA3VAJTVbeCcpheb8=" /></div><input id="surveyor_javascript_enabled" name="surveyor_javascript_enabled" type="hidden" value="false" />
+<div class='surveyor_menu'>
+Sections
+<ul>
+<li class='active'><input name="section[3]" type="submit" value="Questions" /></li>
+<li><input name="section[4]" type="submit" value="Estimation Questions" /></li>
+</ul>
+</div>
+
+<div class='survey_title'>ReDSSoCS</div>
+<div class='previous_section'></div>
+
+<div class="survey_section" id="survey_section_3"><span class='title'>Questions</span>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_52"><legend><span><span class='qnum'>1) </span>What is your age (in years)?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_1_question_id_input"><input id="r_1_question_id" name="r[1][question_id]" type="hidden" value="52" />
+
+</li>
+<li class="quiet input optional" id="r_1_api_id_input"><input id="r_1_api_id" name="r[1][api_id]" type="hidden" value="62ecf657-6f29-4991-b246-0d452528b110" />
+
+</li>
+
+<li class="quiet input optional" id="r_1_answer_id_input"><input class="" id="r_1_answer_id" name="r[1][answer_id]" type="hidden" value="253" />
+
+</li>
+<li class="string input optional stringish" id="r_1_integer_value_input"><input class="integer" id="r_1_integer_value" name="r[1][integer_value]" type="text" />
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_53"><legend><span><span class='qnum'>2) </span>What sex were you assigned at birth, on your original birth certificate?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_2_question_id_input"><input id="r_2_question_id" name="r[2][question_id]" type="hidden" value="53" />
+
+</li>
+
+<li class="quiet input optional" id="r_2_api_id_input"><input id="r_2_api_id" name="r[2][api_id]" type="hidden" value="ffcfbe1a-0736-49ba-aee7-f4802a0e2072" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_2_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_2_answer_id_254"><input class="" id="r_2_answer_id_254" name="r[2][answer_id]" type="radio" value="254" />Male</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_2_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_2_answer_id_255"><input class="" id="r_2_answer_id_255" name="r[2][answer_id]" type="radio" value="255" />Female</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_54"><legend><span><span class='qnum'>3) </span>What is your current gender identity? (Check all that apply)</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_3_question_id_input"><input id="r_3_question_id" name="r[3][question_id]" type="hidden" value="54" />
+
+</li>
+<li class="quiet input optional" id="r_3_api_id_input"><input id="r_3_api_id" name="r[3][api_id]" type="hidden" value="960f7a1a-3f28-49c9-9fff-5b774ddd923b" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_3_answer_id_input"><fieldset class="choices"><input id="r[3]_answer_id_none" name="r[3][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_3_answer_id_256"><input class="" id="r_3_answer_id_256" name="r[3][answer_id][]" type="checkbox" value="256" />Male</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_4_question_id_input"><input id="r_4_question_id" name="r[4][question_id]" type="hidden" value="54" />
+
+</li>
+<li class="quiet input optional" id="r_4_api_id_input"><input id="r_4_api_id" name="r[4][api_id]" type="hidden" value="f423a123-56e6-48be-ad06-488fe03cb380" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_4_answer_id_input"><fieldset class="choices"><input id="r[4]_answer_id_none" name="r[4][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_4_answer_id_257"><input class="" id="r_4_answer_id_257" name="r[4][answer_id][]" type="checkbox" value="257" />Female</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_5_question_id_input"><input id="r_5_question_id" name="r[5][question_id]" type="hidden" value="54" />
+
+</li>
+<li class="quiet input optional" id="r_5_api_id_input"><input id="r_5_api_id" name="r[5][api_id]" type="hidden" value="8216e1bb-fe36-410d-9784-803e675aa526" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_5_answer_id_input"><fieldset class="choices"><input id="r[5]_answer_id_none" name="r[5][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_5_answer_id_258"><input class="" id="r_5_answer_id_258" name="r[5][answer_id][]" type="checkbox" value="258" />Transgender, male-to-female</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_6_question_id_input"><input id="r_6_question_id" name="r[6][question_id]" type="hidden" value="54" />
+
+</li>
+<li class="quiet input optional" id="r_6_api_id_input"><input id="r_6_api_id" name="r[6][api_id]" type="hidden" value="68a6f26a-dc90-406d-a90a-aadd56bcc973" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_6_answer_id_input"><fieldset class="choices"><input id="r[6]_answer_id_none" name="r[6][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_6_answer_id_259"><input class="" id="r_6_answer_id_259" name="r[6][answer_id][]" type="checkbox" value="259" />Transgender, female-to-male</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_7_question_id_input"><input id="r_7_question_id" name="r[7][question_id]" type="hidden" value="54" />
+
+</li>
+<li class="quiet input optional" id="r_7_api_id_input"><input id="r_7_api_id" name="r[7][api_id]" type="hidden" value="7fc6b3f0-2feb-4042-8967-c2cbd5dd2ded" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_7_answer_id_input"><fieldset class="choices"><input id="r[7]_answer_id_none" name="r[7][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_7_answer_id_260"><input class="" id="r_7_answer_id_260" name="r[7][answer_id][]" type="checkbox" value="260" />Other</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_55"><legend><span><span class='qnum'>4) </span>Are you of Hispanic or Latino origin?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_8_question_id_input"><input id="r_8_question_id" name="r[8][question_id]" type="hidden" value="55" />
+
+</li>
+
+<li class="quiet input optional" id="r_8_api_id_input"><input id="r_8_api_id" name="r[8][api_id]" type="hidden" value="40de6e05-e954-45c5-9e4f-aafee1ae0cf3" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_8_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_8_answer_id_261"><input class="" id="r_8_answer_id_261" name="r[8][answer_id]" type="radio" value="261" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_8_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_8_answer_id_262"><input class="" id="r_8_answer_id_262" name="r[8][answer_id]" type="radio" value="262" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_56"><legend><span><span class='qnum'>5) </span>Please select 1 or more categories to describe your race.</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_9_question_id_input"><input id="r_9_question_id" name="r[9][question_id]" type="hidden" value="56" />
+
+</li>
+<li class="quiet input optional" id="r_9_api_id_input"><input id="r_9_api_id" name="r[9][api_id]" type="hidden" value="8feadfad-1a3a-4667-b77c-2659e34e8b2a" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_9_answer_id_input"><fieldset class="choices"><input id="r[9]_answer_id_none" name="r[9][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_9_answer_id_263"><input class="" id="r_9_answer_id_263" name="r[9][answer_id][]" type="checkbox" value="263" />American Indian or Alaska Native</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_10_question_id_input"><input id="r_10_question_id" name="r[10][question_id]" type="hidden" value="56" />
+
+</li>
+<li class="quiet input optional" id="r_10_api_id_input"><input id="r_10_api_id" name="r[10][api_id]" type="hidden" value="d80df430-a44b-48ed-83af-0992de47ecc6" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_10_answer_id_input"><fieldset class="choices"><input id="r[10]_answer_id_none" name="r[10][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_10_answer_id_264"><input class="" id="r_10_answer_id_264" name="r[10][answer_id][]" type="checkbox" value="264" />Asian</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_11_question_id_input"><input id="r_11_question_id" name="r[11][question_id]" type="hidden" value="56" />
+
+</li>
+<li class="quiet input optional" id="r_11_api_id_input"><input id="r_11_api_id" name="r[11][api_id]" type="hidden" value="986e64bf-042a-4954-a6bf-fa2421b2b812" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_11_answer_id_input"><fieldset class="choices"><input id="r[11]_answer_id_none" name="r[11][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_11_answer_id_265"><input class="" id="r_11_answer_id_265" name="r[11][answer_id][]" type="checkbox" value="265" />Black or African American</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_12_question_id_input"><input id="r_12_question_id" name="r[12][question_id]" type="hidden" value="56" />
+
+</li>
+<li class="quiet input optional" id="r_12_api_id_input"><input id="r_12_api_id" name="r[12][api_id]" type="hidden" value="e0603250-4d55-46ad-9c80-9316912fe82c" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_12_answer_id_input"><fieldset class="choices"><input id="r[12]_answer_id_none" name="r[12][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_12_answer_id_266"><input class="" id="r_12_answer_id_266" name="r[12][answer_id][]" type="checkbox" value="266" />Native Hawaiian or Other Pacific Islander</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_13_question_id_input"><input id="r_13_question_id" name="r[13][question_id]" type="hidden" value="56" />
+
+</li>
+<li class="quiet input optional" id="r_13_api_id_input"><input id="r_13_api_id" name="r[13][api_id]" type="hidden" value="4b6c28df-5943-4903-a6a7-cca766b907a6" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_13_answer_id_input"><fieldset class="choices"><input id="r[13]_answer_id_none" name="r[13][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_13_answer_id_267"><input class="" id="r_13_answer_id_267" name="r[13][answer_id][]" type="checkbox" value="267" />White</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_57"><legend><span><span class='qnum'>6) </span>What is your current marital status?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_14_question_id_input"><input id="r_14_question_id" name="r[14][question_id]" type="hidden" value="57" />
+
+</li>
+
+<li class="quiet input optional" id="r_14_api_id_input"><input id="r_14_api_id" name="r[14][api_id]" type="hidden" value="c33d94f3-a3fd-4258-84e0-8f4b9c1abbfd" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_14_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_14_answer_id_268"><input class="" id="r_14_answer_id_268" name="r[14][answer_id]" type="radio" value="268" />Married</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_14_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_14_answer_id_269"><input class="" id="r_14_answer_id_269" name="r[14][answer_id]" type="radio" value="269" />Living with someone as if married</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_14_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_14_answer_id_270"><input class="" id="r_14_answer_id_270" name="r[14][answer_id]" type="radio" value="270" />Widowed</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_14_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_14_answer_id_271"><input class="" id="r_14_answer_id_271" name="r[14][answer_id]" type="radio" value="271" />Divorced</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_14_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_14_answer_id_272"><input class="" id="r_14_answer_id_272" name="r[14][answer_id]" type="radio" value="272" />Separated</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_14_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_14_answer_id_273"><input class="" id="r_14_answer_id_273" name="r[14][answer_id]" type="radio" value="273" />Never married</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_58"><legend><span><span class='qnum'>7) </span>How many children have you EVER had, including those who are not now living? Please include any adopted, foster or stepchildren who EVER lived with you.</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_15_question_id_input"><input id="r_15_question_id" name="r[15][question_id]" type="hidden" value="58" />
+
+</li>
+<li class="quiet input optional" id="r_15_api_id_input"><input id="r_15_api_id" name="r[15][api_id]" type="hidden" value="8332b0c3-420f-41a2-80d6-129ca595bff6" />
+
+</li>
+
+<li class="quiet input optional" id="r_15_answer_id_input"><input class="" id="r_15_answer_id" name="r[15][answer_id]" type="hidden" value="274" />
+
+</li>
+<li class="string input optional stringish" id="r_15_integer_value_input"><input class="integer" id="r_15_integer_value" name="r[15][integer_value]" type="text" />
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_59"><legend><span><span class='qnum'>8) </span>Which of these statements describe your present situation? (Check all that apply)</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_16_question_id_input"><input id="r_16_question_id" name="r[16][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_16_api_id_input"><input id="r_16_api_id" name="r[16][api_id]" type="hidden" value="26cb2928-77f7-4366-a2f0-550f75c08dff" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_16_answer_id_input"><fieldset class="choices"><input id="r[16]_answer_id_none" name="r[16][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_16_answer_id_275"><input class="" id="r_16_answer_id_275" name="r[16][answer_id][]" type="checkbox" value="275" />Working full time, that is, 35 hours or more per week</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_17_question_id_input"><input id="r_17_question_id" name="r[17][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_17_api_id_input"><input id="r_17_api_id" name="r[17][api_id]" type="hidden" value="2a99d81d-ebee-484f-82e3-c823bb9c5398" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_17_answer_id_input"><fieldset class="choices"><input id="r[17]_answer_id_none" name="r[17][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_17_answer_id_276"><input class="" id="r_17_answer_id_276" name="r[17][answer_id][]" type="checkbox" value="276" />Working part time, that is, less than 35 hours per week</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_18_question_id_input"><input id="r_18_question_id" name="r[18][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_18_api_id_input"><input id="r_18_api_id" name="r[18][api_id]" type="hidden" value="c8f587cc-7aa8-4eac-93ef-8e1414438561" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_18_answer_id_input"><fieldset class="choices"><input id="r[18]_answer_id_none" name="r[18][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_18_answer_id_277"><input class="" id="r_18_answer_id_277" name="r[18][answer_id][]" type="checkbox" value="277" />Have a job or business, but not at work because of temporary illness or injury</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_19_question_id_input"><input id="r_19_question_id" name="r[19][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_19_api_id_input"><input id="r_19_api_id" name="r[19][api_id]" type="hidden" value="2d478561-5286-4ec6-a180-6d90007c611a" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_19_answer_id_input"><fieldset class="choices"><input id="r[19]_answer_id_none" name="r[19][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_19_answer_id_278"><input class="" id="r_19_answer_id_278" name="r[19][answer_id][]" type="checkbox" value="278" />Have a job or business, but on paid vacation</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_20_question_id_input"><input id="r_20_question_id" name="r[20][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_20_api_id_input"><input id="r_20_api_id" name="r[20][api_id]" type="hidden" value="c9b93a34-1ac6-46a9-b9dd-ae5b4310bf49" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_20_answer_id_input"><fieldset class="choices"><input id="r[20]_answer_id_none" name="r[20][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_20_answer_id_279"><input class="" id="r_20_answer_id_279" name="r[20][answer_id][]" type="checkbox" value="279" />Have a job or business, but absent from work without pay</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_21_question_id_input"><input id="r_21_question_id" name="r[21][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_21_api_id_input"><input id="r_21_api_id" name="r[21][api_id]" type="hidden" value="0ce98753-de37-460d-817d-53fbfd4861bb" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_21_answer_id_input"><fieldset class="choices"><input id="r[21]_answer_id_none" name="r[21][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_21_answer_id_280"><input class="" id="r_21_answer_id_280" name="r[21][answer_id][]" type="checkbox" value="280" />Unemployed or laid off and looking for work</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_22_question_id_input"><input id="r_22_question_id" name="r[22][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_22_api_id_input"><input id="r_22_api_id" name="r[22][api_id]" type="hidden" value="005812bc-a88e-456e-8bb0-db4056f42e84" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_22_answer_id_input"><fieldset class="choices"><input id="r[22]_answer_id_none" name="r[22][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_22_answer_id_281"><input class="" id="r_22_answer_id_281" name="r[22][answer_id][]" type="checkbox" value="281" />Unemployed or laid off and not looking for work</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_23_question_id_input"><input id="r_23_question_id" name="r[23][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_23_api_id_input"><input id="r_23_api_id" name="r[23][api_id]" type="hidden" value="5583e093-c739-44cf-b3aa-2a937b896dc0" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_23_answer_id_input"><fieldset class="choices"><input id="r[23]_answer_id_none" name="r[23][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_23_answer_id_282"><input class="" id="r_23_answer_id_282" name="r[23][answer_id][]" type="checkbox" value="282" />Unemployed and permanently disabled</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_24_question_id_input"><input id="r_24_question_id" name="r[24][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_24_api_id_input"><input id="r_24_api_id" name="r[24][api_id]" type="hidden" value="df318a54-5faa-4409-bb0e-290095aa1282" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_24_answer_id_input"><fieldset class="choices"><input id="r[24]_answer_id_none" name="r[24][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_24_answer_id_283"><input class="" id="r_24_answer_id_283" name="r[24][answer_id][]" type="checkbox" value="283" />Retired</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_25_question_id_input"><input id="r_25_question_id" name="r[25][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_25_api_id_input"><input id="r_25_api_id" name="r[25][api_id]" type="hidden" value="83361b88-f141-498f-bed3-e86e1ccaeb0f" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_25_answer_id_input"><fieldset class="choices"><input id="r[25]_answer_id_none" name="r[25][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_25_answer_id_284"><input class="" id="r_25_answer_id_284" name="r[25][answer_id][]" type="checkbox" value="284" />In school, full time</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_26_question_id_input"><input id="r_26_question_id" name="r[26][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_26_api_id_input"><input id="r_26_api_id" name="r[26][api_id]" type="hidden" value="0067b3c3-6265-4947-9202-7d54be40f74c" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_26_answer_id_input"><fieldset class="choices"><input id="r[26]_answer_id_none" name="r[26][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_26_answer_id_285"><input class="" id="r_26_answer_id_285" name="r[26][answer_id][]" type="checkbox" value="285" />In school, part time</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_27_question_id_input"><input id="r_27_question_id" name="r[27][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_27_api_id_input"><input id="r_27_api_id" name="r[27][api_id]" type="hidden" value="d4b0874f-551e-4173-a87a-eb71423197bd" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_27_answer_id_input"><fieldset class="choices"><input id="r[27]_answer_id_none" name="r[27][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_27_answer_id_286"><input class="" id="r_27_answer_id_286" name="r[27][answer_id][]" type="checkbox" value="286" />Currently on summer break/holiday from school</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_28_question_id_input"><input id="r_28_question_id" name="r[28][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_28_api_id_input"><input id="r_28_api_id" name="r[28][api_id]" type="hidden" value="de7d9b45-5d19-4a58-8043-82338820e2c9" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_28_answer_id_input"><fieldset class="choices"><input id="r[28]_answer_id_none" name="r[28][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_28_answer_id_287"><input class="" id="r_28_answer_id_287" name="r[28][answer_id][]" type="checkbox" value="287" />Full-time homemaker</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_29_question_id_input"><input id="r_29_question_id" name="r[29][question_id]" type="hidden" value="59" />
+
+</li>
+<li class="quiet input optional" id="r_29_api_id_input"><input id="r_29_api_id" name="r[29][api_id]" type="hidden" value="1901e647-e1ed-43a7-86e3-a128c26cc2f2" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_29_answer_id_input"><fieldset class="choices"><input id="r[29]_answer_id_none" name="r[29][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_29_answer_id_288"><input class="" id="r_29_answer_id_288" name="r[29][answer_id][]" type="checkbox" value="288" />Something else</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_60"><legend><span><span class='qnum'>9) </span>What is the highest grade or year of school that you completed?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_30_question_id_input"><input id="r_30_question_id" name="r[30][question_id]" type="hidden" value="60" />
+
+</li>
+
+<li class="quiet input optional" id="r_30_api_id_input"><input id="r_30_api_id" name="r[30][api_id]" type="hidden" value="4ce8c12e-6450-43e1-8f3f-efc8295a0d7d" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_289"><input class="" id="r_30_answer_id_289" name="r[30][answer_id]" type="radio" value="289" />No formal schooling</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_290"><input class="" id="r_30_answer_id_290" name="r[30][answer_id]" type="radio" value="290" />Completed grade K, 1 or 2</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_291"><input class="" id="r_30_answer_id_291" name="r[30][answer_id]" type="radio" value="291" />Completed grade 3 or 4</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_292"><input class="" id="r_30_answer_id_292" name="r[30][answer_id]" type="radio" value="292" />Completed grade 5 or 6</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_293"><input class="" id="r_30_answer_id_293" name="r[30][answer_id]" type="radio" value="293" />Completed grade 7</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_294"><input class="" id="r_30_answer_id_294" name="r[30][answer_id]" type="radio" value="294" />Completed grade 8</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_295"><input class="" id="r_30_answer_id_295" name="r[30][answer_id]" type="radio" value="295" />Some high school (grades 9-11)</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_296"><input class="" id="r_30_answer_id_296" name="r[30][answer_id]" type="radio" value="296" />Completed high school</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_297"><input class="" id="r_30_answer_id_297" name="r[30][answer_id]" type="radio" value="297" />Graduate equivalency degree (GED)</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_298"><input class="" id="r_30_answer_id_298" name="r[30][answer_id]" type="radio" value="298" />Some college (no degree)</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_299"><input class="" id="r_30_answer_id_299" name="r[30][answer_id]" type="radio" value="299" />Completed associate or other technical 2 year degree</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_300"><input class="" id="r_30_answer_id_300" name="r[30][answer_id]" type="radio" value="300" />Completed college (Bachelor’s degree)</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_301"><input class="" id="r_30_answer_id_301" name="r[30][answer_id]" type="radio" value="301" />Some graduate or professional studies (completed bachelor’s degree but not graduate degree)</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_30_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_30_answer_id_302"><input class="" id="r_30_answer_id_302" name="r[30][answer_id]" type="radio" value="302" />Completed Master’s degree or equivalent or higher graduate degree</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_61"><legend><span><span class='qnum'>10) </span>Please report income from all jobs BEFORE taxes and other deductions and net income after business expenses. Include any tips, bonuses, overtime pay and commissions, as well as any income from pensions, dividends, interest, Social Security, alimony, child support, financial aid, support from persons living elsewhere, worker’s compensation or any public assistance or welfare payments and any other money income received by you from ANY OTHER source.<br /><br />Can you tell me which category best represents your TOTAL PERSONAL income in the last 12 months?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_31_question_id_input"><input id="r_31_question_id" name="r[31][question_id]" type="hidden" value="61" />
+
+</li>
+
+<li class="quiet input optional" id="r_31_api_id_input"><input id="r_31_api_id" name="r[31][api_id]" type="hidden" value="5188d0db-8115-464a-9a21-9485af3c97c7" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_303"><input class="" id="r_31_answer_id_303" name="r[31][answer_id]" type="radio" value="303" />$0 (no personal income)</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_304"><input class="" id="r_31_answer_id_304" name="r[31][answer_id]" type="radio" value="304" />$1 to $4,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_305"><input class="" id="r_31_answer_id_305" name="r[31][answer_id]" type="radio" value="305" />$5,000 to $7,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_306"><input class="" id="r_31_answer_id_306" name="r[31][answer_id]" type="radio" value="306" />$8,000 to $9,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_307"><input class="" id="r_31_answer_id_307" name="r[31][answer_id]" type="radio" value="307" />$10,000 to $12,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_308"><input class="" id="r_31_answer_id_308" name="r[31][answer_id]" type="radio" value="308" />$13,000 to $14,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_309"><input class="" id="r_31_answer_id_309" name="r[31][answer_id]" type="radio" value="309" />$15,000 to $19,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_310"><input class="" id="r_31_answer_id_310" name="r[31][answer_id]" type="radio" value="310" />$20,000 to $24,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_311"><input class="" id="r_31_answer_id_311" name="r[31][answer_id]" type="radio" value="311" />$25,000 to $29,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_312"><input class="" id="r_31_answer_id_312" name="r[31][answer_id]" type="radio" value="312" />$30,000 to $34,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_313"><input class="" id="r_31_answer_id_313" name="r[31][answer_id]" type="radio" value="313" />$35,000 to $39,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_314"><input class="" id="r_31_answer_id_314" name="r[31][answer_id]" type="radio" value="314" />$40,000 to $49,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_315"><input class="" id="r_31_answer_id_315" name="r[31][answer_id]" type="radio" value="315" />$50,000 to $59,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_316"><input class="" id="r_31_answer_id_316" name="r[31][answer_id]" type="radio" value="316" />$60,000 to $69,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_317"><input class="" id="r_31_answer_id_317" name="r[31][answer_id]" type="radio" value="317" />$70,000 to $79,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_318"><input class="" id="r_31_answer_id_318" name="r[31][answer_id]" type="radio" value="318" />$80,000 to $89,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_319"><input class="" id="r_31_answer_id_319" name="r[31][answer_id]" type="radio" value="319" />$90,000 to $99,999</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_31_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_31_answer_id_320"><input class="" id="r_31_answer_id_320" name="r[31][answer_id]" type="radio" value="320" />$100,000 or more</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_62"><legend><span><span class='qnum'>11) </span>During the last 12 months, where did you USUALLY go to obtain health care?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_32_question_id_input"><input id="r_32_question_id" name="r[32][question_id]" type="hidden" value="62" />
+
+</li>
+
+<li class="quiet input optional" id="r_32_api_id_input"><input id="r_32_api_id" name="r[32][api_id]" type="hidden" value="0a81534c-aa39-4eed-9e7f-4545450e060e" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_32_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_32_answer_id_321"><input class="" id="r_32_answer_id_321" name="r[32][answer_id]" type="radio" value="321" />No place</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_32_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_32_answer_id_322"><input class="" id="r_32_answer_id_322" name="r[32][answer_id]" type="radio" value="322" />Doctor chosen by me</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_32_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_32_answer_id_323"><input class="" id="r_32_answer_id_323" name="r[32][answer_id]" type="radio" value="323" />Doctor assigned by HMO/health care plan</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_32_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_32_answer_id_324"><input class="" id="r_32_answer_id_324" name="r[32][answer_id]" type="radio" value="324" />Hospital outpatient department</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_32_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_32_answer_id_325"><input class="" id="r_32_answer_id_325" name="r[32][answer_id]" type="radio" value="325" />Community clinic or health center</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_32_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_32_answer_id_326"><input class="" id="r_32_answer_id_326" name="r[32][answer_id]" type="radio" value="326" />College/university health center</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_32_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_32_answer_id_327"><input class="" id="r_32_answer_id_327" name="r[32][answer_id]" type="radio" value="327" />Hospital emergency room</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_32_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_32_answer_id_328"><input class="" id="r_32_answer_id_328" name="r[32][answer_id]" type="radio" value="328" />Some other place most often</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_32_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_32_answer_id_329"><input class="" id="r_32_answer_id_329" name="r[32][answer_id]" type="radio" value="329" />Don’t go to one place most often/go to more than one place</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_63"><legend><span><span class='qnum'>12) </span>At ANY time during the last 12 months were YOU covered by a private health insurance plan obtained through a current or former employer or union?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_33_question_id_input"><input id="r_33_question_id" name="r[33][question_id]" type="hidden" value="63" />
+
+</li>
+
+<li class="quiet input optional" id="r_33_api_id_input"><input id="r_33_api_id" name="r[33][api_id]" type="hidden" value="a41e42a8-a0a7-43c4-9b53-80de57812634" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_33_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_33_answer_id_330"><input class="" id="r_33_answer_id_330" name="r[33][answer_id]" type="radio" value="330" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_33_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_33_answer_id_331"><input class="" id="r_33_answer_id_331" name="r[33][answer_id]" type="radio" value="331" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_64"><legend><span><span class='qnum'>13) </span>In general, would you say your health is excellent, very good, good, fair or poor?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_34_question_id_input"><input id="r_34_question_id" name="r[34][question_id]" type="hidden" value="64" />
+
+</li>
+
+<li class="quiet input optional" id="r_34_api_id_input"><input id="r_34_api_id" name="r[34][api_id]" type="hidden" value="c9a986fd-6eaa-4309-95c9-323de64301bc" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_34_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_34_answer_id_332"><input class="" id="r_34_answer_id_332" name="r[34][answer_id]" type="radio" value="332" />Excellent</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_34_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_34_answer_id_333"><input class="" id="r_34_answer_id_333" name="r[34][answer_id]" type="radio" value="333" />Very good</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_34_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_34_answer_id_334"><input class="" id="r_34_answer_id_334" name="r[34][answer_id]" type="radio" value="334" />Good</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_34_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_34_answer_id_335"><input class="" id="r_34_answer_id_335" name="r[34][answer_id]" type="radio" value="335" />Fair</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_34_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_34_answer_id_336"><input class="" id="r_34_answer_id_336" name="r[34][answer_id]" type="radio" value="336" />Poor</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="g_inline " id="g_7"><legend><span><span class='qnum'>14) </span>And now, please tell me your height and weight as these are important factors for this survey.</span></legend><ol><li class='help'></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default " id="q_65"><legend><span>Height (feet)</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_35_question_id_input"><input id="r_35_question_id" name="r[35][question_id]" type="hidden" value="65" />
+
+</li>
+<li class="quiet input optional" id="r_35_api_id_input"><input id="r_35_api_id" name="r[35][api_id]" type="hidden" value="41b634cd-7f50-4b7f-8cfe-82b2c60dba97" />
+
+</li>
+
+<li class="quiet input optional" id="r_35_answer_id_input"><input class="" id="r_35_answer_id" name="r[35][answer_id]" type="hidden" value="337" />
+
+</li>
+<li class="string input optional stringish" id="r_35_integer_value_input"><input class="integer" id="r_35_integer_value" name="r[35][integer_value]" type="text" />
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default " id="q_66"><legend><span>Height (inches)</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_36_question_id_input"><input id="r_36_question_id" name="r[36][question_id]" type="hidden" value="66" />
+
+</li>
+<li class="quiet input optional" id="r_36_api_id_input"><input id="r_36_api_id" name="r[36][api_id]" type="hidden" value="4a60e02a-ac40-487b-908d-b17d0ee2a276" />
+
+</li>
+
+<li class="quiet input optional" id="r_36_answer_id_input"><input class="" id="r_36_answer_id" name="r[36][answer_id]" type="hidden" value="338" />
+
+</li>
+<li class="string input optional stringish" id="r_36_integer_value_input"><input class="integer" id="r_36_integer_value" name="r[36][integer_value]" type="text" />
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default " id="q_67"><legend><span>Weight (pounds)</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_37_question_id_input"><input id="r_37_question_id" name="r[37][question_id]" type="hidden" value="67" />
+
+</li>
+<li class="quiet input optional" id="r_37_api_id_input"><input id="r_37_api_id" name="r[37][api_id]" type="hidden" value="78b27e09-78b9-415a-a136-1c913464b502" />
+
+</li>
+
+<li class="quiet input optional" id="r_37_answer_id_input"><input class="" id="r_37_answer_id" name="r[37][answer_id]" type="hidden" value="339" />
+
+</li>
+<li class="string input optional stringish" id="r_37_integer_value_input"><input class="integer" id="r_37_integer_value" name="r[37][integer_value]" type="text" />
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="g_inline " id="g_8"><legend><span><span class='qnum'>15) </span>The next questions are about drinking alcohol. This includes coolers; beer; wine; champagne; liquor such as whiskey, rum, gin, vodka, bourbon, tequila, scotch, brandy, cognac, cordials, or liqueurs; and also any other type of alcohol</span></legend><ol><li class='help'></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default " id="q_68"><legend><span><br />During the last 12 months, have you had at least 1 drink of any kind of alcohol, not counting small tastes or sips?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_38_question_id_input"><input id="r_38_question_id" name="r[38][question_id]" type="hidden" value="68" />
+
+</li>
+
+<li class="quiet input optional" id="r_38_api_id_input"><input id="r_38_api_id" name="r[38][api_id]" type="hidden" value="6441b259-4f7f-41d3-8ad0-a266f690f00e" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_38_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_38_answer_id_340"><input class="" id="r_38_answer_id_340" name="r[38][answer_id]" type="radio" value="340" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_38_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_38_answer_id_341"><input class="" id="r_38_answer_id_341" name="r[38][answer_id]" type="radio" value="341" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default q_dependent q_hidden" id="q_69"><legend><span>During the last 12 months, did you have a total of at least 12 drinks of any kind of alcohol?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_39_question_id_input"><input id="r_39_question_id" name="r[39][question_id]" type="hidden" value="69" />
+
+</li>
+
+<li class="quiet input optional" id="r_39_api_id_input"><input id="r_39_api_id" name="r[39][api_id]" type="hidden" value="45411ae3-2db1-4227-b3df-60005fb634dc" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_39_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_39_answer_id_342"><input class="" id="r_39_answer_id_342" name="r[39][answer_id]" type="radio" value="342" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_39_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_39_answer_id_343"><input class="" id="r_39_answer_id_343" name="r[39][answer_id]" type="radio" value="343" />No </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default q_dependent q_hidden" id="q_70"><legend><span>During the last 12 months, about how often did you drink any kind of alcoholic beverage?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_40_question_id_input"><input id="r_40_question_id" name="r[40][question_id]" type="hidden" value="70" />
+
+</li>
+
+<li class="quiet input optional" id="r_40_api_id_input"><input id="r_40_api_id" name="r[40][api_id]" type="hidden" value="360bfca7-5728-4c18-b60a-42b28c7445f0" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_40_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_40_answer_id_344"><input class="" id="r_40_answer_id_344" name="r[40][answer_id]" type="radio" value="344" />Every day</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_40_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_40_answer_id_345"><input class="" id="r_40_answer_id_345" name="r[40][answer_id]" type="radio" value="345" />Nearly every day</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_40_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_40_answer_id_346"><input class="" id="r_40_answer_id_346" name="r[40][answer_id]" type="radio" value="346" />3 to 4 times a week</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_40_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_40_answer_id_347"><input class="" id="r_40_answer_id_347" name="r[40][answer_id]" type="radio" value="347" />2 times a week</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_40_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_40_answer_id_348"><input class="" id="r_40_answer_id_348" name="r[40][answer_id]" type="radio" value="348" />Once a week</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_40_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_40_answer_id_349"><input class="" id="r_40_answer_id_349" name="r[40][answer_id]" type="radio" value="349" />2 to 3 times a month</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_40_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_40_answer_id_350"><input class="" id="r_40_answer_id_350" name="r[40][answer_id]" type="radio" value="350" />Once a month</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_40_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_40_answer_id_351"><input class="" id="r_40_answer_id_351" name="r[40][answer_id]" type="radio" value="351" />7 to 11 times in the last year</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_40_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_40_answer_id_352"><input class="" id="r_40_answer_id_352" name="r[40][answer_id]" type="radio" value="352" />3 to 6 times in the last year</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_40_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_40_answer_id_353"><input class="" id="r_40_answer_id_353" name="r[40][answer_id]" type="radio" value="353" />1 or 2 times in the last year</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default q_dependent q_hidden" id="q_71"><legend><span>How many drinks did you USUALLY have on days when you drank during the last 12 months?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_41_question_id_input"><input id="r_41_question_id" name="r[41][question_id]" type="hidden" value="71" />
+
+</li>
+<li class="quiet input optional" id="r_41_api_id_input"><input id="r_41_api_id" name="r[41][api_id]" type="hidden" value="955a7bbb-a635-4582-90af-a346af726fe0" />
+
+</li>
+
+<li class="quiet input optional" id="r_41_answer_id_input"><input class="" id="r_41_answer_id" name="r[41][answer_id]" type="hidden" value="354" />
+
+</li>
+<li class="string input optional stringish" id="r_41_integer_value_input"><input class="integer" id="r_41_integer_value" name="r[41][integer_value]" type="text" />
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default q_dependent q_hidden" id="q_72"><legend><span>During the last 12 months, about how often did you drink FOUR OR MORE drinks in a single day?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_42_question_id_input"><input id="r_42_question_id" name="r[42][question_id]" type="hidden" value="72" />
+
+</li>
+
+<li class="quiet input optional" id="r_42_api_id_input"><input id="r_42_api_id" name="r[42][api_id]" type="hidden" value="cb62868e-c587-4360-93b9-334ebb61eb97" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_42_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_42_answer_id_355"><input class="" id="r_42_answer_id_355" name="r[42][answer_id]" type="radio" value="355" />Every day</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_42_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_42_answer_id_356"><input class="" id="r_42_answer_id_356" name="r[42][answer_id]" type="radio" value="356" />Nearly every day </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_42_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_42_answer_id_357"><input class="" id="r_42_answer_id_357" name="r[42][answer_id]" type="radio" value="357" />3 to 4 times a week </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_42_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_42_answer_id_358"><input class="" id="r_42_answer_id_358" name="r[42][answer_id]" type="radio" value="358" />2 times a week </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_42_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_42_answer_id_359"><input class="" id="r_42_answer_id_359" name="r[42][answer_id]" type="radio" value="359" />Once a week </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_42_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_42_answer_id_360"><input class="" id="r_42_answer_id_360" name="r[42][answer_id]" type="radio" value="360" />2 to 3 times a month </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_42_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_42_answer_id_361"><input class="" id="r_42_answer_id_361" name="r[42][answer_id]" type="radio" value="361" />Once a month </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_42_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_42_answer_id_362"><input class="" id="r_42_answer_id_362" name="r[42][answer_id]" type="radio" value="362" />7 to 11 times in the last year </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_42_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_42_answer_id_363"><input class="" id="r_42_answer_id_363" name="r[42][answer_id]" type="radio" value="363" />3 to 6 times in the last year </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_42_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_42_answer_id_364"><input class="" id="r_42_answer_id_364" name="r[42][answer_id]" type="radio" value="364" />1 or 2 times in the last year </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_42_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_42_answer_id_365"><input class="" id="r_42_answer_id_365" name="r[42][answer_id]" type="radio" value="365" />Never in the last year</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default q_dependent q_hidden" id="q_73"><legend><span>During the last 12 months, about how often did you drink FOUR OR MORE drinks in a period of TWO HOURS OR LESS?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_43_question_id_input"><input id="r_43_question_id" name="r[43][question_id]" type="hidden" value="73" />
+
+</li>
+
+<li class="quiet input optional" id="r_43_api_id_input"><input id="r_43_api_id" name="r[43][api_id]" type="hidden" value="12847840-e0c9-44a1-a289-d9f66431ea2f" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_43_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_43_answer_id_366"><input class="" id="r_43_answer_id_366" name="r[43][answer_id]" type="radio" value="366" />Every day</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_43_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_43_answer_id_367"><input class="" id="r_43_answer_id_367" name="r[43][answer_id]" type="radio" value="367" />Nearly every day </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_43_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_43_answer_id_368"><input class="" id="r_43_answer_id_368" name="r[43][answer_id]" type="radio" value="368" />3 to 4 times a week </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_43_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_43_answer_id_369"><input class="" id="r_43_answer_id_369" name="r[43][answer_id]" type="radio" value="369" />2 times a week </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_43_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_43_answer_id_370"><input class="" id="r_43_answer_id_370" name="r[43][answer_id]" type="radio" value="370" />Once a week </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_43_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_43_answer_id_371"><input class="" id="r_43_answer_id_371" name="r[43][answer_id]" type="radio" value="371" />2 to 3 times a month </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_43_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_43_answer_id_372"><input class="" id="r_43_answer_id_372" name="r[43][answer_id]" type="radio" value="372" />Once a month </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_43_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_43_answer_id_373"><input class="" id="r_43_answer_id_373" name="r[43][answer_id]" type="radio" value="373" />7 to 11 times in the last year </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_43_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_43_answer_id_374"><input class="" id="r_43_answer_id_374" name="r[43][answer_id]" type="radio" value="374" />3 to 6 times in the last year </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_43_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_43_answer_id_375"><input class="" id="r_43_answer_id_375" name="r[43][answer_id]" type="radio" value="375" />1 or 2 times in the last year </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_43_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_43_answer_id_376"><input class="" id="r_43_answer_id_376" name="r[43][answer_id]" type="radio" value="376" />Never in the last year</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_74"><legend><span><span class='qnum'>16) </span>Did you smoke a cigarette in the last year?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_44_question_id_input"><input id="r_44_question_id" name="r[44][question_id]" type="hidden" value="74" />
+
+</li>
+
+<li class="quiet input optional" id="r_44_api_id_input"><input id="r_44_api_id" name="r[44][api_id]" type="hidden" value="89c1a957-ebbc-4b88-bb9d-b2b2f3f9bfdc" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_44_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_44_answer_id_377"><input class="" id="r_44_answer_id_377" name="r[44][answer_id]" type="radio" value="377" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_44_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_44_answer_id_378"><input class="" id="r_44_answer_id_378" name="r[44][answer_id]" type="radio" value="378" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default q_dependent q_hidden" id="q_75"><legend><span>About how often did you USUALLY smoke a cigarette in the last 12 months?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_45_question_id_input"><input id="r_45_question_id" name="r[45][question_id]" type="hidden" value="75" />
+
+</li>
+
+<li class="quiet input optional" id="r_45_api_id_input"><input id="r_45_api_id" name="r[45][api_id]" type="hidden" value="e2990922-e2c5-40f2-bb6c-205481b268d1" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_45_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_45_answer_id_379"><input class="" id="r_45_answer_id_379" name="r[45][answer_id]" type="radio" value="379" />Every day</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_45_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_45_answer_id_380"><input class="" id="r_45_answer_id_380" name="r[45][answer_id]" type="radio" value="380" />5 to 6 days a week</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_45_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_45_answer_id_381"><input class="" id="r_45_answer_id_381" name="r[45][answer_id]" type="radio" value="381" />3 to 4 days a week</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_45_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_45_answer_id_382"><input class="" id="r_45_answer_id_382" name="r[45][answer_id]" type="radio" value="382" />1 to 2 days a week</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_45_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_45_answer_id_383"><input class="" id="r_45_answer_id_383" name="r[45][answer_id]" type="radio" value="383" />2 to 3 days a month</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_45_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_45_answer_id_384"><input class="" id="r_45_answer_id_384" name="r[45][answer_id]" type="radio" value="384" />Once a month or less</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_76"><legend><span><span class='qnum'>17) </span>Now I’d like to ask you about your experiences with medicines and other kinds of drugs that you may have used ON YOUR OWN – that is, either:<br /><br /><li>WITHOUT a doctor’s prescription;</li><li>In GREATER amounts, MORE OFTEN, or LONGER than prescribed; or</li><li>For a reason other than a doctor said you should use them.</li><br />People use these medicines and drugs ON THEIR OWN to feel more alert, to relax or quiet their nerves, to feel better, to enjoy themselves, or to get high or just to see how they would work<br /><br />During the last 12 months, did you use any of these medicines or drugs ON YOUR OWN? Please do not include any over-the-counter medicines or herbal medicines. (Check all that apply)</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_46_question_id_input"><input id="r_46_question_id" name="r[46][question_id]" type="hidden" value="76" />
+
+</li>
+<li class="quiet input optional" id="r_46_api_id_input"><input id="r_46_api_id" name="r[46][api_id]" type="hidden" value="806ef5a3-4ef7-4da0-bb72-7bb85511a9fa" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_46_answer_id_input"><fieldset class="choices"><input id="r[46]_answer_id_none" name="r[46][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_46_answer_id_385"><input class="" id="r_46_answer_id_385" name="r[46][answer_id][]" type="checkbox" value="385" />Sedatives, for example, sleeping pills, barbiturates, Seconal, Quaaludes, or Chloral Hydrate </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_47_question_id_input"><input id="r_47_question_id" name="r[47][question_id]" type="hidden" value="76" />
+
+</li>
+<li class="quiet input optional" id="r_47_api_id_input"><input id="r_47_api_id" name="r[47][api_id]" type="hidden" value="95d36c96-d6ca-4245-8af4-fdfd6bf1131b" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_47_answer_id_input"><fieldset class="choices"><input id="r[47]_answer_id_none" name="r[47][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_47_answer_id_386"><input class="" id="r_47_answer_id_386" name="r[47][answer_id][]" type="checkbox" value="386" />Tranquilizers or anti-anxiety drugs, for example, Valium, Librium, muscle relaxants, or Zanax </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_48_question_id_input"><input id="r_48_question_id" name="r[48][question_id]" type="hidden" value="76" />
+
+</li>
+<li class="quiet input optional" id="r_48_api_id_input"><input id="r_48_api_id" name="r[48][api_id]" type="hidden" value="02979693-9451-486a-8cd2-7c5a063da2d8" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_48_answer_id_input"><fieldset class="choices"><input id="r[48]_answer_id_none" name="r[48][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_48_answer_id_387"><input class="" id="r_48_answer_id_387" name="r[48][answer_id][]" type="checkbox" value="387" />Painkillers, for example, Codeine, Darvon, Percodan, Oxycontin, Dilaudid, Demerol, Celebrex or Vioxx </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_49_question_id_input"><input id="r_49_question_id" name="r[49][question_id]" type="hidden" value="76" />
+
+</li>
+<li class="quiet input optional" id="r_49_api_id_input"><input id="r_49_api_id" name="r[49][api_id]" type="hidden" value="c7eaf1a8-84ad-47f3-b94c-8cc2fc7eb0bd" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_49_answer_id_input"><fieldset class="choices"><input id="r[49]_answer_id_none" name="r[49][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_49_answer_id_388"><input class="" id="r_49_answer_id_388" name="r[49][answer_id][]" type="checkbox" value="388" />Stimulants, for example, Preludin, Benzedrine, Methedrine, Ritalin, uppers, or speed </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_50_question_id_input"><input id="r_50_question_id" name="r[50][question_id]" type="hidden" value="76" />
+
+</li>
+<li class="quiet input optional" id="r_50_api_id_input"><input id="r_50_api_id" name="r[50][api_id]" type="hidden" value="b77f5d5c-45dc-4790-88ea-5abc026aa088" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_50_answer_id_input"><fieldset class="choices"><input id="r[50]_answer_id_none" name="r[50][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_50_answer_id_389"><input class="" id="r_50_answer_id_389" name="r[50][answer_id][]" type="checkbox" value="389" />Marijuana, hash, THC, or grass Cocaine or crack </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_51_question_id_input"><input id="r_51_question_id" name="r[51][question_id]" type="hidden" value="76" />
+
+</li>
+<li class="quiet input optional" id="r_51_api_id_input"><input id="r_51_api_id" name="r[51][api_id]" type="hidden" value="784bb88f-7475-4f42-84d6-5b8c54d036d1" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_51_answer_id_input"><fieldset class="choices"><input id="r[51]_answer_id_none" name="r[51][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_51_answer_id_390"><input class="" id="r_51_answer_id_390" name="r[51][answer_id][]" type="checkbox" value="390" />Hallucinogens, for example, Ecstasy/MDMA, LSD, mescaline, psilocybin, PCP, angel dust, or peyote </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_52_question_id_input"><input id="r_52_question_id" name="r[52][question_id]" type="hidden" value="76" />
+
+</li>
+<li class="quiet input optional" id="r_52_api_id_input"><input id="r_52_api_id" name="r[52][api_id]" type="hidden" value="c050c81c-df5d-4730-94fe-8cabfa354950" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_52_answer_id_input"><fieldset class="choices"><input id="r[52]_answer_id_none" name="r[52][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_52_answer_id_391"><input class="" id="r_52_answer_id_391" name="r[52][answer_id][]" type="checkbox" value="391" />Inhalants or solvents, for example, amyl nitrite, nitrous oxide, glue, toluene or gasoline </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_53_question_id_input"><input id="r_53_question_id" name="r[53][question_id]" type="hidden" value="76" />
+
+</li>
+<li class="quiet input optional" id="r_53_api_id_input"><input id="r_53_api_id" name="r[53][api_id]" type="hidden" value="49940638-7fca-44fa-8cdd-beee866203f1" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_53_answer_id_input"><fieldset class="choices"><input id="r[53]_answer_id_none" name="r[53][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_53_answer_id_392"><input class="" id="r_53_answer_id_392" name="r[53][answer_id][]" type="checkbox" value="392" />Heroin </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_54_question_id_input"><input id="r_54_question_id" name="r[54][question_id]" type="hidden" value="76" />
+
+</li>
+<li class="quiet input optional" id="r_54_api_id_input"><input id="r_54_api_id" name="r[54][api_id]" type="hidden" value="a34097a9-3cd2-4547-a0cf-79cf223dc5a2" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_54_answer_id_input"><fieldset class="choices"><input id="r[54]_answer_id_none" name="r[54][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_54_answer_id_393"><input class="" id="r_54_answer_id_393" name="r[54][answer_id][]" type="checkbox" value="393" />Any OTHER medicines, or drugs, or substances, for example, methadone, Elavil, steroids, Thorazine or Haldol?</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_77"><legend><span><span class='qnum'>18) </span>Have you tried to hurt or kill yourself, or threatened to do so?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_55_question_id_input"><input id="r_55_question_id" name="r[55][question_id]" type="hidden" value="77" />
+
+</li>
+
+<li class="quiet input optional" id="r_55_api_id_input"><input id="r_55_api_id" name="r[55][api_id]" type="hidden" value="d3293a02-8a19-470d-919e-158baa102603" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_55_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_55_answer_id_394"><input class="" id="r_55_answer_id_394" name="r[55][answer_id]" type="radio" value="394" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_55_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_55_answer_id_395"><input class="" id="r_55_answer_id_395" name="r[55][answer_id]" type="radio" value="395" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_78"><legend><span><span class='qnum'>19) </span>In your ENTIRE life Did you EVER have a very serious or life-threatening illness?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_56_question_id_input"><input id="r_56_question_id" name="r[56][question_id]" type="hidden" value="78" />
+
+</li>
+
+<li class="quiet input optional" id="r_56_api_id_input"><input id="r_56_api_id" name="r[56][api_id]" type="hidden" value="4916908a-9871-431b-ab8b-8cdf36902c47" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_56_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_56_answer_id_396"><input class="" id="r_56_answer_id_396" name="r[56][answer_id]" type="radio" value="396" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_56_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_56_answer_id_397"><input class="" id="r_56_answer_id_397" name="r[56][answer_id]" type="radio" value="397" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_79"><legend><span><span class='qnum'>20) </span>In your ENTIRE life Were you EVER sexually assaulted, molested or raped or did you EVER experience unwanted sexual activity?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_57_question_id_input"><input id="r_57_question_id" name="r[57][question_id]" type="hidden" value="79" />
+
+</li>
+
+<li class="quiet input optional" id="r_57_api_id_input"><input id="r_57_api_id" name="r[57][api_id]" type="hidden" value="1c410616-3157-42d7-ab40-725aa0ed9d3a" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_57_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_57_answer_id_398"><input class="" id="r_57_answer_id_398" name="r[57][answer_id]" type="radio" value="398" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_57_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_57_answer_id_399"><input class="" id="r_57_answer_id_399" name="r[57][answer_id]" type="radio" value="399" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default q_dependent q_hidden" id="q_80"><legend><span>How old were you the FIRST time this happened?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_58_question_id_input"><input id="r_58_question_id" name="r[58][question_id]" type="hidden" value="80" />
+
+</li>
+<li class="quiet input optional" id="r_58_api_id_input"><input id="r_58_api_id" name="r[58][api_id]" type="hidden" value="7051e388-61c1-4576-a29f-c7c08b17930a" />
+
+</li>
+
+<li class="quiet input optional" id="r_58_answer_id_input"><input class="" id="r_58_answer_id" name="r[58][answer_id]" type="hidden" value="400" />
+
+</li>
+<li class="string input optional stringish" id="r_58_integer_value_input"><input class="integer" id="r_58_integer_value" name="r[58][integer_value]" type="text" />
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default q_dependent q_hidden" id="q_81"><legend><span>How old were you the MOST RECENT time this happened?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_59_question_id_input"><input id="r_59_question_id" name="r[59][question_id]" type="hidden" value="81" />
+
+</li>
+<li class="quiet input optional" id="r_59_api_id_input"><input id="r_59_api_id" name="r[59][api_id]" type="hidden" value="6825b9b3-3956-415b-abb0-97ad8c952401" />
+
+</li>
+
+<li class="quiet input optional" id="r_59_answer_id_input"><input class="" id="r_59_answer_id" name="r[59][answer_id]" type="hidden" value="401" />
+
+</li>
+<li class="string input optional stringish" id="r_59_integer_value_input"><input class="integer" id="r_59_integer_value" name="r[59][integer_value]" type="text" />
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default q_dependent q_hidden" id="q_82"><legend><span>In your ENTIRE life Before you were 18 years old, were you physically attacked or badly beaten up or injured by either of your parents or any other people who raised you?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_60_question_id_input"><input id="r_60_question_id" name="r[60][question_id]" type="hidden" value="82" />
+
+</li>
+
+<li class="quiet input optional" id="r_60_api_id_input"><input id="r_60_api_id" name="r[60][api_id]" type="hidden" value="414f11c8-59cb-49a7-a62f-bc250d5b451d" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_60_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_60_answer_id_402"><input class="" id="r_60_answer_id_402" name="r[60][answer_id]" type="radio" value="402" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_60_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_60_answer_id_403"><input class="" id="r_60_answer_id_403" name="r[60][answer_id]" type="radio" value="403" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default q_dependent q_hidden" id="q_83"><legend><span>In your ENTIRE life Before you were 18 years old, were you seriously neglected by either of your parents or any other people who raised you?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_61_question_id_input"><input id="r_61_question_id" name="r[61][question_id]" type="hidden" value="83" />
+
+</li>
+
+<li class="quiet input optional" id="r_61_api_id_input"><input id="r_61_api_id" name="r[61][api_id]" type="hidden" value="ee655f87-8576-4f9f-a8a8-2002318780dc" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_61_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_61_answer_id_404"><input class="" id="r_61_answer_id_404" name="r[61][answer_id]" type="radio" value="404" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_61_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_61_answer_id_405"><input class="" id="r_61_answer_id_405" name="r[61][answer_id]" type="radio" value="405" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default q_dependent q_hidden" id="q_84"><legend><span>In your ENTIRE life Were you EVER physically attacked or badly beaten up or injured by your spouse or romantic partner?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_62_question_id_input"><input id="r_62_question_id" name="r[62][question_id]" type="hidden" value="84" />
+
+</li>
+
+<li class="quiet input optional" id="r_62_api_id_input"><input id="r_62_api_id" name="r[62][api_id]" type="hidden" value="e5d98a26-31fe-49a7-b5db-57e3b9788b05" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_62_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_62_answer_id_406"><input class="" id="r_62_answer_id_406" name="r[62][answer_id]" type="radio" value="406" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_62_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_62_answer_id_407"><input class="" id="r_62_answer_id_407" name="r[62][answer_id]" type="radio" value="407" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default q_dependent q_hidden" id="q_85"><legend><span>In your ENTIRE life Were you EVER physically attacked or badly beaten up or injured by anyone else?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_63_question_id_input"><input id="r_63_question_id" name="r[63][question_id]" type="hidden" value="85" />
+
+</li>
+
+<li class="quiet input optional" id="r_63_api_id_input"><input id="r_63_api_id" name="r[63][api_id]" type="hidden" value="c8b61b2a-5bc8-4384-b368-9ab6f0ad2850" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_63_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_63_answer_id_408"><input class="" id="r_63_answer_id_408" name="r[63][answer_id]" type="radio" value="408" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_63_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_63_answer_id_409"><input class="" id="r_63_answer_id_409" name="r[63][answer_id]" type="radio" value="409" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default q_dependent q_hidden" id="q_86"><legend><span>In your ENTIRE life Were you EVER mugged, held up or threatened with a weapon?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_64_question_id_input"><input id="r_64_question_id" name="r[64][question_id]" type="hidden" value="86" />
+
+</li>
+
+<li class="quiet input optional" id="r_64_api_id_input"><input id="r_64_api_id" name="r[64][api_id]" type="hidden" value="b8487486-3c71-4314-8143-50d406f033cd" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_64_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_64_answer_id_410"><input class="" id="r_64_answer_id_410" name="r[64][answer_id]" type="radio" value="410" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_64_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_64_answer_id_411"><input class="" id="r_64_answer_id_411" name="r[64][answer_id]" type="radio" value="411" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="g_inline " id="g_9"><legend><span><span class='qnum'>21) </span>The next few questions are about how your parents or caregivers treated you while you were growing up, that is, BEFORE you were 18 years old. By parents or caregivers, I mean your mother, father, stepmother, stepfather, adoptive mother or father, foster parent or other adult living in your home. </span></legend><ol><li class='help'></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default " id="q_87"><legend><span>BEFORE you were 18 years old How often did a parent or other adult living in your home swear at you, insult you or say hurtful things?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_65_question_id_input"><input id="r_65_question_id" name="r[65][question_id]" type="hidden" value="87" />
+
+</li>
+
+<li class="quiet input optional" id="r_65_api_id_input"><input id="r_65_api_id" name="r[65][api_id]" type="hidden" value="a06c3180-ce16-4c2b-b09c-a02cad55ab2b" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_65_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_65_answer_id_412"><input class="" id="r_65_answer_id_412" name="r[65][answer_id]" type="radio" value="412" />Never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_65_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_65_answer_id_413"><input class="" id="r_65_answer_id_413" name="r[65][answer_id]" type="radio" value="413" />Almost never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_65_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_65_answer_id_414"><input class="" id="r_65_answer_id_414" name="r[65][answer_id]" type="radio" value="414" />Sometimes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_65_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_65_answer_id_415"><input class="" id="r_65_answer_id_415" name="r[65][answer_id]" type="radio" value="415" />Fairly often</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_65_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_65_answer_id_416"><input class="" id="r_65_answer_id_416" name="r[65][answer_id]" type="radio" value="416" />Very often</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default " id="q_88"><legend><span>BEFORE you were 18 years old How often did a parent or other adult living in your home act in ANY other way that made you afraid that you would be physically hurt or injured?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_66_question_id_input"><input id="r_66_question_id" name="r[66][question_id]" type="hidden" value="88" />
+
+</li>
+
+<li class="quiet input optional" id="r_66_api_id_input"><input id="r_66_api_id" name="r[66][api_id]" type="hidden" value="86ed93f5-e273-4cb2-b685-1e459af8d467" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_66_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_66_answer_id_417"><input class="" id="r_66_answer_id_417" name="r[66][answer_id]" type="radio" value="417" />Never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_66_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_66_answer_id_418"><input class="" id="r_66_answer_id_418" name="r[66][answer_id]" type="radio" value="418" />Almost never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_66_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_66_answer_id_419"><input class="" id="r_66_answer_id_419" name="r[66][answer_id]" type="radio" value="419" />Sometimes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_66_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_66_answer_id_420"><input class="" id="r_66_answer_id_420" name="r[66][answer_id]" type="radio" value="420" />Fairly often</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_66_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_66_answer_id_421"><input class="" id="r_66_answer_id_421" name="r[66][answer_id]" type="radio" value="421" />Very often</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default " id="q_89"><legend><span>How often did your father, stepfather, foster or adoptive father or mother’s boyfriend push, grab, slap or throw something at your mother, stepmother, father’s girlfriend, or your foster or adoptive mother?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_67_question_id_input"><input id="r_67_question_id" name="r[67][question_id]" type="hidden" value="89" />
+
+</li>
+
+<li class="quiet input optional" id="r_67_api_id_input"><input id="r_67_api_id" name="r[67][api_id]" type="hidden" value="25000c82-69c7-4574-9033-77893ebd90d4" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_67_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_67_answer_id_422"><input class="" id="r_67_answer_id_422" name="r[67][answer_id]" type="radio" value="422" />Never </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_67_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_67_answer_id_423"><input class="" id="r_67_answer_id_423" name="r[67][answer_id]" type="radio" value="423" />Almost never </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_67_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_67_answer_id_424"><input class="" id="r_67_answer_id_424" name="r[67][answer_id]" type="radio" value="424" />Sometimes </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_67_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_67_answer_id_425"><input class="" id="r_67_answer_id_425" name="r[67][answer_id]" type="radio" value="425" />Fairly often </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_67_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_67_answer_id_426"><input class="" id="r_67_answer_id_426" name="r[67][answer_id]" type="radio" value="426" />Very often </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_90"><legend><span><span class='qnum'>22) </span>And now some questions about your health and sexual practices.<br /><br />People are different in their sexual attraction to other people. Which category best describes your feelings?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_68_question_id_input"><input id="r_68_question_id" name="r[68][question_id]" type="hidden" value="90" />
+
+</li>
+
+<li class="quiet input optional" id="r_68_api_id_input"><input id="r_68_api_id" name="r[68][api_id]" type="hidden" value="8dd45fa2-c6c8-4c40-bf2c-ce31f4d2a9ae" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_68_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_68_answer_id_427"><input class="" id="r_68_answer_id_427" name="r[68][answer_id]" type="radio" value="427" />Only attracted to females</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_68_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_68_answer_id_428"><input class="" id="r_68_answer_id_428" name="r[68][answer_id]" type="radio" value="428" />Mostly attracted to females</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_68_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_68_answer_id_429"><input class="" id="r_68_answer_id_429" name="r[68][answer_id]" type="radio" value="429" />Equally attracted to females and males</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_68_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_68_answer_id_430"><input class="" id="r_68_answer_id_430" name="r[68][answer_id]" type="radio" value="430" />Mostly attracted to males</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_68_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_68_answer_id_431"><input class="" id="r_68_answer_id_431" name="r[68][answer_id]" type="radio" value="431" />Only attracted to males</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_91"><legend><span><span class='qnum'>23) </span>In your entire life, have you had sex with only males, only females, both males and females, or have you never had sex?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_69_question_id_input"><input id="r_69_question_id" name="r[69][question_id]" type="hidden" value="91" />
+
+</li>
+
+<li class="quiet input optional" id="r_69_api_id_input"><input id="r_69_api_id" name="r[69][api_id]" type="hidden" value="7b49ebbc-ffe8-411e-b5dd-6d526797446e" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_69_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_69_answer_id_432"><input class="" id="r_69_answer_id_432" name="r[69][answer_id]" type="radio" value="432" />Only males </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_69_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_69_answer_id_433"><input class="" id="r_69_answer_id_433" name="r[69][answer_id]" type="radio" value="433" />Only females </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_69_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_69_answer_id_434"><input class="" id="r_69_answer_id_434" name="r[69][answer_id]" type="radio" value="434" />Both males and females </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_69_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_69_answer_id_435"><input class="" id="r_69_answer_id_435" name="r[69][answer_id]" type="radio" value="435" />Never had sex</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_92"><legend><span><span class='qnum'>24) </span>Which of the categories best describes you?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_70_question_id_input"><input id="r_70_question_id" name="r[70][question_id]" type="hidden" value="92" />
+
+</li>
+
+<li class="quiet input optional" id="r_70_api_id_input"><input id="r_70_api_id" name="r[70][api_id]" type="hidden" value="9dbce5c1-7564-46d4-91ed-167f06de1660" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_70_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_70_answer_id_436"><input class="" id="r_70_answer_id_436" name="r[70][answer_id]" type="radio" value="436" />Heterosexual (straight) </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_70_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_70_answer_id_437"><input class="" id="r_70_answer_id_437" name="r[70][answer_id]" type="radio" value="437" />Gay or lesbian </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_70_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_70_answer_id_438"><input class="" id="r_70_answer_id_438" name="r[70][answer_id]" type="radio" value="438" />Bisexual </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_70_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_70_answer_id_439"><input class="" id="r_70_answer_id_439" name="r[70][answer_id]" type="radio" value="439" />Not sure</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="g_inline " id="g_10"><legend><span><span class='qnum'>25) </span>Now I’d like to know about how often you have experienced discrimination, been prevented from doing something, or been hassled or made to feel inferior in any of the following situations because you were assumed to be gay, lesbian or bisexual. </span></legend><ol><li class='help'></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default " id="q_93"><legend><span>During the last 12 months, about how often did you experience discrimination in your ability to obtain health care or health insurance coverage because you were assumed to be gay, lesbian or bisexual?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_71_question_id_input"><input id="r_71_question_id" name="r[71][question_id]" type="hidden" value="93" />
+
+</li>
+
+<li class="quiet input optional" id="r_71_api_id_input"><input id="r_71_api_id" name="r[71][api_id]" type="hidden" value="a5cd48df-3add-4135-8090-6060e04ab83f" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_71_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_71_answer_id_440"><input class="" id="r_71_answer_id_440" name="r[71][answer_id]" type="radio" value="440" />Never </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_71_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_71_answer_id_441"><input class="" id="r_71_answer_id_441" name="r[71][answer_id]" type="radio" value="441" />Almost never </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_71_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_71_answer_id_442"><input class="" id="r_71_answer_id_442" name="r[71][answer_id]" type="radio" value="442" />Sometimes </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_71_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_71_answer_id_443"><input class="" id="r_71_answer_id_443" name="r[71][answer_id]" type="radio" value="443" />Fairly often </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_71_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_71_answer_id_444"><input class="" id="r_71_answer_id_444" name="r[71][answer_id]" type="radio" value="444" />Very often </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default " id="q_94"><legend><span>During the last 12 months, how often did you experience discrimination in how you were treated when you got care because you were assumed to be gay, lesbian or bisexual?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_72_question_id_input"><input id="r_72_question_id" name="r[72][question_id]" type="hidden" value="94" />
+
+</li>
+
+<li class="quiet input optional" id="r_72_api_id_input"><input id="r_72_api_id" name="r[72][api_id]" type="hidden" value="72951ce7-6502-4cee-84d5-e1a8de02c111" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_72_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_72_answer_id_445"><input class="" id="r_72_answer_id_445" name="r[72][answer_id]" type="radio" value="445" />Never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_72_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_72_answer_id_446"><input class="" id="r_72_answer_id_446" name="r[72][answer_id]" type="radio" value="446" />Almost never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_72_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_72_answer_id_447"><input class="" id="r_72_answer_id_447" name="r[72][answer_id]" type="radio" value="447" />Sometimes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_72_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_72_answer_id_448"><input class="" id="r_72_answer_id_448" name="r[72][answer_id]" type="radio" value="448" />Fairly often</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_72_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_72_answer_id_449"><input class="" id="r_72_answer_id_449" name="r[72][answer_id]" type="radio" value="449" />Very often</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default " id="q_95"><legend><span>During the last 12 months, how often did you experience discrimination in public, like on the street, in stores or in restaurants, because you were assumed to be gay, lesbian or bisexual?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_73_question_id_input"><input id="r_73_question_id" name="r[73][question_id]" type="hidden" value="95" />
+
+</li>
+
+<li class="quiet input optional" id="r_73_api_id_input"><input id="r_73_api_id" name="r[73][api_id]" type="hidden" value="7034cd52-b299-48ee-bf60-40255f85ecdf" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_73_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_73_answer_id_450"><input class="" id="r_73_answer_id_450" name="r[73][answer_id]" type="radio" value="450" />Never </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_73_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_73_answer_id_451"><input class="" id="r_73_answer_id_451" name="r[73][answer_id]" type="radio" value="451" />Almost never </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_73_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_73_answer_id_452"><input class="" id="r_73_answer_id_452" name="r[73][answer_id]" type="radio" value="452" />Sometimes </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_73_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_73_answer_id_453"><input class="" id="r_73_answer_id_453" name="r[73][answer_id]" type="radio" value="453" />Fairly often </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_73_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_73_answer_id_454"><input class="" id="r_73_answer_id_454" name="r[73][answer_id]" type="radio" value="454" />Very often </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default " id="q_96"><legend><span>During the last 12 months, about how often did you experience discrimination because you were assumed to be gay, lesbian or bisexual in ANY other situation, like obtaining a job or on the job, getting admitted to a school or training program, in the courts or by the police?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_74_question_id_input"><input id="r_74_question_id" name="r[74][question_id]" type="hidden" value="96" />
+
+</li>
+
+<li class="quiet input optional" id="r_74_api_id_input"><input id="r_74_api_id" name="r[74][api_id]" type="hidden" value="e1dce90b-4d58-4481-9f73-fad8b762ff27" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_74_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_74_answer_id_455"><input class="" id="r_74_answer_id_455" name="r[74][answer_id]" type="radio" value="455" />Never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_74_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_74_answer_id_456"><input class="" id="r_74_answer_id_456" name="r[74][answer_id]" type="radio" value="456" />Almost never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_74_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_74_answer_id_457"><input class="" id="r_74_answer_id_457" name="r[74][answer_id]" type="radio" value="457" />Sometimes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_74_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_74_answer_id_458"><input class="" id="r_74_answer_id_458" name="r[74][answer_id]" type="radio" value="458" />Fairly often</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_74_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_74_answer_id_459"><input class="" id="r_74_answer_id_459" name="r[74][answer_id]" type="radio" value="459" />Very often</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+<li class="input"><div class="fieldset_wrapper"><fieldset class="q_inline_default " id="q_97"><legend><span>During the last 12 months, about how often were you made fun of, picked on, pushed, shoved, hit, or threatened with harm because you were assumed to be gay, lesbian or bisexual?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_75_question_id_input"><input id="r_75_question_id" name="r[75][question_id]" type="hidden" value="97" />
+
+</li>
+
+<li class="quiet input optional" id="r_75_api_id_input"><input id="r_75_api_id" name="r[75][api_id]" type="hidden" value="4ed7e582-c805-42e8-ae64-fc7dc5aa0a39" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_75_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_75_answer_id_460"><input class="" id="r_75_answer_id_460" name="r[75][answer_id]" type="radio" value="460" />Never </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_75_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_75_answer_id_461"><input class="" id="r_75_answer_id_461" name="r[75][answer_id]" type="radio" value="461" />Almost never </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_75_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_75_answer_id_462"><input class="" id="r_75_answer_id_462" name="r[75][answer_id]" type="radio" value="462" />Sometimes </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_75_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_75_answer_id_463"><input class="" id="r_75_answer_id_463" name="r[75][answer_id]" type="radio" value="463" />Fairly often </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_75_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_75_answer_id_464"><input class="" id="r_75_answer_id_464" name="r[75][answer_id]" type="radio" value="464" />Very often</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div></li>
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_98"><legend><span><span class='qnum'>26) </span>And now a few questions about your health. <br /><br />Did you test positive for HIV, the virus that causes AIDS?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_76_question_id_input"><input id="r_76_question_id" name="r[76][question_id]" type="hidden" value="98" />
+
+</li>
+
+<li class="quiet input optional" id="r_76_api_id_input"><input id="r_76_api_id" name="r[76][api_id]" type="hidden" value="6cf5bb40-c163-4dfe-b53f-6ca6d8f341c2" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_76_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_76_answer_id_465"><input class="" id="r_76_answer_id_465" name="r[76][answer_id]" type="radio" value="465" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_76_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_76_answer_id_466"><input class="" id="r_76_answer_id_466" name="r[76][answer_id]" type="radio" value="466" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_99"><legend><span><span class='qnum'>27) </span>In your ENTIRE life did you EVER attempt suicide?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_77_question_id_input"><input id="r_77_question_id" name="r[77][question_id]" type="hidden" value="99" />
+
+</li>
+
+<li class="quiet input optional" id="r_77_api_id_input"><input id="r_77_api_id" name="r[77][api_id]" type="hidden" value="e0e11492-16a8-4dec-ada5-a59134eecead" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_77_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_77_answer_id_467"><input class="" id="r_77_answer_id_467" name="r[77][answer_id]" type="radio" value="467" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_77_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_77_answer_id_468"><input class="" id="r_77_answer_id_468" name="r[77][answer_id]" type="radio" value="468" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default q_dependent q_hidden" id="q_100"><legend><span>Which of the following best describes your experience? (Please check all that apply)</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_78_question_id_input"><input id="r_78_question_id" name="r[78][question_id]" type="hidden" value="100" />
+
+</li>
+<li class="quiet input optional" id="r_78_api_id_input"><input id="r_78_api_id" name="r[78][api_id]" type="hidden" value="e9be928f-3484-479c-828d-e53fd1eaf3fd" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_78_answer_id_input"><fieldset class="choices"><input id="r[78]_answer_id_none" name="r[78][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_78_answer_id_469"><input class="" id="r_78_answer_id_469" name="r[78][answer_id][]" type="checkbox" value="469" />I thought seriously about it</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_79_question_id_input"><input id="r_79_question_id" name="r[79][question_id]" type="hidden" value="100" />
+
+</li>
+<li class="quiet input optional" id="r_79_api_id_input"><input id="r_79_api_id" name="r[79][api_id]" type="hidden" value="8e5cd4db-40b0-4c5f-bc78-d333a54ca891" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_79_answer_id_input"><fieldset class="choices"><input id="r[79]_answer_id_none" name="r[79][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_79_answer_id_470"><input class="" id="r_79_answer_id_470" name="r[79][answer_id][]" type="checkbox" value="470" />I had a general plan but did not carry it out (e.g., a time, a place, etc. were identified)</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_80_question_id_input"><input id="r_80_question_id" name="r[80][question_id]" type="hidden" value="100" />
+
+</li>
+<li class="quiet input optional" id="r_80_api_id_input"><input id="r_80_api_id" name="r[80][api_id]" type="hidden" value="2c56ed31-2ac5-4e21-9ccd-f24767b45420" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_80_answer_id_input"><fieldset class="choices"><input id="r[80]_answer_id_none" name="r[80][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_80_answer_id_471"><input class="" id="r_80_answer_id_471" name="r[80][answer_id][]" type="checkbox" value="471" />I wrote a suicide note but did not leave it where it could be found</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_81_question_id_input"><input id="r_81_question_id" name="r[81][question_id]" type="hidden" value="100" />
+
+</li>
+<li class="quiet input optional" id="r_81_api_id_input"><input id="r_81_api_id" name="r[81][api_id]" type="hidden" value="e5970545-f3fb-45c8-a53b-b2d5ef6103df" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_81_answer_id_input"><fieldset class="choices"><input id="r[81]_answer_id_none" name="r[81][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_81_answer_id_472"><input class="" id="r_81_answer_id_472" name="r[81][answer_id][]" type="checkbox" value="472" />I wrote a suicide note and did leave it where it could be found</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_82_question_id_input"><input id="r_82_question_id" name="r[82][question_id]" type="hidden" value="100" />
+
+</li>
+<li class="quiet input optional" id="r_82_api_id_input"><input id="r_82_api_id" name="r[82][api_id]" type="hidden" value="cfc7a248-c8dd-4174-b9f8-c13b7ff39644" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_82_answer_id_input"><fieldset class="choices"><input id="r[82]_answer_id_none" name="r[82][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_82_answer_id_473"><input class="" id="r_82_answer_id_473" name="r[82][answer_id][]" type="checkbox" value="473" />I had a method but did not carry it out</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_83_question_id_input"><input id="r_83_question_id" name="r[83][question_id]" type="hidden" value="100" />
+
+</li>
+<li class="quiet input optional" id="r_83_api_id_input"><input id="r_83_api_id" name="r[83][api_id]" type="hidden" value="4ffe0a36-b1f3-4df7-9bb0-a53ff80cb742" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_83_answer_id_input"><fieldset class="choices"><input id="r[83]_answer_id_none" name="r[83][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_83_answer_id_474"><input class="" id="r_83_answer_id_474" name="r[83][answer_id][]" type="checkbox" value="474" />I made a serious attempt but no medical intervention occurred </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_84_question_id_input"><input id="r_84_question_id" name="r[84][question_id]" type="hidden" value="100" />
+
+</li>
+<li class="quiet input optional" id="r_84_api_id_input"><input id="r_84_api_id" name="r[84][api_id]" type="hidden" value="15f1b8fa-200e-4942-a7de-0721d096dc8f" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_84_answer_id_input"><fieldset class="choices"><input id="r[84]_answer_id_none" name="r[84][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_84_answer_id_475"><input class="" id="r_84_answer_id_475" name="r[84][answer_id][]" type="checkbox" value="475" />I made a serious attempt that received medical attention </label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+<li class="quiet input optional" id="r_85_question_id_input"><input id="r_85_question_id" name="r[85][question_id]" type="hidden" value="100" />
+
+</li>
+<li class="quiet input optional" id="r_85_api_id_input"><input id="r_85_api_id" name="r[85][api_id]" type="hidden" value="aa668e2d-6afb-4e07-bdf6-4b503e59b02f" />
+
+</li>
+
+<li class="surveyor_check_boxes input optional" id="r_85_answer_id_input"><fieldset class="choices"><input id="r[85]_answer_id_none" name="r[85][answer_id][]" type="hidden" value="" /><ol class="choices-group"><li class="choice"><label for="r_85_answer_id_476"><input class="" id="r_85_answer_id_476" name="r[85][answer_id][]" type="checkbox" value="476" />Although I considered suicide, I was not that serious about it</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="q_default " id="q_101"><legend><span><span class='qnum'>28) </span>How frequently do you check Facebook?</span></legend><ol><span class='help'></span>
+<li class="quiet input optional" id="r_86_question_id_input"><input id="r_86_question_id" name="r[86][question_id]" type="hidden" value="101" />
+
+</li>
+
+<li class="quiet input optional" id="r_86_api_id_input"><input id="r_86_api_id" name="r[86][api_id]" type="hidden" value="6f4ded09-9946-488c-b3f5-fc7ba0502b71" />
+
+</li>
+
+
+
+<li class="surveyor_radio input optional" id="r_86_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_86_answer_id_477"><input class="" id="r_86_answer_id_477" name="r[86][answer_id]" type="radio" value="477" />Hourly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_86_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_86_answer_id_478"><input class="" id="r_86_answer_id_478" name="r[86][answer_id]" type="radio" value="478" />Daily</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_86_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_86_answer_id_479"><input class="" id="r_86_answer_id_479" name="r[86][answer_id]" type="radio" value="479" />Weekly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_86_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_86_answer_id_480"><input class="" id="r_86_answer_id_480" name="r[86][answer_id]" type="radio" value="480" />Monthly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_86_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_86_answer_id_481"><input class="" id="r_86_answer_id_481" name="r[86][answer_id]" type="radio" value="481" />Every Several Months</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+
+
+
+<li class="surveyor_radio input optional" id="r_86_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_86_answer_id_482"><input class="" id="r_86_answer_id_482" name="r[86][answer_id]" type="radio" value="482" />Never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="g_grid " id="g_11"><legend><span><span class='qnum'>29) </span>Which social networks do you check?</span></legend><ol><li class='help'></li>
+<li>
+<table>
+<col class='pre'>
+<col class='odd'>
+<col class='even'>
+<col class='odd'>
+<col class='even'>
+<col class='odd'>
+<col class='even'>
+<col class='post'>
+<tbody>
+<tr>
+<th>&nbsp;</th>
+<th>
+Hourly
+<span class='help'></span>
+</th>
+<th>
+Daily
+<span class='help'></span>
+</th>
+<th>
+Weekly
+<span class='help'></span>
+</th>
+<th>
+Monthly
+<span class='help'></span>
+</th>
+<th>
+Every Several Months
+<span class='help'></span>
+</th>
+<th>
+Never
+<span class='help'></span>
+</th>
+<th>&nbsp;</th>
+</tr>
+<tr class='q_grid ' id='q_102'>
+<th>
+Twitter
+
+<li class="quiet input optional" id="r_87_question_id_input"><input id="r_87_question_id" name="r[87][question_id]" type="hidden" value="102" />
+
+</li>
+<li class="quiet input optional" id="r_87_api_id_input"><input id="r_87_api_id" name="r[87][api_id]" type="hidden" value="f81a91c1-174c-4ce5-ad90-6e2aee21e65a" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_87_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_87_answer_id_483"><input class="" id="r_87_answer_id_483" name="r[87][answer_id]" type="radio" value="483" />Hourly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_87_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_87_answer_id_484"><input class="" id="r_87_answer_id_484" name="r[87][answer_id]" type="radio" value="484" />Daily</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_87_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_87_answer_id_485"><input class="" id="r_87_answer_id_485" name="r[87][answer_id]" type="radio" value="485" />Weekly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_87_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_87_answer_id_486"><input class="" id="r_87_answer_id_486" name="r[87][answer_id]" type="radio" value="486" />Monthly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_87_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_87_answer_id_487"><input class="" id="r_87_answer_id_487" name="r[87][answer_id]" type="radio" value="487" />Every Several Months</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_87_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_87_answer_id_488"><input class="" id="r_87_answer_id_488" name="r[87][answer_id]" type="radio" value="488" />Never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_103'>
+<th>
+Google+
+
+<li class="quiet input optional" id="r_88_question_id_input"><input id="r_88_question_id" name="r[88][question_id]" type="hidden" value="103" />
+
+</li>
+<li class="quiet input optional" id="r_88_api_id_input"><input id="r_88_api_id" name="r[88][api_id]" type="hidden" value="4bfd6d61-f54a-4068-89f1-d8c45d132d72" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_88_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_88_answer_id_489"><input class="" id="r_88_answer_id_489" name="r[88][answer_id]" type="radio" value="489" />Hourly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_88_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_88_answer_id_490"><input class="" id="r_88_answer_id_490" name="r[88][answer_id]" type="radio" value="490" />Daily</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_88_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_88_answer_id_491"><input class="" id="r_88_answer_id_491" name="r[88][answer_id]" type="radio" value="491" />Weekly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_88_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_88_answer_id_492"><input class="" id="r_88_answer_id_492" name="r[88][answer_id]" type="radio" value="492" />Monthly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_88_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_88_answer_id_493"><input class="" id="r_88_answer_id_493" name="r[88][answer_id]" type="radio" value="493" />Every Several Months</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_88_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_88_answer_id_494"><input class="" id="r_88_answer_id_494" name="r[88][answer_id]" type="radio" value="494" />Never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_104'>
+<th>
+MySpace
+
+<li class="quiet input optional" id="r_89_question_id_input"><input id="r_89_question_id" name="r[89][question_id]" type="hidden" value="104" />
+
+</li>
+<li class="quiet input optional" id="r_89_api_id_input"><input id="r_89_api_id" name="r[89][api_id]" type="hidden" value="5850bead-42fb-4b68-8363-edbe6b9fe435" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_89_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_89_answer_id_495"><input class="" id="r_89_answer_id_495" name="r[89][answer_id]" type="radio" value="495" />Hourly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_89_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_89_answer_id_496"><input class="" id="r_89_answer_id_496" name="r[89][answer_id]" type="radio" value="496" />Daily</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_89_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_89_answer_id_497"><input class="" id="r_89_answer_id_497" name="r[89][answer_id]" type="radio" value="497" />Weekly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_89_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_89_answer_id_498"><input class="" id="r_89_answer_id_498" name="r[89][answer_id]" type="radio" value="498" />Monthly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_89_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_89_answer_id_499"><input class="" id="r_89_answer_id_499" name="r[89][answer_id]" type="radio" value="499" />Every Several Months</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_89_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_89_answer_id_500"><input class="" id="r_89_answer_id_500" name="r[89][answer_id]" type="radio" value="500" />Never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_105'>
+<th>
+LinkedIn
+
+<li class="quiet input optional" id="r_90_question_id_input"><input id="r_90_question_id" name="r[90][question_id]" type="hidden" value="105" />
+
+</li>
+<li class="quiet input optional" id="r_90_api_id_input"><input id="r_90_api_id" name="r[90][api_id]" type="hidden" value="050ffca2-8720-4726-983f-5dc4a7fa16d9" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_90_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_90_answer_id_501"><input class="" id="r_90_answer_id_501" name="r[90][answer_id]" type="radio" value="501" />Hourly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_90_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_90_answer_id_502"><input class="" id="r_90_answer_id_502" name="r[90][answer_id]" type="radio" value="502" />Daily</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_90_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_90_answer_id_503"><input class="" id="r_90_answer_id_503" name="r[90][answer_id]" type="radio" value="503" />Weekly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_90_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_90_answer_id_504"><input class="" id="r_90_answer_id_504" name="r[90][answer_id]" type="radio" value="504" />Monthly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_90_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_90_answer_id_505"><input class="" id="r_90_answer_id_505" name="r[90][answer_id]" type="radio" value="505" />Every Several Months</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_90_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_90_answer_id_506"><input class="" id="r_90_answer_id_506" name="r[90][answer_id]" type="radio" value="506" />Never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_106'>
+<th>
+Other
+
+<li class="quiet input optional" id="r_91_question_id_input"><input id="r_91_question_id" name="r[91][question_id]" type="hidden" value="106" />
+
+</li>
+<li class="quiet input optional" id="r_91_api_id_input"><input id="r_91_api_id" name="r[91][api_id]" type="hidden" value="42a001f6-fbb5-4aca-9bfe-dbe50339842c" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_91_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_91_answer_id_507"><input class="" id="r_91_answer_id_507" name="r[91][answer_id]" type="radio" value="507" />Hourly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_91_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_91_answer_id_508"><input class="" id="r_91_answer_id_508" name="r[91][answer_id]" type="radio" value="508" />Daily</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_91_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_91_answer_id_509"><input class="" id="r_91_answer_id_509" name="r[91][answer_id]" type="radio" value="509" />Weekly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_91_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_91_answer_id_510"><input class="" id="r_91_answer_id_510" name="r[91][answer_id]" type="radio" value="510" />Monthly</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_91_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_91_answer_id_511"><input class="" id="r_91_answer_id_511" name="r[91][answer_id]" type="radio" value="511" />Every Several Months</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_91_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_91_answer_id_512"><input class="" id="r_91_answer_id_512" name="r[91][answer_id]" type="radio" value="512" />Never</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+</tbody>
+</table>
+</li>
+</ol></fieldset></div>
+<div class="fieldset_wrapper"><fieldset class="g_grid " id="g_12"><legend><span><span class='qnum'>30) </span>Do you check any of the following social networking sites?</span></legend><ol><li class='help'></li>
+<li>
+<table>
+<col class='pre'>
+<col class='odd'>
+<col class='even'>
+<col class='post'>
+<tbody>
+<tr>
+<th>&nbsp;</th>
+<th>
+Yes
+<span class='help'></span>
+</th>
+<th>
+No
+<span class='help'></span>
+</th>
+<th>&nbsp;</th>
+</tr>
+<tr class='q_grid ' id='q_107'>
+<th>
+Tumblr
+
+<li class="quiet input optional" id="r_92_question_id_input"><input id="r_92_question_id" name="r[92][question_id]" type="hidden" value="107" />
+
+</li>
+<li class="quiet input optional" id="r_92_api_id_input"><input id="r_92_api_id" name="r[92][api_id]" type="hidden" value="dc1ad43a-7111-40d6-800a-0f919cdc69d1" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_92_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_92_answer_id_513"><input class="" id="r_92_answer_id_513" name="r[92][answer_id]" type="radio" value="513" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_92_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_92_answer_id_514"><input class="" id="r_92_answer_id_514" name="r[92][answer_id]" type="radio" value="514" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_108'>
+<th>
+TrevorSpace
+
+<li class="quiet input optional" id="r_93_question_id_input"><input id="r_93_question_id" name="r[93][question_id]" type="hidden" value="108" />
+
+</li>
+<li class="quiet input optional" id="r_93_api_id_input"><input id="r_93_api_id" name="r[93][api_id]" type="hidden" value="f7652b95-a8cf-49e6-a93f-075a713f57e0" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_93_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_93_answer_id_515"><input class="" id="r_93_answer_id_515" name="r[93][answer_id]" type="radio" value="515" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_93_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_93_answer_id_516"><input class="" id="r_93_answer_id_516" name="r[93][answer_id]" type="radio" value="516" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_109'>
+<th>
+Grindr
+
+<li class="quiet input optional" id="r_94_question_id_input"><input id="r_94_question_id" name="r[94][question_id]" type="hidden" value="109" />
+
+</li>
+<li class="quiet input optional" id="r_94_api_id_input"><input id="r_94_api_id" name="r[94][api_id]" type="hidden" value="2839c764-3e09-4cb4-a3c1-df2790c3eb95" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_94_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_94_answer_id_517"><input class="" id="r_94_answer_id_517" name="r[94][answer_id]" type="radio" value="517" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_94_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_94_answer_id_518"><input class="" id="r_94_answer_id_518" name="r[94][answer_id]" type="radio" value="518" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_110'>
+<th>
+Scruff
+
+<li class="quiet input optional" id="r_95_question_id_input"><input id="r_95_question_id" name="r[95][question_id]" type="hidden" value="110" />
+
+</li>
+<li class="quiet input optional" id="r_95_api_id_input"><input id="r_95_api_id" name="r[95][api_id]" type="hidden" value="cd99ca91-d558-4f8d-b8bb-0c15518576bc" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_95_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_95_answer_id_519"><input class="" id="r_95_answer_id_519" name="r[95][answer_id]" type="radio" value="519" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_95_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_95_answer_id_520"><input class="" id="r_95_answer_id_520" name="r[95][answer_id]" type="radio" value="520" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_111'>
+<th>
+Jack'd
+
+<li class="quiet input optional" id="r_96_question_id_input"><input id="r_96_question_id" name="r[96][question_id]" type="hidden" value="111" />
+
+</li>
+<li class="quiet input optional" id="r_96_api_id_input"><input id="r_96_api_id" name="r[96][api_id]" type="hidden" value="edfd207f-ade0-42ac-a91a-e61afba38e4a" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_96_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_96_answer_id_521"><input class="" id="r_96_answer_id_521" name="r[96][answer_id]" type="radio" value="521" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_96_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_96_answer_id_522"><input class="" id="r_96_answer_id_522" name="r[96][answer_id]" type="radio" value="522" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_112'>
+<th>
+Hornet
+
+<li class="quiet input optional" id="r_97_question_id_input"><input id="r_97_question_id" name="r[97][question_id]" type="hidden" value="112" />
+
+</li>
+<li class="quiet input optional" id="r_97_api_id_input"><input id="r_97_api_id" name="r[97][api_id]" type="hidden" value="39a2b85f-71c5-4f66-9195-bdbb426deec7" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_97_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_97_answer_id_523"><input class="" id="r_97_answer_id_523" name="r[97][answer_id]" type="radio" value="523" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_97_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_97_answer_id_524"><input class="" id="r_97_answer_id_524" name="r[97][answer_id]" type="radio" value="524" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_113'>
+<th>
+Yelp
+
+<li class="quiet input optional" id="r_98_question_id_input"><input id="r_98_question_id" name="r[98][question_id]" type="hidden" value="113" />
+
+</li>
+<li class="quiet input optional" id="r_98_api_id_input"><input id="r_98_api_id" name="r[98][api_id]" type="hidden" value="6dcddf24-062d-41cf-8175-857fbe6f2db2" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_98_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_98_answer_id_525"><input class="" id="r_98_answer_id_525" name="r[98][answer_id]" type="radio" value="525" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_98_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_98_answer_id_526"><input class="" id="r_98_answer_id_526" name="r[98][answer_id]" type="radio" value="526" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_114'>
+<th>
+Foursquare
+
+<li class="quiet input optional" id="r_99_question_id_input"><input id="r_99_question_id" name="r[99][question_id]" type="hidden" value="114" />
+
+</li>
+<li class="quiet input optional" id="r_99_api_id_input"><input id="r_99_api_id" name="r[99][api_id]" type="hidden" value="ccd3f323-9fcb-484f-b0ce-c5a44e21830d" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_99_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_99_answer_id_527"><input class="" id="r_99_answer_id_527" name="r[99][answer_id]" type="radio" value="527" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_99_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_99_answer_id_528"><input class="" id="r_99_answer_id_528" name="r[99][answer_id]" type="radio" value="528" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_115'>
+<th>
+Flickr
+
+<li class="quiet input optional" id="r_100_question_id_input"><input id="r_100_question_id" name="r[100][question_id]" type="hidden" value="115" />
+
+</li>
+<li class="quiet input optional" id="r_100_api_id_input"><input id="r_100_api_id" name="r[100][api_id]" type="hidden" value="ae8e3e03-44ec-4394-9167-4fb076f3e5ba" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_100_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_100_answer_id_529"><input class="" id="r_100_answer_id_529" name="r[100][answer_id]" type="radio" value="529" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_100_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_100_answer_id_530"><input class="" id="r_100_answer_id_530" name="r[100][answer_id]" type="radio" value="530" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_116'>
+<th>
+YouTube
+
+<li class="quiet input optional" id="r_101_question_id_input"><input id="r_101_question_id" name="r[101][question_id]" type="hidden" value="116" />
+
+</li>
+<li class="quiet input optional" id="r_101_api_id_input"><input id="r_101_api_id" name="r[101][api_id]" type="hidden" value="271d8534-2812-439e-95ec-5bc95d01b1ad" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_101_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_101_answer_id_531"><input class="" id="r_101_answer_id_531" name="r[101][answer_id]" type="radio" value="531" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_101_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_101_answer_id_532"><input class="" id="r_101_answer_id_532" name="r[101][answer_id]" type="radio" value="532" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr>
+<th>&nbsp;</th>
+<th>
+Yes
+<span class='help'></span>
+</th>
+<th>
+No
+<span class='help'></span>
+</th>
+<th>&nbsp;</th>
+</tr>
+<tr class='q_grid ' id='q_117'>
+<th>
+Pinterest
+
+<li class="quiet input optional" id="r_102_question_id_input"><input id="r_102_question_id" name="r[102][question_id]" type="hidden" value="117" />
+
+</li>
+<li class="quiet input optional" id="r_102_api_id_input"><input id="r_102_api_id" name="r[102][api_id]" type="hidden" value="b33d92ad-08dc-48e9-87ca-1a02347dd5ea" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_102_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_102_answer_id_533"><input class="" id="r_102_answer_id_533" name="r[102][answer_id]" type="radio" value="533" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_102_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_102_answer_id_534"><input class="" id="r_102_answer_id_534" name="r[102][answer_id]" type="radio" value="534" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_118'>
+<th>
+Instagram
+
+<li class="quiet input optional" id="r_103_question_id_input"><input id="r_103_question_id" name="r[103][question_id]" type="hidden" value="118" />
+
+</li>
+<li class="quiet input optional" id="r_103_api_id_input"><input id="r_103_api_id" name="r[103][api_id]" type="hidden" value="0f8ced79-4010-4242-a632-ddffed5e0542" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_103_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_103_answer_id_535"><input class="" id="r_103_answer_id_535" name="r[103][answer_id]" type="radio" value="535" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_103_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_103_answer_id_536"><input class="" id="r_103_answer_id_536" name="r[103][answer_id]" type="radio" value="536" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+<tr class='q_grid ' id='q_119'>
+<th>
+Other
+
+<li class="quiet input optional" id="r_104_question_id_input"><input id="r_104_question_id" name="r[104][question_id]" type="hidden" value="119" />
+
+</li>
+<li class="quiet input optional" id="r_104_api_id_input"><input id="r_104_api_id" name="r[104][api_id]" type="hidden" value="cb4014ec-484d-4030-b249-77b894e3aaf9" />
+
+</li>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_104_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_104_answer_id_537"><input class="" id="r_104_answer_id_537" name="r[104][answer_id]" type="radio" value="537" />Yes</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<td>
+
+
+<li class="surveyor_radio input optional" id="r_104_answer_id_input"><fieldset class="choices"><ol class="choices-group"><li class="choice"><label for="r_104_answer_id_538"><input class="" id="r_104_answer_id_538" name="r[104][answer_id]" type="radio" value="538" />No</label></li></ol></fieldset>
+
+</li>
+<span class='help'></span>
+</td>
+<th></th>
+</th>
+</tr>
+</tbody>
+</table>
+</li>
+</ol></fieldset></div>
+</div>
+<div class='next_section'><input name="section[4]" type="submit" value="Next section &raquo;" /></div>
+</form>
+
+<br>
+</div>
+<script>
+  $(document).ready(function() {
+    $("input#surveyor_javascript_enabled").val(true);
+  });
+</script>
+
+</body>
+</html>

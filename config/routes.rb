@@ -1,9 +1,4 @@
 ReDSSoCS::Application.routes.draw do
-  resources :estimates
-
-
-  get "estimate/index"
-
   mount Surveyor::Engine => "/surveys", :as => "surveyor"
 
   # The priority is based upon order of creation:
@@ -63,7 +58,6 @@ ReDSSoCS::Application.routes.draw do
   # See how all your routes lay out with "rake routes"
 
   match 'recruit', :to => 'recruit#index', :as => 'recruit_index'
-  match 'estimate', :to => 'estimate#index', :as => 'estimate_index'
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
   # Note: This route will make all actions in every controller accessible via GET requests.

@@ -2,7 +2,7 @@ ReDSSoCS::Application.configure do
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
-  config.cache_classes = false
+  config.cache_classes = true
 
   # Full error reports are disabled and caching is turned on
   config.consider_all_requests_local       = false
@@ -69,4 +69,14 @@ ReDSSoCS::Application.configure do
   # [CTH]
   log_pipe = IO.popen("/usr/sbin/rotatelogs #{::Rails.root.to_s}/log/production_log.%Y%m%d 86400", 'a')
   config.logger = Logger.new(log_pipe)
+
+  config.action_mailer.smtp_settings = {
+   :address => 'mailhost.cs.rit.edu',
+   :port => 587,
+   :domain => 'cs.rit.edu',
+   :user_name => 'cmh',
+   :password =>  'iT5-aca',
+   :authentication => 'plain',
+   :enable_starttls_auto => true 
+  }
 end

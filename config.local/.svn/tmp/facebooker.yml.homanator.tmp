@@ -1,0 +1,41 @@
+development:
+  app_id: 179445217929
+  secret: "3f881df113dc48cd63b49de1fa1ca39a"
+  canvas_page_name: homanator
+  callback_url: http://homanator-tunnel.craigharman.net/
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
+  tunnel:
+    public_host_username: cmh
+<<<<<<< .mine
+    public_host: 192.168.2.6
+    public_port: 2500
+=======
+    public_host: craigharman.net
+    public_port: 7007
+>>>>>>> .r1166
+    local_port: 3000
+    server_alive_interval: 0
+
+production:
+  app_id: 179445217929
+  secret: "3f881df113dc48cd63b49de1fa1ca39a"
+  canvas_page_name: homanator
+  callback_url: http://homanator-tunnel.craigharman.net/
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
+  tunnel:
+    public_host_username: cmh
+<<<<<<< .mine
+    public_host: 192.168.2.6
+    public_port: 2500
+=======
+    public_host: craigharman.net
+    public_port: 7007
+>>>>>>> .r1166
+    local_port: 3000
+    server_alive_interval: 0
+
+test:
+  app_id: 179445217929
+  secret: "3f881df113dc48cd63b49de1fa1ca39a"

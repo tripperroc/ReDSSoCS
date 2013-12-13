@@ -1,0 +1,24 @@
+development:
+  app_id: 264445711231
+  secret: "804ad6d7a2ecf53869258dafda1fc87b"
+  canvas_page_name: craig_freds
+  callback_url: http://craigharman.net/redssocs/
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
+
+production:
+  app_id: 264445711231
+  secret: "804ad6d7a2ecf53869258dafda1fc87b"
+  canvas_page_name: craig_freds
+  callback_url: http://craigharman.net/redssocs/
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
+
+test:
+  app_id: 264445711231
+  secret: "804ad6d7a2ecf53869258dafda1fc87b"
+  canvas_page_name: craig_freds
+  callback_url: http://craigharman.net/redssocs/
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
+

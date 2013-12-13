@@ -1,0 +1,30 @@
+development:
+  app_id: 350846314996542
+  secret: 40a703e167ea7548c831aa0aa8e15f04
+  canvas_page_name: vmbs_tunnel
+  callback_url: http://vmbs-tunnel.craigharman.net/
+  pretty_errors: true
+  set_asset_host_to_callback_url: true
+  tunnel:
+    public_host_username: cenzo
+    public_host: craigharman.net
+    public_port: 6006
+    local_port: 3000
+    server_alive_interval: 0
+
+production:
+  app_id: 350846314996542
+  secret: 40a703e167ea7548c831aa0aa8e15f04
+  canvas_page_name: vmbs_tunnel
+  callback_url: http://vmbs-tunnel.craigharman.net/
+  pretty_errors: true
+  tunnel:
+    public_host_username: cenzo
+    public_host: craigharman.net
+    public_port: 6006
+    local_port: 3000
+    server_alive_interval: 0
+
+test:
+  app_id: 350846314996542
+  secret: 40a703e167ea7548c831aa0aa8e15f04
